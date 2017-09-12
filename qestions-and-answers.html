@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+    <meta name="author" content="Vincent Garreau" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/groud-frank.css">
+    <link rel="stylesheet" href="css/questions-and-answers.css">
+    <link rel="stylesheet" media="screen" href="css/style.css">
+
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">-->
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    
+    <title>Q&amp;A</title>
+</head>
+
+<body>
+
+        <div class="icon-size-sm" id="nav-btn">
+                
+               <span><i class = "icon icon ion-android-add"></i></span>
+             </div>
+             
+             <nav id="custom-nav">
+               <ul class="nav-ul">
+                 <li class="nav-li hide-me">
+                   <a href="file:///home/groudie/Dropbox/Code/Projects/groudfrank/index.html#greeter" class="custom-nav-format">HOME</a>
+                 </li>
+                 <li class="nav-li hide-me">
+                   <a href="file:///home/groudie/Dropbox/Code/Projects/groudfrank/index.html#me" class="custom-nav-format">ME</a>
+                 </li>
+                 <li class="nav-li hide-me">
+                   <a href="#services" class="custom-nav-format">SERVICES</a>
+                 </li>
+                 <li class="nav-li hide-me">
+                   <a href="#contact" class="custom-nav-format">CONTACT</a>
+                 </li>
+                 <li class="nav-li hide-me">
+                   <a href="#" class="custom-nav-format">JOURNAL</a>
+                 </li>
+                 <li class="nav-li hide-me">
+                   <a href="#" class="custom-nav-format">Q&amp;A</a>
+                 </li>
+               </ul>
+             
+               <ul class="nav-contact-ul hide-me">
+                 <li class="nav-contact-li">
+                   <a class="custom-nav-contact-format">Dribble</a>
+                 </li>
+                 <li class="seperator-li">
+                   <p>.</p>
+                 </li>
+                 <li class="nav-contact-li">
+                   <a class="custom-nav-contact-format">Facebook</a>
+                 </li>
+                 <li class="seperator-li">
+                   <p>.</p>
+                 </li>
+                 <li class="nav-contact-li">
+                   <a class="custom-nav-contact-format">Google+</a>
+                 </li>
+                 <li class="seperator-li">
+                   <p>.</p>
+                 </li>
+                 <li class="nav-contact-li">
+                   <a class="custom-nav-contact-format">Instagram</a>
+                 </li>
+                 <li class="seperator-li">
+                   <p>.</p>
+                 </li>
+                 <li class="nav-contact-li">
+                   <a class="custom-nav-contact-format">Twitter</a>
+                 </li>
+                 <li class="seperator-li">
+                   <p>.</p>
+                 </li>
+                 <li class="nav-contact-li">
+                   <a class="custom-nav-contact-format">groudfrank@gmail.com</a>
+                 </li>
+                 <li class="seperator-li">
+                   <p>.</p>
+                 </li>
+                 <li class="nav-contact-li">
+                   <a class="custom-nav-contact-format">+1-868-343-3756</a>
+                 </li>
+               </ul>
+             </nav>
+             
+             
+             
+             <div id="pseudo-body"> 
+
+              <div id="questions-answers" class="card-format">
+
+                <h1 class="card-heading-format hide-me">Q&amp;A</h1>
+                <div class="card-pic-format hide-me" id="me-pic-div">
+                    <img src="img/me-beard.jpg"/>
+                </div>
+
+                <div class="questions-answers-container hide-me">
+                    <div class="questions-answers-content">
+                        <h1>What's your marital status?</h1>
+                        <p>Waiting for a miracle.</p>
+                    </div>
+
+                    <div class="questions-answers-content">
+                        <h1>Do you have kids?</h1>
+                        <p><s>I am the proud father of an 8 year old cat.</s> No.</p>
+                    </div>
+                </div>
+
+                <div class="questions-answers-container hide-me">
+                    <div class="questions-answers-content">
+                        <h1>What's your greatest strength?</h1>
+                        <p> 
+                            My ability to push through and manage mentally challenging
+                            activities.
+                        </p>
+                    </div>
+
+                    <div class="questions-answers-content">
+                            <h1>What's your greatest weakness?</h1>
+                        <p>
+                        I doubt myself too much and allow fear(of rejection,
+                        failure) to dictate too much of my life.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="questions-answers-container hide-me">
+                        <div class="questions-answers-content">
+                            <h1>What's your calling in life?</h1>
+                            <p> 
+                                I don't think my calling is anything career related. 
+                                <u>My calling in life is to be a decent human being</u> not to be
+                                a developer or a fireman or a farmer or a priest. Don't get me wrong,
+                                there is wrong with
+                                passionately choosing a career. Our personalities and temparaments
+                                generally point us to certain fields and our jobs can change people's
+                                lives for the better but the kind of change we affect 
+                                comes from who we are and not necessarily what we do. 
+                            </p>
+                        </div>
+    
+                        <div class="questions-answers-content">
+                            <h1>What do you want your legacy to be?</h1>
+                            <p>
+                            I'm honestly not very concerned with leaving a legacy. The universe is 
+                            approximately 13.7 billion years old and the earth is appromixmately 4.5 billion.
+                            Humans have been here for approximately 200,000 years and I am 28 years old.
+                            Given the scale of the universe(size and age) it's kinda pointless trying to
+                            leave a legacy behind.  
+                            I think we like holding on to our mortality so much that we 
+                            subconciously try to be immortal by leaving things behind. We are afraid 
+                            people will forget us so we try to leave a mark. The problem there is that
+                            we are attempting to leave a mark on the earth but that's only going to matter
+                            for as long as the earth and people are around and both those things are finite -
+                            as any scientist or priest will tell you. They may disagree about how it will come
+                            to an end but they agree on the end result. 
+                            I want my legacy to be obedience to God. If I aim for that I may be pleasing 
+                            in the eyes of God and may, in the process, leave a legacy behind
+                            but if I aim for leaving a legacy on earth I may achieve neither of those things. 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="questions-answers-container hide-me">
+                        <div class="questions-answers-content">
+                            <h1>Who is your favorite historical figure?</h1>
+                            <p> 
+                                Diogenese of Sinope. The most interesting troll in all of antiquity.
+                                You should read about him.
+    
+                            </p>
+                        </div>
+    
+                        <div class="questions-answers-content">
+                            <h1>Who has the biggest influence in your life?</h1>
+                            <p>
+                            Mommy :D
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="questions-answers-container hide-me">
+                            <div class="questions-answers-content">
+                                <h1>What piece of advice would you give to people?</h1>
+                                <p> 
+                                    <i>"Beware the emptiness of a busy life"</i> <br>
+                                    Socrates <br> <br>
+
+                                    If you're too busy for prayer or exercise or a social life or 
+                                    yourself then you're too busy. What's the point of 
+                                    being so busy your spiritual, mental and physical well being are threadened
+                                    bringing unhappiness and emptiness to your life?
+                                </p>
+                            </div>
+        
+                            <div class="questions-answers-content">
+                                <h1>What's your most controversial opinion?</h1>
+                                <p>
+                                <s>The Lion King was not the masterpiece everyone thinkings it is.</s>
+                                The death penalty does little to reduce crime and is there to satisfy our
+                                need for vengance, not really to safeguard society. It isn't much of a
+                                deterrent either. 
+                                </p>
+                            </div>
+                        </div>
+
+                <div class="questions-answers-container hide-me">
+                    <div class="questions-answers-content">
+                        <h1>How long have you been a developer?</h1>
+                        <p> 
+                            I started learning Web Development in 2015. This is actually,
+                            my first website.
+                        </p>
+                    </div>
+
+                    <div class="questions-answers-content">
+                        <h1>What do you love most about being a developer?</h1>
+                        <p>
+                        That's a tough one. What I love most is the high I get from 
+                        resolving an error or bug after hours(sometimes days) of
+                        frustration and failure. I learn far more about coding this 
+                        way than reading coding books.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="questions-answers-container hide-me">
+                    <div class="questions-answers-content">
+                        <h1>What's your favorite language?</h1>
+                        <p> 
+                            Ooooo... that's a close race between Python and JavaScript
+                            but I think JavaScript would come out on top. JavaScript does 
+                            have its quirks for sure: <br> <br>
+                            '' == '0' //false <br>
+                            0 == '' //true <br>
+                            0 == '0' //true <br>
+                            <i>Taken from JavaScript: The Good Parts by Douglas Crockford</i> <br><br>
+                            Despite the fact that 0 can be equal to two things that don't 
+                            equal each other I think JavaScript is a beautiful language
+                            kinda like a Pug is so repulsive it's actually cute.
+                            Python would have been my favorite if it did not have that 
+                            awful whitespace code block system.
+
+                        </p>
+                    </div>
+
+                    <div class="questions-answers-content">
+                        <h1>What's your least favorite language?</h1>
+                        <p>
+                        That would probably be PHP when I will eventually and reluctantly
+                        attempt to learn it in the future. I've never tried to learn to learn
+                        it but everyone seems to complain about it so I want to be ahead of 
+                        the curve. <br>
+                        "It has all the hassle of C and C++ and all the performance of ALTAIR
+                        Basic " - Mark Rendle.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="questions-answers-container hide-me">
+                        <div class="questions-answers-content">
+                            <h1>What's your favorite Linux distro?</h1>
+                            <p> 
+                               Any distro that gives me access to pacman and the AUR so 
+                               basically any Arch distro like Manjaro or Antergos BESIDES Arch
+                               proper. I just want to get my system up and get to work coding 
+                               and watching cat videos on YouTube.  
+    
+                            </p>
+                        </div>
+    
+                        <div class="questions-answers-content">
+                            <h1>What's your favorite Desktop Environemt?</h1>
+                            <p>
+                            Gnome master race!
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="questions-answers-container hide-me">
+                            <div class="questions-answers-content">
+                                <h1>Do you workout?</h1>
+                                <p> 
+                                   I hate gyms so I mostly run. I run 10 Kilometers a day, 5 days a 
+                                   week with 3 out of those 5 days being road runs and the last 2
+                                   being sand runs. I try to get some modest swimming and biking in.
+                                   Want to start biking to work but Trinidad and Tobago does cater for 
+                                   bikers all that much. 
+                                </p>
+                            </div>
+        
+                            <div class="questions-answers-content">
+                                <h1>What about your eating habbits?</h1>
+                                <p>
+                                Thaaaaaat leaves a lot to be desired. I definitely don't pigout, I try
+                                to have a balanced diet and I've cut back on my added sugar intake but 
+                                there is still lots of room for improvement. I have a weakness for salty
+                                fries. 
+                                </p>
+                            </div>
+                        </div>
+
+              </div>
+
+              <div class="me-imgs-icons-bottom">
+                <span><i class = "icon ion-social-dribbble-outline icon-size-sm"></i></span>
+                <span><i class = "icon ion-social-facebook icon-size-sm"></i></span>
+                <span><i class = "icon ion-social-googleplus-outline icon-size-sm"></i></span>
+                <span><i class = "icon ion-social-instagram-outline icon-size-sm"></i></span>
+                <span><i class = "icon ion-social-octocat icon-size-sm"></i></span>
+                <span><i class = "icon ion-social-reddit icon-size-sm"></i></span>
+                <span><i class = "icon ion-social-skype icon-size-sm"></i></span>
+                <span><i class = "icon ion-social-twitter icon-size-sm"></i></span>
+           
+            </div>
+
+            </div>
+
+             <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+             <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+             <script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js"></script>
+             <!-- <script src="js/groudfrank.js"></script> -->
+             <script src="js/questions-and-answers.js"></script>
+</body>
+</html>

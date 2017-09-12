@@ -1,0 +1,1560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+    <meta name="author" content="Vincent Garreau" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"> -->
+
+    <!-- <link rel="stylesheet" href="/home/groudie/Dropbox/Code/Projects/groudfrank/bootstrap-3.3.7-dist/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="/home/groudie/Dropbox/Code/Projects/groudfrank/css/animate.css"> -->
+    <link rel="stylesheet" href="css/groud-frank.css">
+    <link rel="stylesheet" media="screen" href="css/style.css">
+
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">-->
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    
+    <title>Groud Frank - Web Developer</title>
+</head>
+<!-- add class of overflow-hidden-->
+<body id="groudfrank">
+
+<div class="icon-size-sm" id="nav-btn">
+    <!-- <span><i class = "icon icon ion-navicon"></i></span>   -->
+  <!-- <span><i class = "icon icon ion-android-more-horizontal"></i></span> -->
+  <!-- <span><i class = "icon icon ion-ios-more-outline"></i></span> -->
+  <span><i class = "icon icon ion-android-add"></i></span>
+</div>
+
+<nav id="custom-nav">
+  <ul class="nav-ul">
+    <li class="nav-li hide-me">
+      <a href="#greeter" class="custom-nav-format">HOME</a>
+    </li>
+    <li class="nav-li hide-me">
+      <a href="#me" class="custom-nav-format">ME</a>
+    </li>
+    <li class="nav-li hide-me">
+      <a href="#services" class="custom-nav-format">SERVICES</a>
+    </li>
+    <li class="nav-li hide-me">
+      <a href="#contact" class="custom-nav-format">CONTACT</a>
+    </li>
+    <li class="nav-li hide-me">
+      <a href="#" class="custom-nav-format">JOURNAL</a>
+    </li>
+    <li class="nav-li hide-me">
+      <a href="/home/groudie/Dropbox/Code/Projects/groudfrank/qestions-and-answers.html" class="custom-nav-format allow-default">Q&amp;A</a>
+    </li>
+  </ul>
+
+  <ul class="nav-contact-ul hide-me">
+    <li class="nav-contact-li">
+      <a class="custom-nav-contact-format">Dribbble</a>
+    </li>
+    <li class="seperator-li">
+      <p>.</p>
+    </li>
+    <li class="nav-contact-li">
+      <a class="custom-nav-contact-format">Facebook</a>
+    </li>
+    <li class="seperator-li">
+      <p>.</p>
+    </li>
+    <li class="nav-contact-li">
+      <a class="custom-nav-contact-format">Google+</a>
+    </li>
+    <li class="seperator-li">
+      <p>.</p>
+    </li>
+    <li class="nav-contact-li">
+      <a class="custom-nav-contact-format">Instagram</a>
+    </li>
+    <li class="seperator-li">
+      <p>.</p>
+    </li>
+    <li class="nav-contact-li">
+      <a class="custom-nav-contact-format">Medium</a>
+    </li>
+    <li class="seperator-li">
+      <p>.</p>
+    </li>
+    <li class="nav-contact-li">
+      <a class="custom-nav-contact-format">Twitter</a>
+    </li>
+    <li class="seperator-li">
+      <p>.</p>
+    </li>
+    <li class="nav-contact-li">
+      <a class="custom-nav-contact-format">groudfrank@gmail.com</a>
+    </li>
+    <li class="seperator-li">
+      <p>.</p>
+    </li>
+    <li class="nav-contact-li">
+      <a class="custom-nav-contact-format">+1-868-343-3756</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="custom-modal-layer no-display" id="custom-work-modal-two">
+  <div class="custom-modal" id="custom-modal-content-two">
+    <div class="custom-modal-window-close">
+      <span>
+        <i class = "icon icon ion-android-close"></i>
+      </span>
+    </div>
+    <div class="custom-modal-header">
+      <h1>
+        Business Operations Assistant I
+        (Human Capital Development Department)
+      </h1>
+    </div>
+    <div class="custom-modal-body">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+        culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+    <div class="custom-modal-footer">
+    </div>
+  </div>
+</div>
+
+<div class="custom-modal-layer no-display" id="custom-work-modal-three">
+  <div class="custom-modal" id="custom-modal-content-three">
+    <div class="custom-modal-window-close">
+      <span>
+        <i class="material-icons">close</i>
+      </span>
+    </div>
+    <div class="custom-modal-header">
+      <h1>
+        Business Operations Assistant I
+        (Planning and Research)</h1>
+    </div>
+    <div class="custom-modal-body">
+      <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+    <div class="custom-modal-footer">
+    </div>
+  </div>
+</div>
+
+
+<div class="custom-modal-layer no-display" id="custom-work-modal-four">
+  <div class="custom-modal" id="custom-modal-content-four">
+    <div class="custom-modal-window-close">
+      <span>
+        <i class="material-icons">close</i>
+      </span>
+    </div>
+    <div class="custom-modal-header">
+      <h1>
+          Business Operations Assistant I
+          (Human Resources)
+      </h1>
+    </div>
+    <div class="custom-modal-body">
+     <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+        culpa qui officia deserunt mollit anim id est laborum.
+     </p>
+    </div>
+    <div class="custom-modal-footer">
+    </div>
+  </div>
+</div>
+
+<div class="background-beta" id="pseudo-body">
+  <!-- <div id="main-background"></div> -->
+
+
+<div class="pos-fixed no-display" id="greeter-main">
+  <img class="hide-me victory-icon-format" id="greeter-hi" src="icons/victory.svg">
+  <!-- <p class="hide-me" id="greeter-access">Enter</p> -->
+</div>
+
+
+<div id="greeter">
+  <div id="greeter-about-container">
+    <p class="inconsolata">
+      Formerly a baby, sometimes a trouble maker,
+      Always evolving, now a <span class="highlight">Web Developer</span>.
+      CSS, JS, HTML, Bootstrap - my domain is the <span class="highlight">Front-End</span>,
+      Undoubtedly a <span class="highlight">Digital Creator</span>, one to recommend. 
+      Detailed &amp; thoughtful - let's just make things clear,
+      Proud of the moniker - a <span class="highlight">UX-Engineer</span>.
+      Simplicity, negative spaces, purposeful design - you get the gist, 
+      I subscribe to the philosophy of the <span class="highlight">Minimalist</span>.
+      Never afraid of the commandline or system breakage - "sudo" is my middle name,
+      a <span class="highlight">Tinkerer</span> at heart with distro hopping ways.
+      Lover of choice, community and freedom - always willing to broadcast,
+      Ever the <span class="highlight">Open Source Enthusiast</span>. 
+    </p>
+  </div>
+</div>
+
+<div id="greeter-breaker">
+  <h1 class="txt-accent hide-me" id="greeter-breaker-h1">
+    <span class="greeter-i">I. </span><span class="greeter-am"> AM. </span><span class="greeter-groot"> <span class="crossout"></span>GROOT</span> <span class="greeter-groud">GROUD.</span>
+  </h1>
+  <img class="hide-me" src="img/peace-back.png">
+</div>
+
+    <div id="me">
+        <div class="card-format hide-me padding-bottom-80" id="me-card">
+          <h1 class="card-heading-format card-content hide-me">Me</h1>
+          <div class="card-pic-format card-content hide-me" id="me-pic-div">
+            <img src="img/me.jpg"/>
+          </div>
+          <p class="card-content hide-me">
+            Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
+            tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex
+            ea commodi consequat. Quis aute iure reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat
+            cupiditat non proident, sunt in culpa qui officia deserunt mollit anim
+             id est laborum.
+
+          </p>
+
+          <div class="me-card-icons card-content hide-me">
+            <div>
+              <span class="card-icons-format"><i class="fa fa-id-badge" aria-hidden="true"></i></span>
+              <h4>Groud Frank</h4>
+            </div>
+            <div>
+              <span class="card-icons-format"><i class="fa fa-birthday-cake" aria-hidden="true"></i></span>
+              <h4>27-11-1989</h4>
+            </div>
+            <div>
+              <span class="card-icons-format"><i class="fa fa-flag-o" aria-hidden="true"></i></span>
+              <h4>Trinidad &amp; Tobago</h4>
+            </div>
+          </div>
+
+          <div class="me-card-icons card-content hide-me">
+            <div>
+              <span class="card-icons-format"><i class="fa fa-balance-scale" aria-hidden="true"></i></span>
+              <h4>150 lbs</h4>
+            </div>
+            <div>
+              <span class="card-icons-format"><i class="fa fa-long-arrow-up" aria-hidden="true"></i></span>
+              <h4>183 cm</h4>
+            </div>
+            <div>
+              <span class="card-icons-format"><i class="fa fa-venus-mars" aria-hidden="true"></i></span>
+              <h4>Male</h4>
+            </div>
+          </div>
+        </div>
+        <section id="me-section">
+          <div id="me-section-slogan">
+            <h1 class="slogan hide-me">God, Wifi, food, my bed, coding</h1>
+          </div>
+          <!-- blah -->
+          <!-- <article class="section-decoration">
+            <div class="minor"></div>
+            <div class="major"></div>
+          </article> -->
+          <div class="background-alpha" id="me-subsection">
+            <div id="education">
+              <h1 class="gradient-me-txt hide-me">Education</h1>
+              <div class="hide-me">
+                <h3>Kidsville Edu Center</h3>
+                <p>September 1993 - July 1995</p>
+              </div>
+
+              <div class="hide-me">
+                <h3>Scarborough R.C. School</h3>
+                <p>September 1995 - July 2002</p>
+              </div>
+
+              <div class="hide-me">
+                <h3>Scarborough Secondary School</h3>
+                <p>Septemeber 2002 - July 2007</p>
+              </div>
+              <div class="hide-me" id="grade-table">
+                <h3>CXC O'Level Grades</h3>
+                <table>
+                  <thead>
+                    <tr>
+                      <th><p>Subject</p></th>
+                      <th><p>Grade</p></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><p>Mathematics</p></td>
+                      <td><p>3</p></td>
+                    </tr>
+                     <tr class="table-highlight">
+                      <td><p>English A</p></td>
+                      <td><p>1</p></td>
+                    </tr>
+                     <tr>
+                      <td><p>Social Studies</p></td>
+                      <td><p>1</p></td>
+                    </tr>
+                     <tr class="table-highlight">
+                      <td><p>Information Technology</p></td>
+                      <td><p>3</p></td>
+                    </tr>
+                     <tr>
+                      <td><p>Chemistry</p></td>
+                      <td><p>3</p></td>
+                    </tr>
+                     <tr class="table-highlight">
+                      <td><p>Biology</p></td>
+                      <td><p>2</p></td>
+                    </tr>
+                     <tr>
+                      <td><p>Physics</p></td>
+                      <td><p>4</p></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="background-beta" id="work">
+              <h1 class="gradient-me-txt hide-me">Worked @</h1>
+              <!-- <div>
+                <h3>It's Complicated</h3>
+                <p>July 2007 - May 2013</p>
+                <button type="button" class="work-info-btn">info</button>
+              </div> -->
+
+              <div class="hide-me">
+                <h3>Office of the Prime Minister - C.A.S.T</h3>
+                <p>June 2013 - May 2014</p>
+                <button type="button" class="work-info-btn" id="work-btn-two">
+                    <p>info</p>
+                </button>
+                <!-- <span type="button" class="work-info-btn" id="work-btn-two">
+                  <i class = "icon ion-ios-information-outline"></i>
+                </span> -->
+              </div>
+
+              <div class="hide-me">
+                <h3>Office of the Prime Minister - C.A.S.T</h3>
+                <p>May 2014 - September 2014</p>
+                <button type="button" class="work-info-btn" id="work-btn-three">
+                  <p>info</p>
+                </button>
+                <!-- <span type="button" class="work-info-btn gradient-me-txt" id="work-btn-three">
+                    <i class = "icon ion-information-circled"></i>
+                  </span> -->
+              </div>
+
+              <div class="hide-me">
+                <h3>Office of the Prime Minister - C.A.S.T</h3>
+                <p>September 2014 - Present</p>
+                <button type="button" class="work-info-btn" id="work-btn-four">
+                  <p>info</p> 
+                </button>
+              </div>
+            </div>
+              <div id="skills">
+              <h1 class="gradient-me-txt hide-me">Skills</h1>
+              <div class="skills-icons">
+                <ul>
+                  <i class="material-icons gradient-me-txt hide-me">code</i>
+                  <li class="hide-me">
+                    <span class="ability"><p>JavaScript</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                    </span>
+                  </li>
+                  <li class="hide-me">
+                    <span class="ability"><p>JSON</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                    </span>
+                  </li>
+                  <li class="hide-me">
+                    <span class="ability"><p>HTML</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                    </span>
+                  </li>
+                  <li class="hide-me">
+                    <span class="ability"><p>CSS</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                    </span>
+                  </li>
+                  <li class="hide-me">
+                    <span class="ability"><p>Python</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                    </span>
+                  </li>
+                  <li class="hide-me">
+                    <span class="ability"><p>Java</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                    </span>
+                  </li>
+                  <li class="hide-me">
+                    <span class="ability"><p>C</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                    </span>
+                  </li>
+                  <li class="hide-me">
+                    <span class="ability"><p>C++</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                    </span>
+                  </li>
+                  <li class="hide-me">
+                    <span class="ability"><p>Pascal</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                    </span>
+                    <li class="hide-me">
+                    <span class="ability"><p>PHP</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                    </span>
+                  </li>
+                  <li class="hide-me">
+                    <span class="ability"><p>Ruby</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                    </span>
+                  </li>
+                </ul>
+
+                <ul>
+                  <i class="material-icons gradient-me-txt hide-me">blur_on</i>
+                  <!-- <h3>Frameworks</h3> -->
+                  <li class="hide-me">
+                    <span class="ability"><p>Bootstrap 3+</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                    </span>
+                  </li>
+                  <li class="hide-me">
+                    <span class="ability"><p>Wordpress</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                    </span>
+                  </li>
+                  <li class="hide-me">
+                    <span class="ability"><p>Materialize(CSS)</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                    </span>
+                  </li>
+                  <li class="hide-me">
+                    <span class="ability"><p>Animate(CSS)</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                    </span>
+                  </li>
+                  <li class="hide-me">
+                    <span class="ability"><p>GSAP</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                    </span>
+                  </li>
+                  <li class="hide-me">
+                    <span class="ability"><p>jQuery</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                    </span>
+                  </li>
+                  <li class="hide-me">
+                    <span class="ability"><p>Particles.js</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                    </span>
+                  </li>
+                  <li class="hide-me">
+                    <span class="ability"><p>React.js</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                    </span>
+                  </li>
+                  <li class="hide-me">
+                    <span class="ability"><p>Angular.js</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                    </span>
+                </ul>
+
+                <ul>
+                  <i class="material-icons gradient-me-txt hide-me">build</i>
+                  <!-- <h3>Tools</h3> -->
+                  <li class="hide-me">
+                    <span class="ability"><p>Linux Package Managers</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                    </span>
+                  </li>
+                  <li class="hide-me">
+                    <span class="ability"><p>Command line</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                    </span>
+                  </li>
+                  <li class="hide-me">
+                    <span class="ability"><p>Visual Studio Code</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                    </span>
+                  </li>
+                  <li class="hide-me">
+                    <span class="ability"><p>Atom Text Editor</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                    </span>
+                  </li>
+                  <li class="hide-me">
+                    <span class="ability"><p>Vim</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                    </span>
+                  </li>
+                  <li class="hide-me">
+                    <span class="ability"><p>Inkscape</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                    </span>
+                  </li>
+                  <li class="hide-me">
+                    <span class="ability"><p>GIMP</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                    </span>
+                  </li>
+                  <li class="hide-me">
+                    <span class="ability"><p>Webkit Browsers</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                    </span>
+                  </li>
+                  <li class="hide-me">
+                    <span class="ability"><p>FireFox</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                    </span>
+                  </li>
+                  <li class="hide-me">
+                    <span class="ability"><p>Search Engines</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                    </span>
+                  </li>
+                  <li class="hide-me">
+                    <span class="ability"><p>GitHub</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                    </span>
+                  </li>
+                  <li class="hide-me">
+                    <span class="ability"><p>Social Media</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                    </span>
+                  </li>
+                  <li class="hide-me">
+                    <span class="ability"><p>Virtual Machines</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                    </span>
+                  </li>
+                </ul>
+
+                <ul>
+                  <i class="material-icons gradient-me-txt hide-me">memory</i>
+                  <!-- <h3>Systems</h3> -->
+                  <li class="hide-me">
+                    <span class="ability"><p>GNU/Linux</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                    </span>
+                  </li>
+                  <li class="hide-me">
+                    <span class="ability"><P>Windows 7+</P></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                    </span>
+                  </li>
+                  <li class="hide-me">
+                    <span class="ability"><p>MacOS</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                    </span>
+                  </li>
+                  <li class="hide-me">
+                    <span class="ability"><p>BSD</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                    </span>
+                  </li>
+                  <li class="hide-me">
+                    <span class="ability"><p>ChromeOS</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                    </span>
+                  </li>
+                  <li class="hide-me">
+                    <span class="ability"><p>Android</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                    </span>
+                  </li>
+                  <li class="hide-me">
+                    <span class="ability"><p>iOS</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                    </span>
+                  </li>
+                  <li class="hide-me">
+                    <span class="ability"><p>Windows Phone</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                    </span>
+                  </li>
+                </ul>
+
+                <ul>
+                  <!-- <h3>Personal</h3> -->
+                  <i class="material-icons gradient-me-txt hide-me">fingerprint</i>
+                  <li class="hide-me">
+                    <span class="ability"><p>Sing</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                    </span>
+                  </li>
+                  <li class="hide-me">
+                    <span class="ability"><p>Dance</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                    </span>
+                  </li>
+                  <li class="hide-me">
+                    <span class="ability"><p>Eat</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                    </span>
+                  </li>
+                  <li class="hide-me">
+                    <span class="ability"><p>Emotional Intelligence</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                    </span>
+                  </li>
+                  <li class="hide-me">
+                    <span class="ability"><p>Interpersonal</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                    </span>
+                  </li>
+                  <li class="hide-me">
+                    <span class="ability"><p>Working under pressure</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                    </span>
+                  </li>
+                  <li class="hide-me">
+                    <span class="ability"><P>Mischievousness</P></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                    </span>
+                  </li>
+                  <li class="hide-me">
+                    <span class="ability"><p>Leadership abilities</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                    </span>
+                  </li>
+                  <li class="hide-me">
+                    <span class="ability"><p>Communication</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                    </span>
+                    </li>
+                  <li class="hide-me">
+                    <span class="ability"><p>Flexibility</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                    </span>
+                  </li class="hide-me">
+                    <li class="hide-me">
+                    <span class="ability"><p>Willingness to learn</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                    </span>
+                  </li>
+                    <li class="hide-me">
+                    <span class="ability"><p>Honesty</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                    </span>
+                  </li>
+                    <li class="hide-me">
+                    <span class="ability"><p>Loyalty</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                    </span>
+                  </li>
+                  <li class="hide-me">
+                    <span class="ability"><p>Sense of Humor</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                    </span>
+                  </li>
+                  <li class="hide-me">
+                    <span class="ability"><p>Procrastinator</p></span>
+                    <span class="ability-score">
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star color-fill"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div> <!--end of Skills-->
+            <div class="background-beta padding-bottom-80" id="future">
+              <h1 class="gradient-me-txt hide-me">Future</h1>
+                  <div class="future-plans-layout">
+                  <div class="container-1 hide-me">
+                    <figure class="background-alpha section-badge me-badge-border">
+                      <img src="icons/wedding.svg">
+                    </figure>
+                  </div>
+                  <div class="container-2 hide-me">
+                    <div class="txt-container">
+                      <h3>Marriage &amp; Family</h3>
+                      <p>
+                        I've always had a fascination with marriage and what it represents.
+                        There are few things more noble than two souls forsaking other people to
+                        publicly declaring their commitment and dedication to each other before God 
+                        and state - for covonant and contract. It's something I eagerly look forward to
+                        but it's one of those things that you should let find you and not chase.
+                        You just have to be prepared for when it comes. Here's to 
+                        hoping I live long enough to see the day and wise enough to choose a good partner
+                        (Proverbs 31).
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="future-plans-layout-reverse">
+                  <div class="container-1 hide-me">
+                    <figure class="background-alpha section-badge me-badge-border">
+                      <img src="icons/house.svg">
+                    </figure>
+                  </div>
+                  <div class="container-2 hide-me">
+                    <div class="txt-container">
+                      <h3>Business &amp; Pleasure</h3>
+                      <p>
+                        If you're going to have a family you're going to need a place to shelter them, right?
+                        I want a modest home with not too much space, not too little and overflowing with love.
+                        My ideal vision for my profession life is to own my own business in software development
+                        and  I.T. and mostly work from a studio/office at home. There's nothing wrong with working 
+                        for someone else but I'd ideally like to be working for myself in this scenario. It allows 
+                        me to more prioritize family life.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="future-plans-layout">
+                <div class="container-1 hide-me">
+                  <figure class="background-alpha section-badge me-badge-border">
+                    <img src="icons/experience-y.svg">
+                  </figure>
+                </div>
+                <div class="container-2 hide-me">
+                  <div class="txt-container">
+                    <h3>I.T. Skills Development</h3>
+                    <p>
+                      I definitely plan on developing my skills as a self-taught programmer.
+                      My main long-term goal is to become a full-stack
+                      web developer. I plan on becoming proficient in PHP(Yes, I'm a mascochist),
+                      sharpening my Python skills and learning more web dev frameworks.
+                      I also plan on aquiring several OS-centric certications for Linux(CompTIA+, RHCE), Windows(A+, MTA),
+                      and MacOS(Apple Certified Associate).
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="future-plans-layout-reverse">
+                <div class="container-1 hide-me">
+                  <figure class="background-alpha section-badge me-badge-border">
+                    <img src="icons/mortarboard.svg">
+                  </figure>
+                </div>
+                <div class="container-2 hide-me">
+                  <div class="txt-container">
+                    <h3>University</h3>
+                    <p>
+                      I have issues with society's misplaced reliance on university degrees to measure
+                      skills, compitencce, intelligence and ability to be successsful or earn good money
+                       - issues that are gracefully fancies-layout
+                      <a href="http://www.huffingtonpost.co.uk/alice-rigby/university-applications_b_4670713.html" target="_blank">here</a>,
+                      <a href="https://www.thetimes.co.uk/article/we-must-accept-that-university-education-isn-t-for-everyone-8nw5bk3cl" target="_blank">here</a>
+                      and this YouTube video
+                      <a href="https://www.youtube.com/watch?v=vwK6dNxAkAQ" target="_blank">here</a>.
+                      With that said, I do plan 
+                      on pursuing a degree in I.T(not necessarily Computer Science or Software Eingineering).
+                      STEM degrees generally give you the theoritical as well as <b>practical</b> knowledge that is 
+                      actually useful and can be applied. I'm getting a degree because it will expand my knowledge
+                      in a useful way and not because I need a degree for society's approval or to give me some sense
+                      of self-worth. 
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="future-plans-layout">
+                <div class="container-1 hide-me">
+                  <figure class="background-alpha section-badge me-badge-border">
+                    <img src="icons/language.svg">
+                  </figure>
+                </div>
+                <div class="container-2 hide-me">
+                  <div class="txt-container">
+                    <h3>Learn Serbian and Japanese</h3>
+                    <p>
+                      It should come as no surprise to anyone who knows me even remotely well that I would
+                      want to learn Serbian. I love the people, the culture and the country.
+                      As for Japanese? I spend so much time watching Japanese anime
+                      that I think it's high time I watch them without 
+                      look away from the action to read subtitles. Some words and phrases I pick up
+                      on easily without have to read the translations so that's a start. 
+                      The language has grown on me and 
+                      <s>I'd really like to learn it</s> I started learning as of 24-08-2017.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>  <!---end of Future -->
+
+            <div id="hobbies">
+              <h1 class="gradient-me-txt hide-me">Hobbies</h1>
+              <div class="hobbies-container hide-me">
+                <div class="hobbies-row">
+                  <figure class="section-badge me-badge-border background-beta">
+                    <img src="icons/goggles.svg">
+                  </figure>
+                  <figure class="section-badge me-badge-border background-beta">
+                    <img src="icons/run.svg">
+                  </figure>
+                  <figure class="section-badge me-badge-border background-beta">
+                    <img src="icons/cycling.svg">
+                  </figure>
+                </div>
+                <div class="hobbies-row">
+                  <figure class="section-badge me-badge-border background-beta">
+                    <img src="icons/fishing.svg">
+                  </figure>
+                  <figure class="section-badge me-badge-border background-beta">
+                    <img src="icons/photo-camera.svg">
+                  </figure>
+                  <figure class="section-badge me-badge-border background-beta">
+                    <img src="icons/game-controller.svg">
+                  </figure>
+                </div>
+              </div>
+            </div> <!-- end of hobbies -->
+
+            <div class="background-beta" id="fancies">
+              <h1 class="gradient-me-txt hide-me">Fancies</h1>
+                <div class="fancies-layout">
+                <div class="container-1 hide-me">
+                  <figure class="section-badge me-badge-border background-alpha">
+                    <img src="icons/happy.svg">
+                  </figure>
+                </div>
+                <div class="container-2 hide-me">
+                  <div class="txt-container">
+                    <h3>Likes</h3>
+                    <p>
+                      Girls, Cats, Serbia, Driving manual transmission vehicles, 
+                      Meat, Minimalism, Linux
+                      Anime, Stormy weather,
+                      Puns, The smell of petrol, WWII documentaries,
+                      Early morning jogs, Silence, WiFi,
+                      My phone, Teasing others, Teasing myself.
+                    </p>
+                  </div>
+                </div>
+              </div>
+                <div class="fancies-layout-reverse">
+                <div class="container-1 hide-me">
+                  <figure class="section-badge me-badge-border background-alpha">
+                    <img src="icons/sad.svg">
+                  </figure>
+                </div>
+                <div class="container-2 hide-me">
+                  <div class="txt-container">
+                    <h3>Dislikes</h3>
+                    <p>
+                      Musicals, Group Chats, Florida,
+                      Lengthy phone calls, My alarm, 3% battery life,
+                      Cling wrap, Crowds, Loud noises,
+                      Spitting in public, Speeding.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- end of hobbies -->
+
+
+            <div id="groudie">
+              <span class="me-imgs-icons-top groudie-icons hide-me"><i class="fa fa-camera-retro" aria-hidden="true"></i></span>
+            <div id="me-imgs">
+              <span class="me-imgs-arrow icon-size-sm groudie-icons hide-me"><i class = "icon ion-arrow-right-b groudie-icons hide-me"></i></span>
+              <div class="me-img-container me-shade1 hide-me">
+                <figure>
+                  <img src="img/me-smiles.jpg">
+                </figure>
+              </div>
+              <div class="me-img-container me-shade2 hide-me">
+                <figure>
+                  <img src="img/patchesandi.jpg">
+                </figure>
+              </div>
+              <div class="me-img-container me-shade3 hide-me">
+                <figure>
+                  <img src="img/me-at-opm.jpg">
+                </figure>
+              </div>
+              <div class="me-img-container me-shade4 hide-me">
+                <figure>
+                  <img src="img/me-and-geb.jpg">
+                </figure>
+              </div>
+              <div class="me-img-container me-shade5 hide-me">
+                <figure>
+                  <img src="img/mekneel.jpg">
+                </figure>
+              </div>
+              <div class="me-img-container me-shade6 hide-me">
+                <figure>
+                  <img src="img/faces.jpg">
+                </figure>
+              </div>
+              <div class="me-img-container me-shade7 hide-me">
+                <figure>
+                  <img src="img/me-and-judith.jpg">
+                </figure>
+              </div>
+              <div class="me-img-container me-shade8 hide-me">
+                <figure>
+                  <img src="img/b-and-me.jpg">
+                </figure>
+              </div>
+              <div class="me-img-container me-shade9 hide-me">
+                <figure>
+                  <img src="img/thatsme.jpg">
+                </figure>
+              </div>
+              <span class="me-imgs-arrow groudie-icons icon-size-sm hide-me"><i class = "icon ion-arrow-left-b"></i></span>
+            </div>
+            <div class="me-imgs-icons-bottom groudie-icons hide-me">
+              <span><i class = "icon ion-social-dribbble-outline icon-size-sm"></i></span>
+              <span><i class = "icon ion-social-facebook icon-size-sm"></i></span>
+              <span><i class = "icon ion-social-googleplus-outline icon-size-sm"></i></span>
+              <span><i class = "icon ion-social-instagram-outline icon-size-sm"></i></span>
+              <span><i class = "icon ion-social-octocat icon-size-sm"></i></span>
+              <span><i class = "icon ion-social-reddit icon-size-sm"></i></span>
+              <span><i class = "icon ion-social-skype icon-size-sm"></i></span>
+              <span><i class = "icon ion-social-twitter icon-size-sm"></i></span>
+     
+            </div>
+            </div>
+
+          </div>
+          <div class="section-breaker-format" id="me-footer">
+            <div class="hide-me" id="me-footer-content">
+              <h1 class="gradient-me-txt footer-format">BORN TO BE AWESOME, NOT PERFECT.</h1>
+            </div>
+          </div>
+        </section>
+        </div>
+      
+    <div id="services">
+      <div class="card-format hide-me padding-bottom-80" id="services-card">
+        <h1 class="card-heading-format card-content hide-me">Services</h1>
+        <!-- <img src="img/me-section-img.png" id="services-pic"/> -->
+        <div class="card-pic-format card-content hide-me" id="services-pic-div">
+          <img src="img/services-img.jpg" />
+        </div>
+        <p class="card-content hide-me">
+          Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
+          tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex
+          ea commodi consequat. Quis aute iure reprehenderit in voluptate velit
+          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat
+          cupiditat non proident, sunt in culpa qui officia deserunt mollit anim
+           id est laborum.
+        </p>
+        <div class="services-card-icons card-content hide-me">
+          <div>
+            <span class="lnr lnr-pencil card-icons-format"></span>
+            <h4>UI Design</h4>
+          </div>
+          <div>
+            <span class="lnr lnr-layers card-icons-format"></span>
+            <h4>UX Engineering</h4>
+          </div>
+          <div>
+            <span class="lnr lnr-code card-icons-format"></span>
+            <h4>Web Design</h4>
+          </div>
+        </div>
+
+        <div class="services-card-icons card-content hide-me">
+          <div>
+            <span class="lnr lnr-enter card-icons-format"></span>
+            <h4>Online Porfolio Creation</h4>
+          </div>
+          <div>
+            <span class="lnr lnr-laptop-phone card-icons-format"></span>
+            <h4>Digital Media Management</h4>
+          </div>
+          <div>
+            <span class="lnr lnr-heart-pulse card-icons-format"></span>
+            <h4>Client Assistance</h4>
+          </div>
+        </div>
+      </div>
+
+      <section id="services-section">
+        <div id="services-section-slogan">
+          <h1 class="slogan hide-me">From plan, to prototype, to product</h1>
+        </div>
+        <!-- breaker -->
+        <!-- <article class="section-decoration">
+            <div class="minor"></div>
+            <div class="major"></div>
+        </article> -->
+        <div class="background-alpha padding-bottom-80" id="services-subsection">
+
+          <div>
+            <h1 class="gradient-services-txt hide-me">Your Brand Matters</h1>
+
+            <figure class="section-badge services-badge-border background-beta hide-me">
+              <img src="icons/brand-dna.svg" class="svg70" />
+            </figure>
+            
+            <p class="hide-me">
+              Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
+              tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex
+              ea commodi consequat. Quis aute iure reprehenderit in voluptate velit
+              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat
+              cupiditat non proident, sunt in culpa qui officia deserunt mollit anim
+               id est laborum.
+            </p>
+          </div>
+
+          <div>
+            <h1 class="gradient-services-txt hide-me">Why a website?</h1>
+            <figure class="section-badge services-badge-border background-beta hide-me">
+              <img src="icons/website.svg" class="svg70" />
+            </figure>
+            <p class="hide-me">
+              Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
+              tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex
+              ea commodi consequat. Quis aute iure reprehenderit in voluptate velit
+              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat
+              cupiditat non proident, sunt in culpa qui officia deserunt mollit anim
+               id est laborum.
+            </p>
+          </div>
+
+          <div>
+            <h1 class="gradient-services-txt hide-me">Why social media?</h1>
+            <figure class="section-badge services-badge-border background-beta hide-me">
+              <img src="icons/social.svg" class="svg70" />
+            </figure>
+            <p class="hide-me">
+              Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
+              tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex
+              ea commodi consequat. Quis aute iure reprehenderit in voluptate velit
+              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat
+              cupiditat non proident, sunt in culpa qui officia deserunt mollit anim
+               id est laborum.
+            </p>
+          </div>
+
+          <div>
+            <h1 class="gradient-services-txt hide-me">Why UI, UX and design matters?</h1>
+            <figure class="section-badge services-badge-border background-beta hide-me">
+              <img src="icons/design.svg" class="svg70" />
+            </figure>
+            <p class="hide-me">
+              Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
+              tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex
+              ea commodi consequat. Quis aute iure reprehenderit in voluptate velit
+              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat
+              cupiditat non proident, sunt in culpa qui officia deserunt mollit anim
+               id est laborum.
+            </p>
+          </div>
+
+          <div>
+            <h1 class="gradient-services-txt hide-me">Why Open Source Matters?</h1>
+            <figure class="section-badge services-badge-border background-beta hide-me">
+              <img src="icons/box.svg" class="svg70" />
+            </figure>
+            <p class="hide-me">
+              Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
+              tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex
+              ea commodi consequat. Quis aute iure reprehenderit in voluptate velit
+              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat
+              cupiditat non proident, sunt in culpa qui officia deserunt mollit anim
+               id est laborum.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+        <div id="services-linux-img">
+          <div class="hide-me" id="services-linux-h1">
+            <h1 class="gradient-services-txt">Powered.<br> By.<br> Linux.</h1>
+          </div>
+          <img class="hide-me" src="img/mydesktop3.png">
+          <div class="hide-me" id="services-linux-p">
+            <p>
+              <span class="gradient-services-txt"><i>Free as in freedom</i></span><br>
+              <span class="gradient-services-txt"><i><i>Free as in free beer.</i></i></span><br>
+              A craftsman's tools can tell you a lot about both him and his works.
+              Linux and its vast software repositories is my primary tool of choice. 
+              GNU/Linux is fast, secure, flexible, and powerful. Find out more
+              about Linux here.
+            </p>
+          </div>
+        </div>
+
+        <div class="section-breaker-format" id="services-footer">
+            <div class="hide-me" id="services-footer-content">
+              <h1 class="gradient-services-txt footer-format">HIRE ME, I'M GOOD.</h1>
+            </div>
+          </div>
+    </div>
+
+     <div id="contact">
+      <div class="card-format hide-me padding-bottom-80" id="contact-card">
+        <h1 class="card-heading-format card-content hide-me">Contact</h1>
+        <!-- <img src="img/me-section-img.png" id="services-pic"/> -->
+        <div class="card-pic-format card-content hide-me" id="contact-pic-div">
+          <img src="img/contact-img.jpg" />
+        </div>
+        <p class="card-content hide-me">
+          Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
+          tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex
+          ea commodi consequat. Quis aute iure reprehenderit in voluptate velit
+          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat
+          cupiditat non proident, sunt in culpa qui officia deserunt mollit anim
+           id est laborum.
+        </p>
+
+        <div class="contact-card-icons card-content hide-me">
+          <div>
+            <span class="card-icons-format"><i class = "icon icon ion-social-facebook-outline"></i></span>
+            <h4>Facebook</h4>
+          </div>
+          <div>
+            <span class="card-icons-format"><i class = "icon icon ion-social-github-outline"></i></span>
+            <h4>GitHub</h4>
+          </div>
+          <div>
+            <span class="card-icons-format"><i class = "icon icon ion-social-twitter-outline"></i></span>
+            <h4>Twitter</h4>
+          </div>
+        </div>
+
+        <div class="contact-card-icons card-content hide-me">
+          <div>
+            <span class="card-icons-format"><i class = "icon icon ion-ios-telephone-outline"></i></span>
+            <h4>+1 868 343-3756</h4>
+          </div>
+          <div>
+            <span class="card-icons-format"><i class = "icon icon ion-ios-email-outline"></i></span>
+            <h4>groudfrank@gmail.com</h4>
+          </div>
+          <div>
+            <span class="card-icons-format"><i class = "icon icon ion-ios-location-outline"></i></span>
+            <h4>
+              #18 Courland Bush Trace,<br>
+              Black Rock,
+              <br>
+              Tobago,
+              <br>
+              Trinidad &amp; Tobago.
+            </h4>
+          </div>
+        </div>
+      </div>
+      
+      <section id="contact-section">
+        <div id="contact-section-slogan">
+          <h1 class="slogan hide-me">Available for hire</h1>
+        </div>
+
+        <div id="contact-subsection">
+          <div>
+            <form class="hide-me">
+              <!-- <h1>Let's Talk</h1> -->
+              <span class="lnr lnr-inbox gradient-contact-txt"></span>
+              <!-- <span><i class="material-icons">message</i></span> -->
+              <label><p>First Name:</p></label>
+              <input type="text" name="firstname">
+              <br>
+              <label><p>Last Name:</p></label>
+              <input type="text" name="lastname">
+              <br>
+              <label><p>Email:</p></label>
+              <input type="text" name="email">
+              <br>
+              <br>
+              <label><p>Message:</p></label><br>
+              <textarea name="comment" form="contactform"></textarea>
+              <input type="submit" value="Submit">
+
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-breaker-format" id="contact-footer">
+            <div class="hide-me" id="contact-footer-content">
+              <h1 class="gradient-contact-txt footer-format">LET'S TALK</h1>
+            </div>
+          </div>
+    </div>
+
+  <div id="contact-breaker">
+    <i class="material-icons txt-accent icon-size-sm hide-me">format_quote</i>
+  <p class="inconsolata hide-me">
+    Remember that, as I said, the right direction leads not only to peace but to knowledge.
+    When a man is getting better he understands more and more clearly the evil that is still left in him.
+    When a man is getting worse he understands his own badness less and less.
+    A moderately bad man knows he is not very good:
+    a thoroughly bad man thinks he is all right.
+    This is common sense, really.
+    You understand sleep when you are awake, not while you are sleeping.
+    You can see mistakes in arithmetic when your mind is working properly:
+    while you are making them you cannot see them.
+    You can understand the nature of drunkenness when you are sober, not when you are drunk.
+    Good people know about both good and evil: bad people do not know about either.
+  </p>
+
+  <p class="txt-accent inconsolata hide-me">
+    <b>C.S. Lewis - Mere Christianity</b>
+  </p>
+</div>
+
+<div id="page-footer">
+  <div id="page-footer-content">
+    <img class="victory-icon-format" src="icons/victory.svg">
+  </div>
+</div>
+
+<div id="copyleft">
+  <div id="copyleft-row-1">
+    <span><i class="material-icons copyleft-symbol">copyright</i></span>
+    <p class="inconsolata"> 2017 Groud Frank.
+    <s>All rights reserved.</s></p> 
+  </div>
+  <!-- <div id="copyleft-row-2">
+    <span><i class="fa fa-dribbble" aria-hidden="true"></i></span>
+    <span><i class="fa fa-google-plus" aria-hidden="true"></i></span>
+    <span><i class="fa fa-instagram" aria-hidden="true"></i></span>
+    <span><i class="fa fa-github" aria-hidden="true"></i></span>
+     
+  </div> -->
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> -->
+
+ <!-- <script src="/home/groudie/Dropbox/Code/Projects/groudfrank/js/jquery-3.2.1.js"></script> -->
+ <!-- <script src="/home/groudie/Dropbox/Code/Projects/groudfrank/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script> -->
+<script src="js/groudfrank.js"></script>
+</div>
+</body>
+</html>
