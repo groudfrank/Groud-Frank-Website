@@ -277,7 +277,7 @@ $window.on('scroll', _.throttle(function(){
   $services_subsection_div.each(function(){
     if($window.scrollTop() >= ($(this).offset().top - (400)) && $(this).hasClass('disanimate') == false){
       $(this).children().removeClass('hide-me');
-      TweenMax.from($(this).children(), 0.5, {opacity: 0});
+      TweenMax.from($(this).children(), 0.9, {opacity: 0});
       TweenMax.staggerFrom($(this).children(), 1, {y: 100, delay: 0.6}, 0.2);
       $(this).addClass('disanimate');
       };
