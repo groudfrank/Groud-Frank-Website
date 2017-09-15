@@ -151,8 +151,8 @@ $window.on('scroll', _.throttle(function(){
   if($window.scrollTop() >= ($greeter_breaker.offset().top - (400)) && $greeter_breaker.hasClass('disanimate') == false){
     $greeter_breaker_h1.removeClass('hide-me');
     TweenMax.from($greeter_breaker_h1, 1.5, {x: 100, opacity: 0});
-    $greeter_breaker_img.removeClass('hide-me');
-    TweenMax.from($greeter_breaker_img, 1.5, {opacity: 0});
+    // $greeter_breaker_img.removeClass('hide-me');
+    // TweenMax.from($greeter_breaker_img, 1.5, {opacity: 0});
     $greeter_breaker.addClass('disanimate');
   };
 
