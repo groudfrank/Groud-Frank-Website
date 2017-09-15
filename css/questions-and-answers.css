@@ -30,11 +30,17 @@ body{
     color: #fff;
   }
 
+s{
+  color: #90a1b8;
+}
+
+u{
+  color: #90a1b8;
+}
+
 p {
     font-family: 'Inconsolata', monospace;
     color: #364962;
-    /* color: #90a1b8; */
-
 } 
 
 h1{
