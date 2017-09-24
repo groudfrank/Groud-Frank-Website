@@ -133,6 +133,7 @@ var $education = $('#education');
 var $work = $('#work');
 var $skills = $('#skills');
 var $skills_icons_ul = $('#skills .skills-icons ul');
+var $skills_icons_ul_li = $('#skills .skills-icons ul li');
 var $skills_icons_i = $('#skills .skills-icons ul i');
 var $future = $('#future');
 var $future_div = $('#future div');
@@ -214,6 +215,16 @@ $window.on('scroll', _.throttle(function(){
         TweenMax.staggerFrom($(this).children('li'), 0.5, {x:-100, opacity: 0, delay: 1.5, ease: Back.easeOut.config(1.7)}, 0.2);
         $(this).children('li').addClass('disanimate');
        };
+
+      $skills_icons_ul_li.each(function(){
+        $(this).hover(
+          function(){
+            TweenMax.to($(this), 0.3, {x: -10});
+          },
+          function(){
+           TweenMax.to($(this), 0.3, {x: 0});
+          });
+      });
 
     // FUTURE
     if($window.scrollTop() >= ($future.offset().top - (400)) && $future.hasClass('disanimate') == false){
