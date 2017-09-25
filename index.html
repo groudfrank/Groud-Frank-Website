@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--<link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">-->
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+  
     
     <title>Groud Frank - Web Developer</title>
 </head>
@@ -115,7 +116,7 @@
       <p>.</p>
     </li>
     <li class="nav-contact-li">
-      <a class="custom-nav-contact-format">+1-868-343-3756</a>
+      <a class="custom-nav-contact-format" title="call, WhatsApp, Viber, etc">+1-868-343-3756</a>
     </li>
   </ul>
 </nav>
@@ -218,6 +219,11 @@
 
 
 <div id="greeter">
+  <div class="last-updated">
+    <p v-bind:title="message">
+      LAST UPDATED: <b>01-01-2018</b>
+    </p>
+  </div>
   <div id="greeter-about-container">
     <p class="inconsolata">
       Formerly a baby, sometimes a trouble maker,
@@ -1582,6 +1588,16 @@
 <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
 <script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js"></script>
 <script src="js/gf-animation.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.4/vue.min.js"></script>
+<script src="js/gf-vue.js"></script>
+<!-- <script>
+  var app2 = new Vue({
+  el: '.last-updated',
+  data: {
+    message: 'You loaded this page on ' + new Date().toLocaleString()
+  }
+})
+</script> -->
 </div>
 </body>
 </html>

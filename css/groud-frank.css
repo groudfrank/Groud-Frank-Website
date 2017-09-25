@@ -455,6 +455,16 @@ transform: scale(1.05);
     position: relative;
 }
 
+.last-updated{
+  position: absolute;
+  z-index: 15;
+  top: 1%;
+  left: 0px;
+  margin: 0px 10px 0px 0px;
+  font-size: 0.75em;
+  /* margin: 10px 0px 0px 10px !important; */
+}
+
 
 #greeter-txt-container{
   display: flex;
