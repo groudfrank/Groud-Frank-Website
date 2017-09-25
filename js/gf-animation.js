@@ -340,7 +340,7 @@ $window.on('scroll', _.throttle(function(){
   //  };
 
 
-}, 300));
+}, 100));
 
 
 /*----------Greeter Stuff----------*/
