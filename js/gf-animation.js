@@ -1,3 +1,4 @@
+// Sorry boys. jQuery all the way. It was made to be used. 
 $(function(){
 
 var $body = $('body');
@@ -147,6 +148,17 @@ var $contact_subsection_div = $('#contact-subsection div');
 var $contact_breaker = $('#contact-breaker');
 var card_animate_dist = window_vw;
 
+// Triggers a scroll event so when the page reloads on
+// any point that is >= the trigger zone for any element 
+// set to be animated will not remain blank. If I didn't 
+// explain that well enough just comment out this section 
+// and reload the page on any area that is set to animate 
+// on scroll. Also it's wrapped in a setTimeout function 
+// so that it the triggered event doesn't fire too soon.
+$window.trigger('scroll');
+setTimeout(function(){
+  $window.trigger('scroll');
+}, 1000);
 
 $window.on('scroll', _.throttle(function(){
   if($window.scrollTop() >= ($greeter_breaker.offset().top - (400)) && $greeter_breaker.hasClass('disanimate') == false){

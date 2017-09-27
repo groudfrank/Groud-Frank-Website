@@ -168,12 +168,12 @@ s{
   }
   
   .me-imgs-icons-bottom span i{
-    color: #364962;
+    color: #ffffff;
     transition: color 0.3s ease-in-out;
   }
   
   .me-imgs-icons-bottom span i:hover{
-    color: #808080;
+    color: #364962;;
   }
 
   

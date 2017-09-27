@@ -1843,6 +1843,10 @@ background-color: #00acc1;
   color: white !important;
 }
 
+.red-text{
+  color: red;
+}
+
 .material-gray{
   color: #263238 !important;
 }
