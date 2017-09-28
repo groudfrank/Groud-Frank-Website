@@ -103,27 +103,11 @@ $(function(){
       }
       })
 
-      /*----------Me----------*/
-      $card_format = $('.card-format');
-      $card_heading_format = $('.card-heading-format');
-      $card_pic_format = $('#me-pic-div');
-      $p = $('p');
-      $h1 = $('h1');
       $questions_answers = $('#questions-answers');
       $questions_answers_container = $('.questions-answers-container');
 
-      // function animateContent(){
-      //   $card_heading_format.removeClass('hide-me');
-      //   TweenMax.from($card_heading_format, 1 ,{ x: 20,  opacity: 0});
-      //   $card_pic_format.removeClass('hide-me');
-      //   TweenMax.from($card_pic_format, 1 ,{ x: -20, opacity: 0});
-      //   $questions_answers_container.removeClass('hide-me');
-      //   TweenMax.from($questions_answers_container, 0.7 ,{ y: 20, opacity: 0, delay:1});
-      // }
-
-      TweenMax.to($card_format, 2, {className: "+=card-format-shadow", delay:1});
       $questions_answers.children().removeClass('hide-me');
-      TweenMax.staggerFrom($questions_answers.children(), 1.5, {opacity: 0, y: 100, delay: 3, ease: Back.easeOut.config(1.7)}, 0.2);
+      TweenMax.staggerFrom($questions_answers.children(), 1, {opacity: 0, y: 100, delay: 0.5, ease: Back.easeOut.config(1.7)}, 0.2);
     
     
       /*-----------Misc----------*/

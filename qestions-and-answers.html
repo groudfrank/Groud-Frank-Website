@@ -3,15 +3,14 @@
 <head>
     <meta charset="utf-8">
     <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
-    <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
-    <meta name="author" content="Vincent Garreau" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/groud-frank.css">
     <link rel="stylesheet" href="css/questions-and-answers.css">
-    <link rel="stylesheet" media="screen" href="css/style.css">
+    <!-- <link rel="stylesheet" media="screen" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/particle.css">
 
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
@@ -119,27 +118,29 @@
              
              <div id="pseudo-body"> 
 
-              <div id="questions-answers" class="card-format">
+              <div id="particles-js"></div>
+
+              <div id="questions-answers">
 
                 <h1 class="card-heading-format hide-me">Q&amp;A</h1>
                 <div class="card-pic-format hide-me" id="me-pic-div">
                     <img src="img/me-beard.jpg"/>
                 </div>
 
-                <div class="questions-answers-container hide-me">
-                    <div class="questions-answers-content">
+                <div class="questions-answers-container  hide-me">
+                    <div class="questions-answers-content ">
                         <h1>What's your marital status?</h1>
                         <p>Waiting for a miracle.</p>
                     </div>
 
-                    <div class="questions-answers-content">
+                    <div class="questions-answers-content ">
                         <h1>Do you have kids?</h1>
                         <p><s>I am the proud father of an 8 year old cat.</s> No.</p>
                     </div>
                 </div>
 
-                <div class="questions-answers-container hide-me">
-                    <div class="questions-answers-content">
+                <div class="questions-answers-container  hide-me">
+                    <div class="questions-answers-content ">
                         <h1>What's your greatest strength?</h1>
                         <p> 
                             My ability to push through and manage mentally challenging
@@ -147,7 +148,7 @@
                         </p>
                     </div>
 
-                    <div class="questions-answers-content">
+                    <div class="questions-answers-content ">
                             <h1>What's your greatest weakness?</h1>
                         <p>
                         I doubt myself too much and allow fear(of rejection,
@@ -156,8 +157,8 @@
                     </div>
                 </div>
 
-                <div class="questions-answers-container hide-me">
-                        <div class="questions-answers-content">
+                <div class="questions-answers-container  hide-me">
+                        <div class="questions-answers-content ">
                             <h1>What's your calling in life?</h1>
                             <p> 
                                 I don't think my calling is anything career related. 
@@ -171,7 +172,7 @@
                             </p>
                         </div>
     
-                        <div class="questions-answers-content">
+                        <div class="questions-answers-content ">
                             <h1>What do you want your legacy to be?</h1>
                             <p>
                             I'm honestly not very concerned with leaving a legacy. The universe is 
@@ -193,8 +194,8 @@
                         </div>
                     </div>
 
-                    <div class="questions-answers-container hide-me">
-                        <div class="questions-answers-content">
+                    <div class="questions-answers-container  hide-me">
+                        <div class="questions-answers-content ">
                             <h1>Who is your favorite historical figure?</h1>
                             <p> 
                                 Diogenese of Sinope. The most interesting troll in all of antiquity.
@@ -203,7 +204,7 @@
                             </p>
                         </div>
     
-                        <div class="questions-answers-content">
+                        <div class="questions-answers-content ">
                             <h1>Who has the biggest influence in your life?</h1>
                             <p>
                             Mommy :D
@@ -211,7 +212,7 @@
                         </div>
                     </div>
 
-                    <div class="questions-answers-container hide-me">
+                    <div class="questions-answers-container  hide-me">
                             <div class="questions-answers-content">
                                 <h1>What piece of advice would you give to people?</h1>
                                 <p> 
@@ -225,7 +226,7 @@
                                 </p>
                             </div>
         
-                            <div class="questions-answers-content">
+                            <div class="questions-answers-content ">
                                 <h1>What's your most controversial opinion?</h1>
                                 <p>
                                 <s>The Lion King was not the masterpiece everyone thinkings it is.</s>
@@ -236,8 +237,8 @@
                             </div>
                         </div>
 
-                <div class="questions-answers-container hide-me">
-                    <div class="questions-answers-content">
+                <div class="questions-answers-container  hide-me">
+                    <div class="questions-answers-content ">
                         <h1>How long have you been a developer?</h1>
                         <p> 
                             I started learning Web Development in 2015. This is actually,
@@ -245,7 +246,7 @@
                         </p>
                     </div>
 
-                    <div class="questions-answers-content">
+                    <div class="questions-answers-content ">
                         <h1>What do you love most about being a developer?</h1>
                         <p>
                         That's a tough one. What I love most is the high I get from 
@@ -256,7 +257,7 @@
                     </div>
                 </div>
 
-                <div class="questions-answers-container hide-me">
+                <div class="questions-answers-container  hide-me">
                     <div class="questions-answers-content">
                         <h1>What's your favorite language?</h1>
                         <p> 
@@ -276,7 +277,7 @@
                         </p>
                     </div>
 
-                    <div class="questions-answers-content">
+                    <div class="questions-answers-content ">
                         <h1>What's your least favorite language?</h1>
                         <p>
                         That would probably be PHP when I will eventually and reluctantly
@@ -289,7 +290,7 @@
                     </div>
                 </div>
 
-                <div class="questions-answers-container hide-me">
+                <div class="questions-answers-container  hide-me">
                     <div class="questions-answers-content">
                         <h1>What's your favorite thing about web development?</h1>
                         <p> 
@@ -300,7 +301,7 @@
                         </p>
                     </div>
 
-                    <div class="questions-answers-content">
+                    <div class="questions-answers-content ">
                         <h1>What's is your least favorite thing about web development?</h1>
                         <p>
                             The process of ensuring a consistent a design ethos across the insane 
@@ -317,8 +318,8 @@
                     </div>
                 </div>
 
-                <div class="questions-answers-container hide-me">
-                        <div class="questions-answers-content">
+                <div class="questions-answers-container  hide-me">
+                        <div class="questions-answers-content ">
                             <h1>What's your favorite Linux distro?</h1>
                             <p> 
                                Any distro that gives me access to pacman and the AUR so 
@@ -329,7 +330,7 @@
                             </p>
                         </div>
     
-                        <div class="questions-answers-content">
+                        <div class="questions-answers-content ">
                             <h1>What's your favorite Desktop Environemt?</h1>
                             <p>
                             Gnome master race!
@@ -337,7 +338,7 @@
                         </div>
                     </div>
 
-                    <div class="questions-answers-container hide-me">
+                    <div class="questions-answers-container  hide-me">
                             <div class="questions-answers-content">
                                 <h1>Do you workout?</h1>
                                 <p> 
@@ -349,7 +350,7 @@
                                 </p>
                             </div>
         
-                            <div class="questions-answers-content">
+                            <div class="questions-answers-content ">
                                 <h1>What about your eating habbits?</h1>
                                 <p>
                                 Thaaaaaat leaves a lot to be desired. I definitely don't pigout, I try
@@ -414,5 +415,12 @@
              <script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js"></script>
              <!-- <script src="js/groudfrank.js"></script> -->
              <script src="js/questions-and-answers.js"></script>
+             <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+             <script>
+                /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+                particlesJS.load('particles-js', 'particles.json', function() {
+                console.log('callback - particles.js config loaded');
+                });
+             </script>
 </body>
 </html>

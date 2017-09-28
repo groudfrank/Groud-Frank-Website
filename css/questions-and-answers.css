@@ -23,7 +23,7 @@ body{
     /* background-image: linear-gradient(-225deg, #00e3ae 0%, #F9FEA5 100%); */
     /*background-image: linear-gradient(-225deg, #136a8a 0%, #267871 100%);*/
     /* background-image: linear-gradient(-225deg, #16222A 0%, #3A6073 100%);*/
-    background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    /* background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%); */
     width: 100%;
     min-height: 100vh;
     margin: 0px;
@@ -31,7 +31,7 @@ body{
   }
 
 s{
-  color: #90a1b8;
+  color: #364962;
 }
 
 u{
@@ -40,13 +40,13 @@ u{
 
 p {
     font-family: 'Inconsolata', monospace;
-    color: #364962;
+    /* color: #90a1b8; */
+    color: #9e9e9e;
 } 
 
 h1{
+  color: #909090;
   font-family: 'Josefin Slab', Georgia, serif;
-  color: #ffffff;
-  /* color: #364962; */
   font-weight: bold;
 }
 
@@ -125,27 +125,24 @@ s{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 100%;
     min-height: 100vh;
-    background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%) !important;
+    /* background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%) !important; */
 }
 
 .questions-answers-container{
     display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap; */
-    /* border: 2px solid black; */
     width: 90%;
-    padding: 1%;
+    padding: 20px;
 }
 
 .questions-answers-content{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    /* border: 2px solid grey; */
     width: 600px;
-    padding: 1%;
+    padding: 20px;
     margin: 0px auto 0px auto;
     text-align: left;
 }
@@ -168,39 +165,29 @@ s{
   }
   
   .me-imgs-icons-bottom span i{
-    color: #ffffff;
+    color: #9e9e9e;
     transition: color 0.3s ease-in-out;
   }
   
   .me-imgs-icons-bottom span i:hover{
-    color: #364962;;
+    /* color: #364962; */
+    color: #707070;
   }
 
-  
+
 
   /*----------Media Queries----------*/
 
-  @media only screen and (min-width: 2000px){
-    .card-format{
-        padding-bottom: calc(150px * 1.2);
-    }
-  }
-
-  @media only screen and (min-width: 3000px){
-    .card-format{
-        padding-bottom: calc(150px * 2.4);
-    }
-  }
-
   @media (max-width: 768px) {
     #questions-answers{
-        width: 95%;
+        width: 100%;
     }
   }
 
   @media (max-width: 768px) {
     .questions-answers-container{
         flex-wrap: wrap;
+        padding: 10px;
     }
   }
 
@@ -208,17 +195,20 @@ s{
     .questions-answers-content{
         flex-wrap: wrap;
         text-align: center;
+        padding: 10px;
     }
   }
 
   @media only screen and (min-width: 2000px){
     .questions-answers-content{
         width: calc(600px * 1.2);
+        padding: calc(20px * 1.2);
     }
   }
 
   @media only screen and (min-width: 3000px){
   .questions-answers-content{
       width: calc(600px * 2.4);
+      padding: calc(20px * 1.2);
   }
 }
