@@ -17,6 +17,7 @@ s{
 
 u{
   color: #90a1b8;
+ 
 }
 
 p {
@@ -47,9 +48,6 @@ h4{
   font-weight: light;
 }
 
-s{
-  color: #90a1b8;
-}
 
 .custom-nav-format{
   font-family: 'Inconsolata', monospace;
@@ -1682,6 +1680,17 @@ background-color: #00acc1;
   background-color: #006064;
 }
 
+.google-red{
+  font-family: 'Josefin Sans', sans-serif;
+  color: red;
+}
+
+.google-blue{
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: italic;  
+  font-weight: bold;
+  color: blue;
+}
 
 .gradient-home{
   background: linear-gradient(-225deg,#ff4eb3  0%, #ff765c 100%);
