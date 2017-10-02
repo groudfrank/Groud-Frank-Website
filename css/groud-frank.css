@@ -11,12 +11,18 @@ body{
      position: relative;
 }
 
+a{
+  color: #000000;
+}
+
 s{
-  color: #90a1b8;
+  /* color: #90a1b8; */
+  color: #000000;
 }
 
 u{
-  color: #90a1b8;
+  /* color: #90a1b8; */
+  color: #000000;
  
 }
 

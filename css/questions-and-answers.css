@@ -30,13 +30,13 @@ body{
     color: #fff;
   }
 
-s{
+/* s{
   color: #364962;
 }
 
 u{
   color: #90a1b8;
-}
+} */
 
 p {
     font-family: 'Inconsolata', monospace;
@@ -116,9 +116,6 @@ padding-bottom: 150px;
     /* margin: 0px; */
 }
 
-s{
-  color: #90a1b8;
-}
 
 #questions-answers{
     display: flex;
