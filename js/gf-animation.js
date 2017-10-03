@@ -174,13 +174,14 @@ setTimeout(function(){
 }, 1000);
 
 $window.on('scroll', _.throttle(function(){
-  if($window.scrollTop() >= ($greeter_breaker.offset().top - (400)) && $greeter_breaker.hasClass('disanimate') == false){
-    $greeter_breaker_h1.removeClass('hide-me');
-    TweenMax.from($greeter_breaker_h1, 1.5, {x: 100, opacity: 0});
-    $greeter_breaker_img.removeClass('hide-me');
-    TweenMax.from($greeter_breaker_img, 1.5, {y: 50, opacity: 0});
-    $greeter_breaker.addClass('disanimate');
-  };
+  
+  // if($window.scrollTop() >= ($greeter_breaker.offset().top - (400)) && $greeter_breaker.hasClass('disanimate') == false){
+  //   $greeter_breaker_h1.removeClass('hide-me');
+  //   TweenMax.from($greeter_breaker_h1, 1.5, {x: 100, opacity: 0});
+  //   $greeter_breaker_img.removeClass('hide-me');
+  //   TweenMax.from($greeter_breaker_img, 1.5, {y: 50, opacity: 0});
+  //   $greeter_breaker.addClass('disanimate');
+  // };
 
   $card_format.each(function(){
     if($window.scrollTop() >= ($(this).offset().top - (400)) && $(this).hasClass('disanimate') == false){
