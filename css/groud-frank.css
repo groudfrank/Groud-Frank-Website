@@ -306,7 +306,7 @@ transform: scale(1.05);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;<i class="material-icons txt-accent icon-size-sm hide-me">format_quote</i>
+  align-items: center;
   position: fixed;
   z-index: 90;
   width: 100%;

@@ -91,8 +91,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.76168757"
-     inkscape:cx="411.83441"
-     inkscape:cy="119.36347"
+     inkscape:cx="145.32094"
+     inkscape:cy="116.73772"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -100,7 +100,8 @@
      inkscape:window-height="1019"
      inkscape:window-x="70"
      inkscape:window-y="25"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     inkscape:snap-text-baseline="false" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -109,7 +110,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -132,19 +133,19 @@
        inkscape:export-ydpi="8.648839" />
     <a
        id="a925"
-       transform="matrix(1.0982434,-0.01283802,0.00977806,1.4419284,-101.48147,76.715314)">
+       transform="matrix(1.0982434,-0.01283802,0.00977806,1.4419284,-105.99721,77.062678)">
       <text
          transform="scale(1.1726225,0.85278936)"
          id="text923"
          y="145.48184"
          x="102.70583"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:65.12369537px;line-height:1.25;font-family:Inconsolata;-inkscape-font-specification:Inconsolata;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.62809205"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:65.12369537px;line-height:1.25;font-family:Inconsolata;-inkscape-font-specification:Inconsolata;letter-spacing:-7.779037px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.62809205"
          xml:space="preserve"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Inconsolata;-inkscape-font-specification:Inconsolata;fill:#ffffff;fill-opacity:1;stroke-width:1.62809205"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Inconsolata;-inkscape-font-specification:Inconsolata;letter-spacing:-7.779037px;fill:#ffffff;fill-opacity:1;stroke-width:1.62809205"
            y="145.48184"
            x="102.70583"
            id="tspan921"
-           sodipodi:role="line">g</tspan></text>
+           sodipodi:role="line">g.</tspan></text>
     </a>
     <path
        style="opacity:1;fill:#ffffff;fill-opacity:1;stroke-width:0.26458332"
@@ -259,21 +260,5 @@
          x="79.199135"
          y="241.67227"
          style="stroke-width:0.26458332" /></text>
-    <a
-       transform="matrix(0.76549924,-0.00825961,0.00681552,0.92769532,-25.624237,143.3047)"
-       id="a946">
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:65.12369537px;line-height:1.25;font-family:Inconsolata;-inkscape-font-specification:Inconsolata;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.62809205"
-         x="102.70583"
-         y="145.48184"
-         id="text944"
-         transform="scale(1.1726225,0.85278936)"><tspan
-           sodipodi:role="line"
-           id="tspan942"
-           x="102.70583"
-           y="145.48184"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Inconsolata;-inkscape-font-specification:Inconsolata;fill:#ffffff;fill-opacity:1;stroke-width:1.62809205">.</tspan></text>
-    </a>
   </g>
 </svg>
