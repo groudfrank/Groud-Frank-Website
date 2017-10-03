@@ -28,7 +28,19 @@ function hideTimeOut(target, delay){
 
 function noDisplayTimeOut(target, delay){
   setTimeout(function(){
-    target.removeClass('hide-me');
+    target.removeClass('no-display');
+  }, delay);
+}
+
+function hideMeSetIn(target, delay){
+  setTimeout(function(){
+    target.addClass('hide-me');
+  }, delay);
+}
+
+function noDisplaySetIn(target, delay){
+  setTimeout(function(){
+    target.addClass('no-display');
   }, delay);
 }
 
@@ -121,6 +133,7 @@ $nav_btn.click(function(){
 
 
 /*----------Scroll Events----------*/
+var $greeter_about_container = $('#greeter-about-container')
 var $greeter_breaker = $('#greeter-breaker');
 var $greeter_breaker_h1 = $('#greeter-breaker h1');
 var $greeter_breaker_img = $('#greeter-breaker img');
@@ -358,6 +371,7 @@ $window.on('scroll', _.throttle(function(){
 
 /*----------Greeter Stuff----------*/
   var $greeter_main = $('#greeter-main');
+  var $greeter_logo = $('#greeter-logo');
   var $greeter_hi = $('#greeter-hi');
   var $greeter_main_click = $('#greeter-main #greeter-mouse-img');
   var $greeter_main_access = $('#greeter-main #greeter-access');
@@ -392,6 +406,17 @@ $window.on('scroll', _.throttle(function(){
   $greeter_main_click.click(function(){
     TweenMax.to($greeter_main, 1, {y: -(window_vh + 100), ease: Expo.easeInOut, onComplete:mainGreeterTrigger});
   });
+
+  $greeter_logo.removeClass('no-display');
+  TweenMax.from($greeter_logo, 1.5, {y: 200, opacity: 0, ease: Back.easeOut.config(1.7)});
+  TweenMax.to($greeter_logo, 2, {x: 200, opacity: 0, delay: 3, onComplete: summonGreeterText});
+
+
+  function summonGreeterText(){
+    $greeter_logo.addClass('no-display');
+    $greeter_about_container.removeClass('no-display');;
+    TweenMax.from($greeter_about_container, 2.5, {y: 200, opacity: 0, ease: Expo.easeOut, delay: 1});
+  }
 
 
 
