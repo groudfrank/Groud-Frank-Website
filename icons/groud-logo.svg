@@ -17,7 +17,10 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.2 5c3e80d, 2017-08-06"
-   sodipodi:docname="groud-logo-alt.svg">
+   sodipodi:docname="groud-logo.svg"
+   inkscape:export-filename="/home/groudie/Icon Projects/My icons/groud-logo-alt.png"
+   inkscape:export-xdpi="4.9812636"
+   inkscape:export-ydpi="4.9812636">
   <defs
      id="defs2">
     <linearGradient
@@ -91,8 +94,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.76168757"
-     inkscape:cx="145.32094"
-     inkscape:cy="116.73772"
+     inkscape:cx="-121.19253"
+     inkscape:cy="297.66355"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -110,7 +113,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -133,19 +136,23 @@
        inkscape:export-ydpi="8.648839" />
     <a
        id="a925"
-       transform="matrix(1.0982434,-0.01283802,0.00977806,1.4419284,-105.99721,77.062678)">
-      <text
+       transform="matrix(1.0982434,-0.01283802,0.00977806,1.4419284,-103.56566,76.367949)">
+      <g
+         aria-label="g."
          transform="scale(1.1726225,0.85278936)"
-         id="text923"
-         y="145.48184"
-         x="102.70583"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:65.12369537px;line-height:1.25;font-family:Inconsolata;-inkscape-font-specification:Inconsolata;letter-spacing:-7.779037px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.62809205"
-         xml:space="preserve"><tspan
+         id="text923">
+        <path
+           d="m 112.80001,120.40922 q -0.97686,0.97685 -1.43273,2.14908 -0.45586,1.17223 -0.45586,2.4747 0,1.30248 0.52099,2.53983 0.52099,1.17222 1.3676,2.08395 0.91173,0.84661 2.08395,1.3676 1.23735,0.52099 2.53983,0.52099 1.3676,0 2.53982,-0.52099 1.17223,-0.52099 2.08396,-1.43272 0.91173,-0.91173 1.43272,-2.08396 0.52099,-1.17222 0.52099,-2.4747 0,-1.30247 -0.52099,-2.4747 -0.52099,-1.23735 -1.43272,-2.14908 -0.91173,-0.91173 -2.14908,-1.43272 -1.17223,-0.52099 -2.4747,-0.52099 -2.67007,0 -4.62378,1.95371 z m 11.98276,-2.80032 q 3.12593,-2.67007 7.4241,-2.67007 h 0.84661 l 0.58611,3.8423 q -0.45587,-0.0651 -0.91173,-0.0651 -0.39075,-0.0651 -0.84661,-0.0651 -2.86544,0 -5.14477,1.43272 1.49784,2.27933 1.49784,5.01453 0,2.08395 -0.84661,3.97254 -0.8466,1.82346 -2.34445,3.25619 -1.43272,1.36759 -3.38643,2.2142 -1.95371,0.78149 -4.16792,0.78149 -1.82346,0 -3.77717,-0.71637 -2.08396,2.01884 -2.08396,3.38644 0,1.1071 1.23735,1.75834 1.30247,0.58611 3.51668,0.58611 1.23735,0 2.4747,-0.0651 1.30247,-0.13025 2.40958,-0.13025 2.93056,0 5.01452,0.58611 2.14908,0.52099 3.45156,1.56297 1.30247,0.97686 1.95371,2.34445 0.65123,1.3676 0.65123,2.93057 0,1.75834 -0.8466,3.38643 -0.84661,1.69322 -2.53983,2.93057 -1.69321,1.30247 -4.29816,2.01883 -2.53983,0.78149 -5.99138,0.78149 -3.5818,0 -6.18675,-0.58612 -2.53983,-0.52099 -4.1028,-1.49784 -1.56296,-0.97686 -2.40957,-2.27933 -0.78149,-1.23735 -0.78149,-2.67007 0,-3.51668 4.88428,-6.57749 -2.40958,-1.23735 -2.40958,-4.1028 0,-2.80032 3.38644,-5.60064 -2.08396,-1.36759 -3.25619,-3.51667 -1.17222,-2.14909 -1.17222,-4.55866 0,-2.21421 0.91173,-4.1028 0.91173,-1.95371 2.40957,-3.38643 1.56297,-1.43272 3.51668,-2.2142 2.01884,-0.84661 4.1028,-0.84661 4.36328,0 7.22873,2.86544 z m -11.59202,26.30997 q -3.71205,2.08396 -3.71205,4.55866 0,1.30248 0.71636,2.14908 0.78148,0.91174 2.01883,1.43273 1.30248,0.58611 2.99569,0.8466 1.75834,0.2605 3.64693,0.2605 3.97255,0 6.57749,-1.43272 2.60495,-1.43272 2.60495,-3.8423 -0.13025,-1.75834 -1.49784,-2.7352 -1.30248,-0.97685 -4.16792,-0.97685 -0.32562,0 -0.65124,0.0651 -0.32562,0 -0.65123,0 -2.4747,0 -4.42842,-0.0651 -1.95371,-0.13025 -3.45155,-0.2605 z"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Inconsolata;-inkscape-font-specification:Inconsolata;letter-spacing:-7.779037px;fill:#ffffff;fill-opacity:1;stroke-width:1.62809205"
-           y="145.48184"
-           x="102.70583"
-           id="tspan921"
-           sodipodi:role="line">g.</tspan></text>
+           id="path843"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 141.94553,140.05232 q 1.17222,1.17223 1.17222,2.67007 0,1.49785 -1.17222,2.60495 -1.1071,1.1071 -2.7352,1.1071 -1.62809,0 -2.73519,-1.04198 -1.1071,-1.1071 -1.1071,-2.67007 0,-1.56297 1.17222,-2.67007 1.17223,-1.1071 2.67007,-1.1071 1.49785,0 2.7352,1.1071 z"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Inconsolata;-inkscape-font-specification:Inconsolata;letter-spacing:-7.779037px;fill:#ffffff;fill-opacity:1;stroke-width:1.62809205"
+           id="path845"
+           inkscape:connector-curvature="0" />
+      </g>
     </a>
     <path
        style="opacity:1;fill:#ffffff;fill-opacity:1;stroke-width:0.26458332"
