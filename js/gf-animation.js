@@ -226,19 +226,19 @@ $window.on('scroll', _.throttle(function(){
     };
 
     //SKILLS
-    if($window.scrollTop() >= ($skills.offset().top - (400)) && $skills.hasClass('disanimate') == false){
+    if($window.scrollTop() >= ($skills.offset().top - (600)) && $skills.hasClass('disanimate') == false){
       $skills.children().first().removeClass('hide-me');
       TweenMax.from($skills.children().first(), 1, {x: -100, opacity: 0, ease: Back.easeOut.config(1.7)});
       $skills.addClass('disanimate');
     };
 
     $skills_icons_ul.each(function(){
-      if($window.scrollTop() >= ($(this).offset().top - (400)) && $(this).hasClass('disanimate') == false){
+      if($window.scrollTop() >= ($(this).offset().top - (600)) && $(this).hasClass('disanimate') == false){
         $(this).children().first().removeClass('hide-me');
-        TweenMax.from($(this).children().first(), 1, {opacity: 0, ease: Back.easeOut.config(1.7), delay: 1}, 0.2);
+        TweenMax.from($(this).children().first(), 1, {opacity: 0, ease: Back.easeOut.config(1.7)}, 0.2);
         $(this).addClass('disanimate');
         $(this).children('li').removeClass('hide-me');
-        TweenMax.staggerFrom($(this).children('li'), 0.5, {x:-100, opacity: 0, delay: 1.5, ease: Back.easeOut.config(1.7)}, 0.2);
+        TweenMax.staggerFrom($(this).children('li'), 0.5, {x:-100, opacity: 0, ease: Back.easeOut.config(1.7)}, 0.2);
         $(this).children('li').addClass('disanimate');
        };
 

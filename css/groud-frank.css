@@ -28,37 +28,46 @@ u{
 
 p {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 1.45em;
+  /* font-size: 1.45em; */
+  font-size: 1.2em;
   margin: 0px;
   color: #9e9e9e;
 } 
 
 h1{
   font-family: 'Josefin Slab', Georgia, serif;
-  font-size: 2.5em;
+  /* font-size: 2.5em; */
 }
 
 h3{
   font-family: 'Josefin Slab', serif;
-  font-size: 1.75em;
+  /* font-size: 1.75em; */
   color: #909090;
 }
 
 
 h4{
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 1.3em;
+  /* font-size: 1.3em; */
   color: #fff;
   text-align: center;
   min-height: 84px;
   font-weight: light;
 }
 
+.inconsolata{
+  font-family: 'Inconsolata', monospace;
+  /* font-size: 17px; */
+  font-size: 1.02em;
+  color: #9e9e9e;
+  padding: 5px 10px 5px 10px;
+}
+
 
 .custom-nav-format{
   font-family: 'Inconsolata', monospace;
-  /* font-size: 50px; */
-  font-size: 3.5em;
+  /* font-size: 3.5em; */
+  font-size: 3em;
   letter-spacing: 6px;
   color: #fff;
   list-style: none !important;
@@ -73,7 +82,7 @@ h4{
 .custom-nav-contact-format{
   font-family: 'Inconsolata', monospace;
   /* font-size: 17px; */
-  font-size: 1.2em;
+  font-size: 1.02em;
   color: #fff;
   list-style: none !important;
   text-decoration: none !important;
@@ -82,14 +91,6 @@ h4{
 
 .custom-nav-contacts-format:hover{
   color: #808080;
-}
-
-.inconsolata{
-  font-family: 'Inconsolata', monospace;
-  /* font-size: 17px; */
-  font-size: 1.22em;
-  color: #9e9e9e;
-  padding: 5px 10px 5px 10px;
 }
 
 .footer-format{
@@ -2067,14 +2068,14 @@ background: #3f3e44 !important;
 @media only screen  and (min-width : 2000px) {
   p{
     /* font-size: 1.8em; */
-    font-size: calc(1.45em * 1.2);
+    font-size: calc(1.2em * 1.2);
     }
   }
 
   @media only screen  and (min-width : 3000px) {
     p{
       /* font-size: 1.8em; */
-      font-size: calc(1.45em * 2.4);
+      font-size: calc(1.2em * 2.4);
       }
     }
 
@@ -2126,6 +2127,33 @@ background: #3f3e44 !important;
   }
 }
 
+@media (max-width: 768px) {
+  .inconsolata{
+    font-size: 1.1em;
+    white-space: wrap;
+    text-align: center;
+    max-width: 100%;
+  }
+}
+
+@media only screen  and (min-width : 2000px) {
+  .inconsolata{
+    font-size: calc(1.02em * 1.2);
+    white-space: wrap;
+    text-align: center;
+    max-width: 100%;
+  }
+}
+
+@media only screen  and (min-width : 3000px) {
+  .inconsolata{
+    font-size: calc(1.02em * 2.4);
+    white-space: wrap;
+    text-align: center;
+    max-width: 100%;
+  }
+}
+
 @media (max-width : 768px) {
   .custom-nav-format{
     font-size: 2.5em !important;
@@ -2135,13 +2163,13 @@ background: #3f3e44 !important;
 
 @media only screen  and (min-width : 2000px) {
   .custom-nav-format{
-    font-size: calc(3.5em * 1.2);
+    font-size: calc(3em * 1.2);
   }
 }
 
 @media only screen  and (min-width : 3000px) {
   .custom-nav-format{
-    font-size: calc(3.5em * 2.4);
+    font-size: calc(3em * 2.4);
   }
 }
 
@@ -2153,13 +2181,13 @@ background: #3f3e44 !important;
 
 @media only screen  and (min-width : 2000px) {
   .custom-nav-contact-format{
-    font-size: calc(1.2em * 1.2);
+    font-size: calc(1.02em * 1.2);
   }
 }
 
 @media only screen  and (min-width : 3000px) {
   .custom-nav-contact-format{
-    font-size: calc(1.2em * 2.4);
+    font-size: calc(1.02em * 2.4);
   }
 }
 
@@ -2172,34 +2200,6 @@ background: #3f3e44 !important;
 @media only screen  and (min-width : 3000px) {
   #custom-nav .nav-contact-ul .nav-contact-li{
     margin: 0px calc(10px * 2.4) 0px calc(10px * 2.4);
-  }
-}
-
-
-@media (max-width: 768px) {
-  .inconsolata{
-    font-size: 1.1em;
-    white-space: wrap;
-    text-align: center;
-    max-width: 100%;
-  }
-}
-
-@media only screen  and (min-width : 2000px) {
-  .inconsolata{
-    font-size: calc(1.22em * 1.2);
-    white-space: wrap;
-    text-align: center;
-    max-width: 100%;
-  }
-}
-
-@media only screen  and (min-width : 3000px) {
-  .inconsolata{
-    font-size: calc(1.22em * 2.4);
-    white-space: wrap;
-    text-align: center;
-    max-width: 100%;
   }
 }
 
