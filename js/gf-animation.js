@@ -321,7 +321,7 @@ $window.on('scroll', _.throttle(function(){
       };
     });
   
-    if($window.scrollTop() >= ($services_linux_img.offset().top - (500)) && $services_linux_img.hasClass('disanimate') == false){
+    if($window.scrollTop() >= ($services_linux_img.offset().top - (400)) && $services_linux_img.hasClass('disanimate') == false){
       $services_linux_img.children().removeClass('hide-me');
       TweenMax.staggerFrom($services_linux_img.children(), 1, {x: -100, opacity: 0}, 0.2);
       $services_linux_img.addClass('disanimate');
