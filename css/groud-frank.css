@@ -175,7 +175,7 @@ h4{
   justify-content: center;
   align-items: center;
   font-family: 'Josefin Slab', serif;
-  font-size: 4em;
+  font-size: 3.5em;
   color: #808080;
   font-weight: normal;
   padding: 5px 10px 5px 10px;
@@ -202,7 +202,7 @@ h4{
 }
 
 .icon-size-sm{
-  font-size: 2.5em !important;
+  font-size: 2em !important;
 }
 
 .victory-icon-format{
@@ -456,16 +456,15 @@ transform: scale(1.05);
 }
 
 #greeter{
-    /* background-color: transparent; */
-    min-height: 100vh;
-    max-width: 100%;
-    margin-bottom: 15px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    position: relative;
+  min-height: 100vh;
+  max-width: 100%;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
 }
 
 .last-updated{
@@ -1076,7 +1075,6 @@ transform: scale(1.05);
 }
 
 #groudie .me-imgs-icons-top{
-  font-size: 35px;
   color: #bdbdbd;
   /* color: #DFE0E0; */
   position: absolute;
@@ -2020,13 +2018,13 @@ background: #3f3e44 !important;
 
 @media only screen  and (min-width : 2000px) {
   .icon-size-sm{
-    font-size: calc(2.5em * 1.2) !important;
+    font-size: calc(2em * 1.2) !important;
     }
   }
 
 @media only screen  and (min-width : 3000px) {
   .icon-size-sm{
-    font-size: calc(2.5em * 2.4) !important;
+    font-size: calc(2em * 2.4) !important;
     }
   }
 
@@ -2263,7 +2261,7 @@ background: #3f3e44 !important;
 
 @media only screen  and (min-width : 2000px) {
   .slogan{
-    font-size: calc(4em * 1.2);
+    font-size: calc(3.5em * 1.2);
     padding: calc(5px * 1.2) calc(10px * 1.2) calc(5px * 1.2) calc(10px * 1.2);
     margin: calc(60px * 1.2);
   }
@@ -2271,7 +2269,7 @@ background: #3f3e44 !important;
 
 @media only screen  and (min-width : 3000px) {
   .slogan{
-    font-size: calc(4em * 2.4);
+    font-size: calc(3.5em * 2.4);
     padding: calc(5px * 2.4.2) calc(10px * 2.4) calc(5px * 2.4) calc(10px * 2.4);
     margin: calc(60px * 2.4);
   }

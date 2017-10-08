@@ -184,7 +184,7 @@ $window.on('scroll', _.throttle(function(){
   // };
 
   $card_format.each(function(){
-    if($window.scrollTop() >= ($(this).offset().top - (400)) && $(this).hasClass('disanimate') == false){
+    if($window.scrollTop() >= ($(this).offset().top - (600)) && $(this).hasClass('disanimate') == false){
       $(this).removeClass('hide-me');
       TweenMax.from($(this), 1.5, {x: card_animate_dist, ease: Expo.easeOut,});
       $(this).addClass('disanimate');
@@ -254,14 +254,14 @@ $window.on('scroll', _.throttle(function(){
       // });
 
     // FUTURE
-    if($window.scrollTop() >= ($future.offset().top - (400)) && $future.hasClass('disanimate') == false){
+    if($window.scrollTop() >= ($future.offset().top - (600)) && $future.hasClass('disanimate') == false){
       $future.children().first().removeClass('hide-me');
       TweenMax.from($future.children().first(), 1, {x: -100, opacity: 0, ease: Back.easeOut.config(1.7)});
       $future.addClass('disanimate');
     };
 
     $future.children('div').each(function(){
-      if($window.scrollTop() >= ($(this).offset().top - (400)) && $(this).hasClass('disanimate') == false){
+      if($window.scrollTop() >= ($(this).offset().top - (600)) && $(this).hasClass('disanimate') == false){
         $(this).children('.container-1').removeClass('hide-me');
         TweenMax.from($(this).children('.container-1'), 2, {x: -100, opacity: 0, ease: Back.easeOut.config(1.7), delay: 1}, 0.2);
         $(this).children('.container-2').removeClass('hide-me');
@@ -286,14 +286,14 @@ $window.on('scroll', _.throttle(function(){
   };
 
   //FANCIES
-  if($window.scrollTop() >= ($fancies.offset().top - (400)) && $fancies.hasClass('disanimate') == false){
+  if($window.scrollTop() >= ($fancies.offset().top - (600)) && $fancies.hasClass('disanimate') == false){
     $fancies.children().first().removeClass('hide-me');
     TweenMax.from($fancies.children().first(), 1, {y: -100, opacity: 0, ease: Back.easeOut.config(1.7)});
     $fancies.addClass('disanimate');
   };
 
   $fancies.children('div').each(function(){
-    if($window.scrollTop() >= ($(this).offset().top - (400)) && $(this).hasClass('disanimate') == false){
+    if($window.scrollTop() >= ($(this).offset().top - (600)) && $(this).hasClass('disanimate') == false){
       $(this).children('.container-1').removeClass('hide-me');
       TweenMax.from($(this).children('.container-1'), 2, {y: -100, opacity: 0, ease: Back.easeOut.config(1.7), delay: 1}, 0.2);
       $(this).children('.container-2').removeClass('hide-me');
@@ -303,7 +303,7 @@ $window.on('scroll', _.throttle(function(){
   });
 
    //GROUDIE
-   if($window.scrollTop() >= ($groudie.offset().top - (400)) && $groudie.hasClass('disanimate') == false){
+   if($window.scrollTop() >= ($groudie.offset().top - (500)) && $groudie.hasClass('disanimate') == false){
     $groudie.children('#me-imgs').children('.me-img-container').removeClass('hide-me');
     TweenMax.staggerFrom($groudie.children('#me-imgs').children('.me-img-container'), 1, {y: 100, opacity: 0, ease: Back.easeOut.config(1.7)}, 0.2);
     $groudie.addClass('disanimate');
@@ -313,16 +313,15 @@ $window.on('scroll', _.throttle(function(){
 
   // SERVICES SUBSECTION
   $services_subsection_div.each(function(){
-    if($window.scrollTop() >= ($(this).offset().top - (400)) && $(this).hasClass('disanimate') == false){
+    if($window.scrollTop() >= ($(this).offset().top - (600)) && $(this).hasClass('disanimate') == false){
       $(this).children().removeClass('hide-me');
-
-      TweenMax.from($(this).children(), 0.5, {opacity: 0});
-      TweenMax.staggerFrom($(this).children(), 0.8, {y: 100, delay: 0.5}, 0.2);
+      
+      TweenMax.staggerFrom($(this).children(), 1, {y: 100, opacity: 0}, 0.2);
       $(this).addClass('disanimate');
       };
     });
   
-    if($window.scrollTop() >= ($services_linux_img.offset().top - (400)) && $services_linux_img.hasClass('disanimate') == false){
+    if($window.scrollTop() >= ($services_linux_img.offset().top - (500)) && $services_linux_img.hasClass('disanimate') == false){
       $services_linux_img.children().removeClass('hide-me');
       TweenMax.staggerFrom($services_linux_img.children(), 1, {x: -100, opacity: 0}, 0.2);
       $services_linux_img.addClass('disanimate');
@@ -337,7 +336,7 @@ $window.on('scroll', _.throttle(function(){
       };
     
     
-    if($window.scrollTop() >= ( $contact_breaker.offset().top - (400)) &&  $contact_breaker.hasClass('disanimate') == false){
+    if($window.scrollTop() >= ( $contact_breaker.offset().top - (600)) &&  $contact_breaker.hasClass('disanimate') == false){
       $contact_breaker.children().removeClass('hide-me');
       TweenMax.staggerFrom($contact_breaker.children(), 1, {y: 100, opacity: 0}, 0.2);
       $contact_breaker.addClass('disanimate');
