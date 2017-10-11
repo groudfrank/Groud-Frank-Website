@@ -408,7 +408,7 @@ $window.on('scroll', _.throttle(function(){
   });
 
   $greeter_logo.removeClass('no-display');
-  TweenMax.from($greeter_logo, 1.5, {y: 200, opacity: 0, ease: Back.easeOut.config(1.7)});
+  TweenMax.from($greeter_logo, 1.5, {y: 200, opacity: 0, ease: Expo.easeOut});
   TweenMax.to($greeter_logo, 2, {x: 200, opacity: 0, delay: 3, onComplete: summonGreeterText});
 
 
