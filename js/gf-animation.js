@@ -136,6 +136,7 @@ $nav_btn.click(function(){
 var $greeter_about_container = $('#greeter-about-container')
 var $greeter_breaker = $('#greeter-breaker');
 var $greeter_breaker_h1 = $('#greeter-breaker h1');
+var $greeter_breaker_text_stagger = $('.greeter-breaker-text-stagger');
 var $greeter_breaker_img = $('#greeter-breaker img');
 var $card_format = $('.card-format');
 var $slogan = $('.slogan')
@@ -160,6 +161,7 @@ var $services_linux_img = $('#services-linux-img');
 var $contact_subsection_div = $('#contact-subsection div');
 var $contact_breaker = $('#contact-breaker');
 var card_animate_dist = window_vw;
+var $meh = $('.meh');
 
 // Triggers a scroll event so when the page reloads on
 // any point that is >= the trigger zone for any element 
@@ -175,13 +177,11 @@ setTimeout(function(){
 
 $window.on('scroll', _.throttle(function(){
   
-  // if($window.scrollTop() >= ($greeter_breaker.offset().top - (400)) && $greeter_breaker.hasClass('disanimate') == false){
-  //   $greeter_breaker_h1.removeClass('hide-me');
-  //   TweenMax.from($greeter_breaker_h1, 1.5, {x: 100, opacity: 0});
-  //   $greeter_breaker_img.removeClass('hide-me');
-  //   TweenMax.from($greeter_breaker_img, 1.5, {y: 50, opacity: 0});
-  //   $greeter_breaker.addClass('disanimate');
-  // };
+  if($window.scrollTop() >= ($greeter_breaker.offset().top - (400)) && $greeter_breaker.hasClass('disanimate') == false){
+    // $greeter_breaker_img.removeClass('hide-me');
+    // TweenMax.from($greeter_breaker_img, 1.5, {y: 50, opacity: 0});
+    $greeter_breaker.addClass('disanimate');
+  };
 
   $card_format.each(function(){
     if($window.scrollTop() >= ($(this).offset().top - (600)) && $(this).hasClass('disanimate') == false){
