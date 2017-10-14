@@ -1144,7 +1144,7 @@ transform: scale(1.05);
   justify-content: flex-start;
   align-items: center;
   width: 80px;
-  height: 400px;
+  height: 300px;
   position: relative;
   overflow: hidden;
   transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
@@ -1795,8 +1795,6 @@ background-color: #00acc1;
 
 
 .txt-accent{
-  /* background-image: linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%); */
-  /* background-image: linear-gradient(-225deg, #ff758c 0%, #ff7eb3 100%); */
   background-image: linear-gradient(-225deg,#ff4eb3  0%, #ff765c 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
