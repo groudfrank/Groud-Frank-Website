@@ -139,6 +139,7 @@ var $greeter_breaker_h1 = $('#greeter-breaker h1');
 var $greeter_breaker_text_stagger = $('.greeter-breaker-text-stagger');
 var $greeter_breaker_img = $('#greeter-breaker img');
 var $card_format = $('.card-format');
+var $card_pic_format = $('.card-pic-format img');
 var $slogan = $('.slogan')
 var $section_breaker_format = $('.section-breaker-format');
 var $me_card = $('#me-card');
@@ -185,9 +186,13 @@ $window.on('scroll', _.throttle(function(){
 
   $card_format.each(function(){
     if($window.scrollTop() >= ($(this).offset().top - (600)) && $(this).hasClass('disanimate') == false){
+      //animate card 
       $(this).removeClass('hide-me');
       TweenMax.from($(this), 1.5, {x: card_animate_dist, ease: Expo.easeOut,});
       $(this).addClass('disanimate');
+      //animate card content
+      // var card_pic = $(this).children('.card-pic-format');
+      // TweenMax.from($(this).children('.card-pic-format').children('.shrink-img'), 0.1, {scale: 1.5, delay: 5});
       $(this).children().removeClass('hide-me');
       TweenMax.staggerFrom($(this).children(), 0.9, {y:100, opacity: 0, delay: 1.5, ease: Back.easeOut.config(1.7)}, 0.2);
       $(this).children().addClass('disanimate');
