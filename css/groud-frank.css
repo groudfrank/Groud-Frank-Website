@@ -1,12 +1,10 @@
 html, body {
-    /* width: auto;
-    height: auto; */
-    min-width: 100%;
-    min-height: 100vh;
+    width: 100vw;
+    max-width: 100vw;
+    height: auto;
 }
 
 body{
-     min-width: 320px;
      overflow-x: hidden;
      position: relative;
 }
@@ -232,11 +230,13 @@ transform: scale(1.05);
 
 #nav-btn span i{
   color: #808080;
-  transition: color 0.3s ease-in-out;
+  /* color: #ff4eb3; */
+  /* color: #ff765c; */
+  transition: filter 0.3s ease-in-out;
 }
 
 #nav-btn:hover span i{
-  color: #263238;
+  filter: brightness(80%);
 }
 
 #custom-nav{
@@ -244,8 +244,10 @@ transform: scale(1.05);
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 100vw;
+  max-width: 100vw;
   height: 100%;
+  max-height: 100%;
   position: fixed;
   z-index: 0;
   background-color: #3f3e44;
@@ -298,6 +300,8 @@ transform: scale(1.05);
 
 #pseudo-body{
   position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 
