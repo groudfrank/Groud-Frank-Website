@@ -2,11 +2,11 @@ html, body {
     width: 100vw;
     max-width: 100vw;
     height: auto;
+    overflow-x: hidden;
 }
 
 body{
-     overflow-x: hidden;
-     position: relative;
+    position: relative;
 }
 
 a{
@@ -484,16 +484,28 @@ transform: scale(1.05);
 
 #greeter-logo{
   margin: 0px auto 0px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #greeter-logo figure{
   width: 400px;
   height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #greeter-logo figure img{
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -525,6 +537,7 @@ transform: scale(1.05);
   position: relative;
   white-space: pre-line;
   text-align: center;
+  padding: 10px;
 }
 
 #greeter-breaker{
@@ -820,12 +833,10 @@ transform: scale(1.05);
   justify-content: center;
   align-items: center;
   position: relative;
-  /* transition: transform 0.2s ease-in-out; */
 }
 
 #me-subsection #skills div ul li:hover{
   background-color: #eeeeee;
-  transform: translateX(-4px);
 }
 
 #me-subsection #skills div ul li .ability{
@@ -1660,7 +1671,8 @@ input[type=submit]:hover{
 }
 
 .me-badge-border{
-  border: 3px solid #0fb8ad;
+  /* border: 3px solid #0fb8ad; */
+  border: 3px solid #1fc8db;
 }
 
 .services-badge-border{
@@ -1805,11 +1817,15 @@ background-color: #00acc1;
 }
 
 .color-fill{
-  /* color: #2cb5e8; */
+  color: #1fc8db;
 
-   background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+   /* background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
+}
+
+.color-fill-me{
+  color: #1fc8db;
 }
 
 
@@ -2130,7 +2146,6 @@ background: #3f3e44 !important;
 @media (max-width: 768px) {
   .inconsolata{
     font-size: 1.1em;
-    white-space: wrap;
     text-align: center;
     max-width: 100%;
   }
@@ -2321,6 +2336,21 @@ background: #3f3e44 !important;
         left: 45%;
     }
 } 
+
+@media(max-width: 768px){
+  #pseudo-body #greeter #greeter-about-container p{
+    /* white-space: normal; */
+    text-align: left;
+    /* line-height: 1.6em; */
+  }
+}
+
+@media(max-width: 768px){
+  #greeter-logo figure{
+    width: 300px;
+    height: 300px;
+  }
+}
 
 
 @media (max-width: 768px) {
