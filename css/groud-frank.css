@@ -797,6 +797,7 @@ transform: scale(1.05);
 #me-subsection #work .work-info-btn:hover{
   color: #ffffff;
   filter: brightness(95%);
+  box-shadow: 5px 2px 20px 0px rgba(46,61,73,0.15);
 }
 
 #work .work-info-btn p{
@@ -1432,7 +1433,7 @@ transform: scale(1.05);
   justify-content: center;
   width: 100%;
   height: auto;
-  background: url("img/contact-background-image1k.jpg") repeat center center fixed;
+  background: url("img/contact-background-image-alt1k.jpg") repeat center center fixed;
   position: relative;
   margin-bottom: 150px;
   padding-top: 40px;
@@ -1515,7 +1516,7 @@ input[type=text]{
   background: #eee;
   font-size: 1.45em;
   font-weight: bold;
-  color: #df91fb;
+  color: #B99BEC;
   text-align: center;
   margin-bottom: 20px;
   -webkit-transition: all 0.5s ease-in-out;
@@ -1523,7 +1524,8 @@ input[type=text]{
 }
 
 input[type=text]:focus{
-    background: rgba(223,145,251,0.5);
+    /* background: rgba(223,145,251,0.5); */
+    Background: rgba(185,155,236,0.6);
     color: #ffffff;
   /* width: 37%; */
 }
@@ -1531,7 +1533,7 @@ input[type=text]:focus{
 textarea{
   font-size: 1.45em;
   font-weight: bold;
-  color: #df91fb;
+  color: #B99BEC;
   width: 60%;
   box-sizing: border-box;
   border: none;
@@ -1544,8 +1546,7 @@ textarea{
 }
 
 textarea:focus{
-  /* width: 80%; */
-  border-bottom: 2px solid #df91fb;
+  border-bottom: 2px solid #B99BEC;
 }
 
 input[type=submit]{
@@ -1568,7 +1569,7 @@ input[type=submit]{
 input[type=submit]:hover{
   transform: translateY(-5px);
   -webkit-transform: translateY(-5px);
-  box-shadow: 0 18px 25px -5px #df91fb;
+  box-shadow: 0 18px 25px -5px #B99BEC;
 }
 
 
@@ -1673,15 +1674,16 @@ input[type=submit]:hover{
 .me-badge-border{
   /* border: 3px solid #0fb8ad; */
   border: 3px solid #1fc8db;
+  /* border: 3px solid #1BC4CE; */
 }
 
 .services-badge-border{
-  border: 3px solid #BD3F25;
+  border: 3px solid #BD3F55;
 }
 
 .me-shade1{
   /* background-color: #b3e5fc; */
-  background-color: #b2ebf2
+  background-color: #b2ebf2;
 }
 
 .me-shade2{
@@ -1781,6 +1783,7 @@ background-color: #00acc1;
 }
 
 .gradient-me-txt{
+  color: #1fc8db;
   background-image: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
     -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1817,15 +1820,17 @@ background-color: #00acc1;
 }
 
 .color-fill{
-  color: #1fc8db;
+  /* color: #1fc8db; */
+  /* color: #0fb8ad; */
 
-   /* background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+   background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
+  -webkit-text-fill-color: transparent;
 }
 
 .color-fill-me{
   color: #1fc8db;
+  /* color: #0fb8ad; */
 }
 
 
@@ -2744,14 +2749,14 @@ background: #3f3e44 !important;
 @media only screen  and (min-width : 2000px) {
   #me-imgs .me-img-container{
     width: calc(80px * 1.2);
-    height: calc(400px * 1.2);
+    height: calc(300px * 1.2);
   }
 }
 
 @media only screen  and (min-width : 3000px) {
   #me-imgs .me-img-container{
     width: calc(80px * 2.4);
-    height: calc(400px * 2.4);
+    height: calc(300px * 2.4);
   }
 }
 
@@ -2916,13 +2921,13 @@ background: #3f3e44 !important;
 
 @media only screen  and (min-width : 2000px) {
   #contact-subsection{
-    background: url("img/contact-background-image2k.jpg") repeat center center fixed;
+    background: url("img/contact-background-image-alt2k.jpg") repeat center center fixed;
   }
 }
 
 @media only screen  and (min-width : 3000px) {
   #contact-subsection{
-    background: url("img/contact-background-image4k.jpg") repeat center center fixed;
+    background: url("img/contact-background-image-alt4k.jpg") repeat center center fixed;
   }
 }
 
