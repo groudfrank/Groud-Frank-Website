@@ -420,7 +420,7 @@ $window.on('scroll', _.throttle(function(){
   function summonGreeterText(){
     $greeter_logo.addClass('no-display');
     $greeter_about_container.removeClass('no-display');;
-    TweenMax.from($greeter_about_container, 2.5, {y: 200, opacity: 0, ease: Expo.easeOut, delay: 1});
+    TweenMax.from($greeter_about_container, 1.5, {y: 200, opacity: 0, ease: Expo.easeOut, delay: 1});
   }
 
 
