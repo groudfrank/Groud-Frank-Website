@@ -3066,6 +3066,12 @@ background: #3f3e44 !important;
 }
 
 @media (max-width: 768px) {
+  .copyleft-icon {
+    display: inline;
+  }
+}
+
+@media (max-width: 768px) {
   #copyleft-row-2 {
     margin: 0px auto 0px auto;
   }
