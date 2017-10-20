@@ -12,13 +12,14 @@ body{
     justify-content: center;
     align-items: center;
     width: 70%;
-    height: auto;
-    margin: auto;
+    height: 100%;
+    margin: 0px auto 0px auto;
 }
 
 #ie-greeter-content h1{
     font-family: 'Anton', sans-serif;
     font-size: 4em;
+    color: #333;
     /* color: #ff765c; */
     /* color: #ff4eb3; */
     margin-bottom: 50px; 
@@ -26,6 +27,7 @@ body{
 }
 
 #ie-greeter-content p{
+    width: 80%; /*IE support*/
     margin-bottom: 50px;
     font-family: 'Inconsolata', monospace;
     /* text-align: center; */
@@ -43,6 +45,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* background-color: #333; */
     width: 105px;
     height: 105px;
     /* border: 2px solid #000; */
