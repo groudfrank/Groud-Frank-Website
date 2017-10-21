@@ -135,7 +135,7 @@ h4{
   overflow: hidden;
 }
 
-.card-content{
+.card-txt-format{
   color: #fff;
   max-width: 50%;
   text-align: center;
@@ -621,7 +621,6 @@ transform: scale(1.05);
   transition: all 4s;
 }
 
-
 .me-card-icons{
   display: flex;
   flex-direction: row;
@@ -888,6 +887,26 @@ transform: scale(1.05);
   /* background-color: pink; */
 }
 
+.future-plans-layout .container-1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  width: 40%;
+  /* background-color: green; */
+}
+
+.future-plans-layout .container-2{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  width: 60%;
+  /* background-color: purple; */
+}
+
 #future .future-plans-layout-reverse{
   display: flex;
   flex-direction: row-reverse;
@@ -898,16 +917,6 @@ transform: scale(1.05);
   min-height: 200px;
   margin-bottom: 60px;
   /* background-color: pink; */
-}
-
-.future-plans-layout .container-1{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  height: 100%;
-  width: 40%;
-  /* background-color: green; */
 }
 
 .future-plans-layout-reverse .container-1{
@@ -921,16 +930,6 @@ transform: scale(1.05);
 }
 
 .future-plans-layout-reverse .container-2{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  height: 100%;
-  width: 60%;
-  /* background-color: purple; */
-}
-
-.future-plans-layout .container-2{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -1014,6 +1013,24 @@ transform: scale(1.05);
   /* background-color: pink; */
 }
 
+.fancies-layout .container-1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  width: 50%;
+}
+
+.fancies-layout .container-2{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+}
+
 #fancies .fancies-layout-reverse{
   display: flex;
   flex-direction: row-reverse;
@@ -1026,14 +1043,7 @@ transform: scale(1.05);
   /* background-color: pink; */
 }
 
-.fancies-layout .container-1{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  height: 100%;
-  width: 50%;
-}
+
 
 .fancies-layout-reverse .container-1{
   display: flex;
@@ -1053,14 +1063,6 @@ transform: scale(1.05);
   width: 50%;
 }
 
-.fancies-layout .container-2{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  height: 100%;
-  width: 50%;
-}
 
 .container-2 .txt-container{
   /* white-space: pre-line;*/
@@ -2251,6 +2253,12 @@ background: #3f3e44 !important;
   }
 }
 
+@media (max-width: 768px) {
+  .card-txt-format{
+      max-width: 100% !important;
+  }
+}
+
 @media only screen  and (min-width : 2000px) {
   .card-icons-format{
     font-size: calc(50px * 1.2);
@@ -2404,12 +2412,6 @@ background: #3f3e44 !important;
     #me-pic-div{
         width: 250px !important;
         height: 250px !important;
-    }
-}
-
-@media (max-width: 768px) {
-    #me-card p{
-        min-width: 100%;
     }
 }
 
@@ -2783,12 +2785,6 @@ background: #3f3e44 !important;
 }
 
 @media (max-width: 768px) {
-    #services-card p{
-        max-width: 100% !important;
-    }
-}
-
-@media (max-width: 768px) {
     .services-card-icons div{
        width: 100px !important;
     }
@@ -2886,12 +2882,6 @@ background: #3f3e44 !important;
 @media (max-width: 500px) {
     #contact-card{
         padding-bottom: 150px;
-    }
-}
-
-@media (max-width: 768px) {
-    #contact-card p{
-        max-width: 100% !important;
     }
 }
 
@@ -3049,6 +3039,12 @@ background: #3f3e44 !important;
 @media (max-width: 768px) {
   #copyleft-row-1 {
     margin: 0px auto 0px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .copyleft-icon {
+    display: inline;
   }
 }
 
