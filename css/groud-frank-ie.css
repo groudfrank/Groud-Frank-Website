@@ -1112,11 +1112,12 @@ transform: scale(1.05);
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  width: 100%;
-  bottom: 0%;
-  z-index: 22;
   padding: 0px;
+  position: absolute;
+  right: 0;   
+  left: 0;
+  bottom:0; 
+  margin: auto;
 }
 
 #groudie .me-imgs-icons-bottom span{
