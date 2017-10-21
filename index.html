@@ -208,7 +208,7 @@
   <!-- <p class="hide-me" id="greeter-access">Enter</p> -->
 </div>
 
-
+<div class="flex-container-wrapper-ie-support">
 <div id="greeter">
   <div class="last-updated">
     <p v-bind:title="message">
@@ -216,12 +216,15 @@
     </p>
   </div>
 
+  <!-- <div class="flex-container-wrapper-ie-support"> -->
   <div class="no-display" id="greeter-logo">
     <figure class="groud-logo-format">
       <img src="icons/groud-logo-final.svg" alt="Groud's Logo">
     </figure>
   </div>
+<!-- </div> -->
 
+  <!-- <div class="flex-container-wrapper-ie-support"> -->
   <div id="greeter-about-container" class="no-display">
     <p class="inconsolata">
       Formerly a baby, sometimes a trouble maker,
@@ -238,6 +241,8 @@
       Ever the <span class="highlight">Open Source Enthusiast</span>. 
     </p>
   </div>
+  <!-- </div> -->
+</div>
 </div>
 
 <div id="greeter-breaker">
@@ -368,6 +373,7 @@
                 </table>
               </div>
             </div>
+            <div class="flex-container-wrapper-ie-support"> <!-- for IE flex min-height bug -->
             <div class="background-beta" id="work">
               <h1 class="gradient-me-txt hide-me">Worked @</h1>
               <!-- <div>
@@ -406,6 +412,8 @@
                 </button>
               </div>
             </div>
+          </div>
+
               <div id="skills">
               <h1 class="gradient-me-txt hide-me">Skills</h1>
               <div class="skills-icons">
