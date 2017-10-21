@@ -621,13 +621,6 @@ transform: scale(1.05);
   transition: all 4s;
 }
 
-/* #me-card p{
-  color: #fff;
-  max-width: 50%;
-  text-align: center;
-  margin-bottom: 80px;
-} */
-
 .me-card-icons{
   display: flex;
   flex-direction: row;
@@ -1222,13 +1215,6 @@ transform: scale(1.05);
   transition: all 4s ease;
 }
 
-/* #services-card p{
-  color: #fff;
-  max-width: 50%;
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 60px;
-} */
 
 .services-card-icons{
   display: flex;
@@ -1391,14 +1377,6 @@ transform: scale(1.05);
   height: 100%;
   transition: all 4s ease;
 }
-
-/* #contact-card p{
-  color: #fff;
-  max-width: 50%;
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 60px;
-} */
 
 .contact-card-icons{
   display: flex;
@@ -2434,12 +2412,6 @@ background: #3f3e44 !important;
     }
 }
 
-/* @media (max-width: 768px) {
-    #me-card p{
-        min-width: 100%;
-    }
-} */
-
 @media (max-width: 768px) {
     .me-card-icons div{
        width: 100px !important;
@@ -2809,12 +2781,6 @@ background: #3f3e44 !important;
   }
 }
 
-/* @media (max-width: 768px) {
-    #services-card p{
-        max-width: 100% !important;
-    }
-} */
-
 @media (max-width: 768px) {
     .services-card-icons div{
        width: 100px !important;
@@ -2915,12 +2881,6 @@ background: #3f3e44 !important;
         padding-bottom: 150px;
     }
 }
-
-/* @media (max-width: 768px) {
-    #contact-card p{
-        max-width: 100% !important;
-    }
-} */
 
 @media (max-width: 768px) {
     .contact-card-icons div{
