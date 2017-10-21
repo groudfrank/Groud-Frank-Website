@@ -1013,6 +1013,24 @@ transform: scale(1.05);
   /* background-color: pink; */
 }
 
+.fancies-layout .container-1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  width: 50%;
+}
+
+.fancies-layout .container-2{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+}
+
 #fancies .fancies-layout-reverse{
   display: flex;
   flex-direction: row-reverse;
@@ -1025,14 +1043,7 @@ transform: scale(1.05);
   /* background-color: pink; */
 }
 
-.fancies-layout .container-1{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  height: 100%;
-  width: 50%;
-}
+
 
 .fancies-layout-reverse .container-1{
   display: flex;
@@ -1052,14 +1063,6 @@ transform: scale(1.05);
   width: 50%;
 }
 
-.fancies-layout .container-2{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  height: 100%;
-  width: 50%;
-}
 
 .container-2 .txt-container{
   /* white-space: pre-line;*/
