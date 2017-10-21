@@ -135,6 +135,14 @@ h4{
   overflow: hidden;
 }
 
+.card-txt-format{
+  color: #fff;
+  max-width: 50%;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
 .card-icons-format{
   font-size: 50px;
   color: white;
@@ -613,12 +621,12 @@ transform: scale(1.05);
   transition: all 4s;
 }
 
-#me-card p{
+/* #me-card p{
   color: #fff;
   max-width: 50%;
   text-align: center;
   margin-bottom: 80px;
-}
+} */
 
 .me-card-icons{
   display: flex;
@@ -1214,13 +1222,13 @@ transform: scale(1.05);
   transition: all 4s ease;
 }
 
-#services-card p{
+/* #services-card p{
   color: #fff;
   max-width: 50%;
   text-align: center;
   margin-top: 40px;
   margin-bottom: 60px;
-}
+} */
 
 .services-card-icons{
   display: flex;
@@ -1384,13 +1392,13 @@ transform: scale(1.05);
   transition: all 4s ease;
 }
 
-#contact-card p{
+/* #contact-card p{
   color: #fff;
   max-width: 50%;
   text-align: center;
   margin-top: 40px;
   margin-bottom: 60px;
-}
+} */
 
 .contact-card-icons{
   display: flex;
@@ -2264,6 +2272,12 @@ background: #3f3e44 !important;
   }
 }
 
+@media (max-width: 768px) {
+  .card-txt-format{
+      max-width: 100% !important;
+  }
+}
+
 @media only screen  and (min-width : 2000px) {
   .card-icons-format{
     font-size: calc(50px * 1.2);
@@ -2420,11 +2434,11 @@ background: #3f3e44 !important;
     }
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     #me-card p{
         min-width: 100%;
     }
-}
+} */
 
 @media (max-width: 768px) {
     .me-card-icons div{
@@ -2795,11 +2809,11 @@ background: #3f3e44 !important;
   }
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     #services-card p{
         max-width: 100% !important;
     }
-}
+} */
 
 @media (max-width: 768px) {
     .services-card-icons div{
@@ -2902,11 +2916,11 @@ background: #3f3e44 !important;
     }
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     #contact-card p{
         max-width: 100% !important;
     }
-}
+} */
 
 @media (max-width: 768px) {
     .contact-card-icons div{
