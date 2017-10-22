@@ -1,12 +1,17 @@
-html, body {
-    width: 100vw;
-    max-width: 100vw;
-    height: auto;
-    overflow-x: hidden;
+html{
+  position: relative;
+  max-width: 100vw;
+  height: auto;
+  /* overflow-x: hidden; */
 }
+
+
 
 body{
     position: relative;
+    max-width: 100vw;
+    height: auto;
+    /* overflow-x: hidden; */
 }
 
 a{
@@ -756,7 +761,7 @@ transform: scale(1.05);
 .flex-container-wrapper-ie-support{
   display: flex;
   flex-direction: column;
-  height: 100%;
+  /* height: 100%; this cases an overflow to the right of the page.*/
   width: 100%;
 }
 
@@ -1282,7 +1287,7 @@ transform: scale(1.05);
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100%;
+  max-width: 100vw;
   position: relative;
   padding-top: 40px;
   /* padding-bottom: 40px; */
@@ -1290,7 +1295,7 @@ transform: scale(1.05);
   transition: all 0.7s ease;
 }
 
-#services-subsection div{
+#services-subsection .services-content{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -1299,8 +1304,12 @@ transform: scale(1.05);
   margin-bottom: 40px;
 }
 
-#services-subsection div h1{
+#services-subsection .services-content h1{
   font-weight: bold;
+}
+
+.services-content p{
+  width: 100%;
 }
 
 #services-3d-container{
@@ -2829,7 +2838,7 @@ background: #3f3e44 !important;
 }
 
 @media (max-width: 768px) {
-    #services-subsection div{
+    #services-subsection .services-content{
         width: 100%;
         padding: 20px;
     }
