@@ -570,7 +570,7 @@ transform: scale(1.05);
   left: 0;
   bottom:0; 
   margin: auto;
-  z-index: 22;
+  z-index: 23;
 }
 
 .crossout{
@@ -1356,6 +1356,7 @@ transform: scale(1.05);
 #services-linux-h1 h1{
   font-size: 4.3em;
   font-weight: bold;
+  width: 100%;
 }
 
 #services-linux-p{
@@ -1370,6 +1371,7 @@ transform: scale(1.05);
 
 #services-linux-p p{
   font-weight: 550;
+  width: 100%;
 }
 
 
