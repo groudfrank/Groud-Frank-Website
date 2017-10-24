@@ -70,7 +70,7 @@ h4{
 .inconsolata{
   font-family: 'Inconsolata', monospace;
   /* font-size: 17px; */
-  font-size: 1.02em;
+  font-size: 1.15em;
   color: #9e9e9e;
   padding: 5px 10px 5px 10px;
 }
@@ -2024,25 +2024,6 @@ background: #3f3e44 !important;
   height: auto;
   min-height: 500px;
 }
-/*----------transitions----------*/
-
-.collapsing {
-  /*NB This is a bootstrap class being overriden*/
-    opacity: 0;
-    -webkit-transition: opacity 0.3s;
-    transition: opacity 0.3s;
-
-}
-
-
-.in{
-  /*NB This is a bootstrap class being overriden*/
-  opacity: 1;
-  -webkit-transition: opacity 0.5s;
-  transition: opacity 0.5s;
-  display: none !important;
-
-}
 
 /*----------Misc----------*/
 .hide-me{
@@ -3107,6 +3088,7 @@ background: #3f3e44 !important;
 @media (max-width: 768px) {
   #contact-breaker p{
     width: 95%;
+    text-align: left;
   }
 }
 
