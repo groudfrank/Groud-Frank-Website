@@ -164,6 +164,13 @@ var $contact_breaker = $('#contact-breaker');
 var card_animate_dist = window_vw;
 var $meh = $('.meh');
 
+function shrinkImg(){
+  //animate card content
+  var card_pic = $(this).children('.card-pic-format');
+  TweenMax.from($(this).children('.card-pic-format').children('.shrink-img'), 0.1, {scale: 1.5});
+  // alert('found shrink class');
+}
+
 // Triggers a scroll event so when the page reloads on
 // any point that is >= the trigger zone for any element 
 // set to be animated will not remain blank. If I didn't 
@@ -190,11 +197,11 @@ $window.on('scroll', _.throttle(function(){
       $(this).removeClass('hide-me');
       TweenMax.from($(this), 1.5, {x: card_animate_dist, ease: Expo.easeOut,});
       $(this).addClass('disanimate');
-      //animate card content
-      // var card_pic = $(this).children('.card-pic-format');
-      // TweenMax.from($(this).children('.card-pic-format').children('.shrink-img'), 0.1, {scale: 1.5, delay: 5});
       $(this).children().removeClass('hide-me');
-      TweenMax.staggerFrom($(this).children(), 0.9, {y:100, opacity: 0, delay: 1.5, ease: Back.easeOut.config(1.7)}, 0.2);
+      TweenMax.staggerFrom($(this).children(), 0.9, {y:100, opacity: 0, delay: 1.5
+      , ease: Back.easeOut.config(1.7)}, 0.2);
+      var card_pic = $(this).children('.card-pic-format');
+      TweenMax.from($(this).children('.card-pic-format').children('.shrink-img'), 4, {scale: 1});
       $(this).children().addClass('disanimate');
      };
     });
