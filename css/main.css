@@ -159,6 +159,8 @@ h4{
 
 .card-pic-format img{
   transform: scale(1.5);
+  max-width: 100%;
+  min-width: 100%;
 } 
 
 .card-txt-format{
@@ -665,13 +667,6 @@ transform: scale(1.05);
 
 #me-card{
   background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
-}
-
-
-#me-pic-div img{
-  max-width: 100%;
-  min-height: 100%;
-  transition: all 4s;
 }
 
 .me-card-icons{
@@ -1265,13 +1260,6 @@ transform: scale(1.05);
   background: linear-gradient(141deg, #BD3F25, #CB356B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-#services-pic-div img{
-  width: 100%;
-  height: 100%;
-  transition: all 4s ease;
-}
-
-
 .services-card-icons{
   display: flex;
   flex-direction: row;
@@ -1423,12 +1411,6 @@ transform: scale(1.05);
   background: linear-gradient(141deg, #df91fb, #8ca6db);
 }
 
-
-#contact-pic-div img{
-  width: 100%;
-  height: 100%;
-  transition: all 4s ease;
-}
 
 .contact-card-icons{
   display: flex;

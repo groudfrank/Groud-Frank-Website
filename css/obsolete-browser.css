@@ -7,7 +7,7 @@ body{
     height: 100vh;
 }
 
-#ie-greeter-content{
+#obsolete-browser-content{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,7 +17,7 @@ body{
     margin: 0px auto 0px auto;
 }
 
-#ie-greeter-content h1{
+#obsolete-browser-content h1{
     font-family: 'Anton', sans-serif;
     font-size: 4em;
     color: #333;
@@ -27,16 +27,16 @@ body{
 
 }
 
-#ie-greeter-content p{
+#obsolete-browser-content p{
     width: 80%; /*IE support*/
     margin-bottom: 50px;
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Inconsolata', 'Courier', 'Courier New', 'Lucida Sans Typewriter', 'Lucida Console', 'Monaco', 'Andale Mono', monospace;
     /* text-align: center; */
 }
 
-#ie-greeter-content a{
+#obsolete-browser-content a{
     width: 80%; /*IE support*/
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Inconsolata', 'Courier', 'Courier New', 'Lucida Sans Typewriter', 'Lucida Console', 'Monaco', 'Andale Mono', monospace;
     font-size: 1.2em;
     color: #9e9e9e;
     text-align: center;
@@ -44,11 +44,11 @@ body{
     transition: color 0.3s ease-in-out;
 }
 
-#ie-greeter-content a:hover{
+#obsolete-browser-content a:hover{
     color: #333333;
 }
 
-#ie-greeter-content a:visited{
+#obsolete-browser-content a:visited{
     text-decoration: none;
 }
 

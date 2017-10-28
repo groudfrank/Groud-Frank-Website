@@ -94,7 +94,7 @@ $(document).ready(function(){
 
       $questions_answers.children().removeClass('hide-me');
       TweenMax.staggerFrom($questions_answers.children(), 1, {opacity: 0, y: 100, delay: 0.5, ease: Back.easeOut.config(1.7)}, 0.2);
-      TweenMax.to($questions_answers.children('.card-pic-format').children('.shrink-img'), 0.05, {scale: 1, delay: 1, ease: Power1.easeOut});
+      TweenMax.to($questions_answers.children('.card-pic-format').children('.shrink-img'), 2.5, {scale: 1, delay: 1, ease: Power1.easeInOut});
     
     
       /*-----------Misc----------*/
