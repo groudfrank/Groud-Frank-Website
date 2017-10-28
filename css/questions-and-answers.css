@@ -23,71 +23,26 @@ body{
     color: #fff;
   }
 
-/* s{
-  color: #364962;
-}
-
-u{
-  color: #90a1b8;
-} */
 
 p {
     font-family: 'Inconsolata', monospace;
-    /* color: #90a1b8; */
     color: #9e9e9e;
 } 
 
 h1{
   color: #909090;
-  font-family: 'Josefin Slab', Georgia, serif;
-  font-weight: bold;
 }
 
 h3{
-  font-family: 'Josefin Slab', serif;
-  font-size: 1.75em;
   color: #fff;
 }
 
 
 h4{
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 1.3em;
   color: #fff;
-  text-align: center;
-  min-height: 84px;
-  font-weight: light;
-}
-
-.custom-nav-format{
-  font-family: 'Inconsolata', monospace;
-  letter-spacing: 6px;
-  color: #fff;
-  list-style: none !important;
-  text-decoration: none !important;
-  transition: color 0.3s ease-in-out;
-}
-
-.custom-nav-format:hover{
-    color: #fff;
-}
-
-.custom-nav-contact-format{
-  font-family: 'Inconsolata', monospace;
-  color: #fff;
-  list-style: none !important;
-  text-decoration: none !important;
-  transition: color 0.3s ease-in-out;
-}
-
-.custom-nav-contacts-format:hover{
-    color: #fff;
 }
 
 .inconsolata{
-  font-family: 'Inconsolata', monospace;
-  /* font-size: 17px; */
-  font-size: 1.22em;
   color: #fff;
   padding: 5px 10px 5px 10px;
 }
@@ -100,11 +55,6 @@ padding-bottom: 150px;
 .card-format-shadow{
   box-shadow: 0px 39px 61px -15px rgba(0,0,0,0.5);
 }
-
-.card-pic-format{
-    /* margin: 0px; */
-}
-
 
 #questions-answers{
     display: flex;
@@ -169,6 +119,12 @@ padding-bottom: 150px;
 
   @media (max-width: 768px) {
     p{
+        text-align: left;
+    }
+  }
+
+  @media (max-width: 768px) {
+    h1{
         text-align: left;
     }
   }

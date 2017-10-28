@@ -1,4 +1,4 @@
-$(function(){
+$(document).ready(function(){
     
     var $body = $('body');
     var $html_body = $('html, body');
@@ -68,22 +68,6 @@ $(function(){
       }
     });
     
-    //   $($nav_a).on('click', function(event) {
-    
-    //     if (this.hash !== "") {
-    //       event.preventDefault();
-    
-    //       var hash = this.hash;
-    
-    //       $($html_body).animate({
-    //         scrollTop: $(hash).offset().top
-    //       }, 2200, function(){
-       
-    //         window.location.hash = hash;
-    //       });
-    //     } 
-    //   });
-    
       $nav_a.click(function(e){
         // e.preventDefault();
     
@@ -103,11 +87,14 @@ $(function(){
       }
       })
 
+
+      var $card_pic_format = $('.card-pic-format img');
       $questions_answers = $('#questions-answers');
       $questions_answers_container = $('.questions-answers-container');
 
       $questions_answers.children().removeClass('hide-me');
       TweenMax.staggerFrom($questions_answers.children(), 1, {opacity: 0, y: 100, delay: 0.5, ease: Back.easeOut.config(1.7)}, 0.2);
+      TweenMax.to($questions_answers.children('.card-pic-format').children('.shrink-img'), 0.05, {scale: 1, delay: 1, ease: Power1.easeOut});
     
     
       /*-----------Misc----------*/
@@ -118,6 +105,8 @@ $(function(){
       function overflowShow(el){
         el.removeClass('overflow-hidden');
       }
+
+
     
     });
     

@@ -1,5 +1,5 @@
 // Sorry boys. jQuery all the way. It was made to be used. 
-$(function(){
+$(document).ready(function(){
 
 var $body = $('body');
 var $html_body = $('html, body');
