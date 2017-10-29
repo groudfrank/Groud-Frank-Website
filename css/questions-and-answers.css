@@ -1,13 +1,12 @@
 html, body {
-    min-width: 100%;
+    min-width: 100vw;
     min-height: 100vh;
     margin: 0px;
     padding: 0px;
+    overflow-x: hidden;
 }
 
 body{
-     min-width: 320px;
-     overflow-x: hidden;
      position: relative;
 }
 
@@ -25,7 +24,7 @@ body{
 
 
 p {
-    font-family: 'Inconsolata', monospace;
+  font-family: 'Inconsolata', 'Courier', 'Courier New', 'Lucida Sans Typewriter', 'Lucida Console', 'Monaco', 'Andale Mono', monospace;
     color: #9e9e9e;
 } 
 

@@ -201,7 +201,7 @@ $window.on('scroll', _.throttle(function(){
       TweenMax.staggerFrom($(this).children(), 0.9, {y:100, opacity: 0, delay: 1.5
       , ease: Back.easeOut.config(1.7)}, 0.2);
       var card_pic = $(this).children('.card-pic-format');
-      TweenMax.to($(this).children('.card-pic-format').children('.shrink-img'), 2.5, {scale: 1, delay: 2, ease: Power1.easeInOut});
+      TweenMax.to($(this).children('.card-pic-format').children('.shrink-img'), 2.5, {scale: 1, delay: 1.8, ease: Power1.easeOut});
       $(this).children().addClass('disanimate');
      };
     });
