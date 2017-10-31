@@ -598,15 +598,15 @@ transform: scale(1.05);
 }
 
 #greeter-breaker-h1{
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: nowrap;
+  flex-wrap: nowrap; */
   font-family: 'Josefin Sans', sans-serif;
   font-size: 4.3em;  
   font-weight: bold;
   position: absolute;
-  margin: auto;
+  /* margin: auto; */
   z-index: 23;
 }
 
