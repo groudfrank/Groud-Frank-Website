@@ -343,7 +343,7 @@ $window.on('scroll', _.throttle(function(){
     if($window.scrollTop() >= ( $contact_subsection_div.offset().top - (200)) &&  $contact_subsection_div.hasClass('disanimate') == false){
       $contact_subsection_div.children().removeClass('hide-me');
       // TweenMax.from($contact_subsection_div.children(), 1.5, {scale: 0, ease: Elastic.easeOut.config(1, 0.3) });
-      TweenMax.from($contact_subsection_div.children(), 0.4, {scale: 2, opacity: 0});
+      TweenMax.from($contact_subsection_div.children(), 0.5, {scale: 1.5, opacity: 0});
       $contact_subsection_div.addClass('disanimate');
       };
     

@@ -1692,7 +1692,7 @@ input[type=submit]:hover{
 }
 
 .big-up{
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 /*----------Font Stuff----------*/
@@ -2083,6 +2083,18 @@ background: #3f3e44 !important;
 }
 
 /*----------@media stuff----------*/
+
+@media only screen  and (min-width : 2000px) {
+  .icon-size-sm-alt{
+    font-size: calc(2em * 1.2) !important;
+    }
+  }
+
+  @media only screen  and (min-width : 3000px) {
+    .icon-size-sm-alt{
+      font-size: calc(2em * 2.4) !important;
+      }
+    }
 
 @media only screen  and (min-width : 2000px) {
   .icon-size-sm{
