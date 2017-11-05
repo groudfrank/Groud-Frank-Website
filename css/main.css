@@ -377,7 +377,7 @@ transform: scale(1.05);
 }
 
 #custom-nav .nav-contact-ul .nav-contact-li a:hover{
-  font-weight: bold;
+  filter: brightness(75%);
 } 
 
 #custom-nav .nav-contact-ul .seperator-li p{
@@ -1240,7 +1240,7 @@ transform: scale(1.05);
 }
 
 #groudie .me-imgs-icons-bottom span i:hover{
-  color: #3f3e44;
+  color: #1fc8db;
 }
 
 #me-imgs{

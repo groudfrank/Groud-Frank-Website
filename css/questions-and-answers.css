@@ -29,7 +29,8 @@ p {
 } 
 
 h1{
-  color: #909090;
+  /* color: #909090; */
+  color: #00897b;
 }
 
 h3{
@@ -109,7 +110,8 @@ padding-bottom: 150px;
   
   .me-imgs-icons-bottom span i:hover{
     /* color: #364962; */
-    color: #707070;
+    /* color: #707070; */
+    color: #00897b;
   }
 
 
