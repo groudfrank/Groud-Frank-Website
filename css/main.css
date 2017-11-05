@@ -286,7 +286,7 @@ transform: scale(1.05);
 }
 
 #nav-btn:hover span i{
-  filter: brightness(80%);
+  filter: brightness(75%);
 }
 
 #custom-nav-container{
@@ -1955,6 +1955,7 @@ background-color: #00acc1;
 ::selection{
 background: #3f3e44 !important;
 }
+
 /*----------Dimensions----------*/
 .min-width{
   min-width: 320px;
