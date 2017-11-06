@@ -10,16 +10,30 @@ body{
      position: relative;
 }
 
+#custom-nav-container{
+  background-color: #fff;
+}
+
+.custom-nav-format{
+ color: #3f3e44;
+}
+
+.nav-contact-li a{
+  color: #3f3e44;
+}
+
+#custom-nav .nav-contact-ul .seperator-li p{
+  color: #3f3e44;
+}
+
 #pseudo-body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
     position: relative;
     width: 100%;
     min-height: 100vh;
     margin: 0px;
-    color: #fff;
   }
 
 
