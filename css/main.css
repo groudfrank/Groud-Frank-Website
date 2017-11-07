@@ -51,13 +51,11 @@ p {
 } 
 
 h1{
-  /* font-family: 'Josefin Slab', 'Georgia', serif; */
   font-family: 'Josefin Slab', 'Georgia', 'Times', 'Times New Roman', 'Palatino Linotype', serif;
   font-size: 2.3em;
 }
 
 h3{
-  /* font-family: 'Josefin Slab', serif; */
   font-family: 'Josefin Slab', 'Georgia', 'Times', 'Times New Roman', 'Palatino Linotype', serif;
   font-size: 1.5em;
   color: #909090;
@@ -81,7 +79,8 @@ h4{
 
 
 .custom-nav-format{
-  font-family: 'Inconsolata', 'Courier', 'Courier New', 'Lucida Sans Typewriter', 'Lucida Console', 'Monaco', 'Andale Mono', monospace;
+  /* font-family: 'Inconsolata', 'Courier', 'Courier New', 'Lucida Sans Typewriter', 'Lucida Console', 'Monaco', 'Andale Mono', monospace; */
+  font-family: 'Indie Flower', cursive, 'Josefin Slab', 'Georgia', 'Times', 'Times New Roman', 'Palatino Linotype', serif;
   font-size: 3em;
   letter-spacing: 6px;
   color: #fff;
@@ -95,7 +94,8 @@ h4{
 }
 
 .custom-nav-contact-format{
-  font-family: 'Inconsolata', 'Courier', 'Courier New', 'Lucida Sans Typewriter', 'Lucida Console', 'Monaco', 'Andale Mono', monospace;
+  /* font-family: 'Inconsolata', 'Courier', 'Courier New', 'Lucida Sans Typewriter', 'Lucida Console', 'Monaco', 'Andale Mono', monospace; */
+  font-family: 'Indie Flower', cursive, 'Josefin Slab', 'Georgia', 'Times', 'Times New Roman', 'Palatino Linotype', serif;
   font-size: 0.9em;
   color: #fff;
   list-style: none !important;
@@ -127,7 +127,6 @@ h4{
     border-radius: 5px;
     margin-top: 40px;
     margin-bottom: 40px;
-    /* padding: 20px 20px 20px 20px; */
     padding: 80px 2% 2% 2%;
     position: relative;
     color: white;
@@ -135,8 +134,10 @@ h4{
 }
 
 .card-heading-format{
-  font-family: 'Megrim', cursive, 'Josefin Slab', 'Georgia', 'Times', 'Times New Roman', 'Palatino Linotype', serif;
-  font-weight: bold;
+  /* font-family: 'Megrim', cursive, 'Josefin Slab', 'Georgia', 'Times', 'Times New Roman', 'Palatino Linotype', serif; */
+  /* font-family: 'Josefin Slab', 'Georgia', 'Times', 'Times New Roman', 'Palatino Linotype', serif; */
+  font-family: 'Indie Flower', cursive, 'Josefin Slab', 'Georgia', 'Times', 'Times New Roman', 'Palatino Linotype', serif;
+  font-weight: 100;
   margin-bottom: 40px;
 }
 
@@ -146,7 +147,6 @@ h4{
   border: 3px solid #fff;
   border-radius: 50%;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  /* transition: transform 4s ease; */
   margin-bottom: 80px;
   overflow: hidden;
 }
@@ -170,7 +170,6 @@ h4{
 .card-icons-format{
   font-size: 50px;
   color: #fff;
-  /* transition: scale 0.3s linear; */
 }
 
 .section-breaker-format{
@@ -199,7 +198,9 @@ h4{
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-family: 'Josefin Slab', serif;
+  /* font-family: 'Indie Flower', cursive; */
+  font-family: 'Indie Flower', cursive, 'Josefin Slab', 'Georgia', 'Times',
+  'Times New Roman', 'Palatino Linotype', serif;
   font-size: 3.5em;
   color: #808080;
   font-weight: normal;
@@ -392,7 +393,6 @@ h4{
   width: 100%;
   height: 100vh;
   background-color: rgba(63,62,68,0.8);
-  /* background: linear-gradient(141deg, rgba(15,184,173,0.5) 0%, rgba(31,200,219,0.5) 51%, rgba(44,181,232,0.5) 75%); */
 }
 
 .custom-modal{
@@ -403,7 +403,6 @@ h4{
   position: relative;
   width: 800px;
   height: auto;
-  /* min-height: 500px; */
   font-family: 'Josefin Sans', 'Trebuchet', 'Verdana', 'Tahoma', 'Arial Narrow', 'Helvetica', 'Geneva', sans-serif;
   background-color: rgba(255,255,255,1);
   border-radius: 5px;
@@ -422,7 +421,6 @@ h4{
   left: 97%;
   width: 40px;
   height: 40px;
-  /* background-color: rgba(63,62,68,1); */
   background: #1fc8db;
   border-radius: 50%;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
@@ -499,43 +497,6 @@ h4{
 
 /* ----------Greeter Stuff----------*/
 
-#greeter-main{
-  display: flex;
-  flex-direction: column;
-  justify-content: center !important;
-  align-items: center !important;
-  min-width: 100%;
-  min-height: 100vh;
-  background: #3f3e44;
-}
-
-#greeter-main h1{
-  font-family: 'Josefin Sans', 'Trebuchet', 'Verdana', 'Tahoma', 'Arial Narrow', 'Helvetica', 'Geneva', sans-serif;
-  color: white;
-}
-
-#greeter-main #greeter-access{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  height: 35px;
-  font-family: 'Josefin Sans', 'Trebuchet', 'Verdana', 'Tahoma', 'Arial Narrow', 'Helvetica', 'Geneva', sans-serif;
-  color: #ffffff;
-  position: absolute;
-  bottom: 0;
-  margin-bottom: 5px;
-  border-radius: 30px;
-  text-align: center;
-
-  transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
-}
-
-#greeter-main #greeter-access:hover{
-  background: #ffffff;
-  color: #3f3e44;
-}
-
 #greeter{
   width: 100%;
   min-height: 100vh;
@@ -556,7 +517,6 @@ h4{
   left: 0px;
   margin: 0px 10px 0px 0px;
   font-size: 0.75em;
-  /* margin: 10px 0px 0px 10px !important; */
 }
 
 #greeter-logo{

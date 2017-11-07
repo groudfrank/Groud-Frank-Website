@@ -407,11 +407,8 @@ $window.on('scroll', _.throttle(function(){
 
 
 /*----------Greeter Stuff----------*/
-  var $greeter_main = $('#greeter-main');
   var $greeter_logo = $('#greeter-logo');
   var $greeter_hi = $('#greeter-hi');
-  var $greeter_main_click = $('#greeter-main #greeter-mouse-img');
-  var $greeter_main_access = $('#greeter-main #greeter-access');
   var $greeter_heading_div = $("#greeter-heading-div");
   var $greeter_about_div = $("#greeter-about-div");
   var $heading_words = $('.heading-words');
@@ -425,25 +422,7 @@ $window.on('scroll', _.throttle(function(){
     $greeter_main.addClass("no-display");
   };
 
-  function pulseIcon(){
-    TweenMax.from($greeter_main_click, 0.65 , {opacity: 0.4, scale: 1.05, repeat: 100, yoyo:true });
-  }
-
-  $greeter_main.one("click wheel", function(){
-    TweenMax.to($greeter_main, 1, {y: -(window_vh + 100), ease: Expo.easeInOut, onComplete:mainGreeterTrigger});
-  });
-
-  hideTimeOut($greeter_hi, 2000);
-  TweenMax.from($greeter_hi, 2, {opacity:0, ease: SlowMo.easeOut, delay: 2});
-
-  hideTimeOut($greeter_main_access, 2000);
-  TweenMax.from($greeter_main_access, 2, {y:50,  opacity:0, ease: SlowMo.easeOut, delay: 3.5});
-
-
-  $greeter_main_click.click(function(){
-    TweenMax.to($greeter_main, 1, {y: -(window_vh + 100), ease: Expo.easeInOut, onComplete:mainGreeterTrigger});
-  });
-
+ 
   $greeter_logo.removeClass('no-display');
   TweenMax.from($greeter_logo, 1.5, {y: 200, opacity: 0, ease: Expo.easeOut});
   TweenMax.to($greeter_logo, 2, {opacity: 0, delay: 3, onComplete: summonGreeterText});
