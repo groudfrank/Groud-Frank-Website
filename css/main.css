@@ -336,6 +336,10 @@ h4{
   padding: 0px;
 }
 
+#custom-nav .nav-ul .nav-li{
+  height: 60px;
+}
+
 #custom-nav .nav-ul .nav-li:hover{
   /* color: #909090; */
 }
@@ -354,7 +358,7 @@ h4{
   right: 0;   
   left: 0;
   bottom:0;
-  padding: 0px;
+  padding: 0% 0% 0.3% 0%;
   margin: 0px;
 }
 
@@ -2210,6 +2214,19 @@ background: #3f3e44 !important;
     margin: 0px calc(10px * 2.4) 0px calc(10px * 2.4);
   }
 }
+
+@media only screen  and (min-width : 2000px) {
+  #custom-nav .nav-ul .nav-li{
+    height: calc(60px * 1.2);
+  }
+}
+
+@media only screen  and (min-width : 3000px) {
+  #custom-nav .nav-ul .nav-li{
+    height: calc(60px * 2.4);
+  }
+}
+
 
 @media (max-width: 768px) {
   .footer-format{
