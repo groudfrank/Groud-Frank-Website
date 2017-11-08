@@ -53,7 +53,7 @@ $(document).ready(function(){
       
       if(navbar_exposed == false){
         TweenMax.to($nav_btn, 0.2, {rotation: 135, transformOrigin:"50% 50%"})
-        TweenMax.to($('#nav-btn span i'), 0.7, {color: '#3f3e44'});
+        TweenMax.to($('#nav-btn span i'), 0.7, {color: '#333'});
         TweenMax.to($pseudo_body, 0.7, {x: (window_vw + 20), ease: Expo.easeInOut, onComplete: customNavAnimate});
         navbar_exposed = true;
         // $body.addClass('overflow-hidden');

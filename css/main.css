@@ -104,7 +104,8 @@ h4{
 }
 
 .custom-nav-contacts-format:hover{
-  color: #808080;
+  /* color: #808080; */
+  color: #FF6484;
 }
 
 .footer-format{
@@ -367,6 +368,7 @@ h4{
 
 #custom-nav .nav-contact-ul .nav-contact-li a:hover{
   filter: brightness(75%);
+  /* color: #FF6484; */
 } 
 
 #custom-nav .nav-contact-ul .seperator-li p{

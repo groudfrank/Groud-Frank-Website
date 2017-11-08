@@ -73,6 +73,29 @@ padding-bottom: 150px;
   box-shadow: 0px 39px 61px -15px rgba(0,0,0,0.5);
 }
 
+#custom-nav-container{
+  background-color: #fff;
+}
+
+.custom-nav-format{
+  color: #3f3e44;
+}
+
+#custom-nav .nav-contact-ul .nav-contact-li a{
+  color: #3f3e44;
+  transition: color 0.3s ease-in-out;
+}
+
+#custom-nav .nav-contact-ul .nav-contact-li a:hover{
+  color: #23C086;
+}
+
+.seperator-li p{
+  color: #3f3e44;
+}
+
+
+
 #questions-answers{
     display: flex;
     flex-direction: column;
