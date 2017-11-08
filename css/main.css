@@ -1847,7 +1847,7 @@ background-color: #00acc1;
 }
 
 .contact-color-blend{
-  
+  color: rgba(185,155,236,1);
   }
   
 
@@ -2164,6 +2164,18 @@ background: #3f3e44 !important;
 @media only screen  and (min-width : 3000px) {
   .custom-nav-format{
     font-size: calc(3em * 2.4);
+  }
+}
+
+@media only screen  and (min-width : 2000px) {
+  .custom-nav-format:hover{
+    filter: blur(calc(2px * 1.2));
+  }
+}
+
+@media only screen  and (min-width : 3000px) {
+  .custom-nav-format:hover{
+    filter: blur(calc(2px * 2.4));
   }
 }
 
@@ -2700,10 +2712,10 @@ background: #3f3e44 !important;
     }
 }
 
-
 @media (max-width: 768px) {
   #groudie .me-imgs-icons-top{
-      top: 0.1%;
+      /* top: 5%; */
+      position: relative;
   }
 }
 
