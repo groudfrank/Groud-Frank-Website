@@ -155,9 +155,86 @@ $nav_btn.click(function(){
     });
   });
 
+/*----------Greeter Stuff----------*/
+  var $greeter_logo = $('#greeter-logo');
+  var $greeter_hi = $('#greeter-hi');
+  var $greeter_heading_div = $("#greeter-heading-div");
+  var $greeter_about_div = $("#greeter-about-div");
+  var $heading_words = $('.heading-words');
+  var $greeter_arrow = $('#greeter-arrow');
+  
+
+  function mainGreeterTrigger(){
+  
+    $body.removeClass("overflow-hidden");
+    $greeter_main.removeClass("pos-fixed");
+    $greeter_main.addClass("no-display");
+  };
+
+ 
+  $greeter_logo.removeClass('no-display');
+  TweenMax.from($greeter_logo, 1.5, {y: 200, opacity: 0, ease: Expo.easeOut});
+  TweenMax.to($greeter_logo, 2, {opacity: 0, delay: 3, onComplete: summonGreeterText});
 
 
-/*----------Scroll Events----------*/
+  function summonGreeterText(){
+    $greeter_logo.addClass('no-display');
+    $greeter_about_container.removeClass('no-display');;
+    TweenMax.from($greeter_about_container, 1.5, {y: 200, opacity: 0, ease: Expo.easeOut, delay: 1});
+  }
+
+
+
+  /*----------Me Stuff---------*/
+  var $work_btn_two = $('#work-btn-two');
+  var $custom_work_modal_two = $('#custom-work-modal-two');
+  var $custom_modal_content_two = $('#custom-modal-content-two');
+  var $me_img_container = $('.me-img-container');
+  var me_img_container_original_height = $me_img_container.height();
+  var me_img_container_original_width = $me_img_container.width();
+  var $me_img_figure = $('.me-img-container figure');
+
+  var $work_btn_three = $('#work-btn-three');
+  var $custom_work_modal_three = $('#custom-work-modal-three');
+  var $custom_modal_content_three = $('#custom-modal-content-three');
+
+  var $work_btn_four = $('#work-btn-four');
+  var $custom_work_modal_four = $('#custom-work-modal-four');
+  var $custom_modal_content_four = $('#custom-modal-content-four');
+
+  $custom_modal_close.click(function(){
+  $custom_modal_layer.addClass('no-display');
+  $body.removeClass('overflow-hidden');
+});
+
+  $work_btn_two.click(function(){
+    $custom_work_modal_two.removeClass('no-display');
+    $body.addClass('overflow-hidden');
+    TweenMax.from($custom_modal_content_two, 0.2, {scale: 1.2, opacity: 0, delay: 0.2});
+  });
+
+  $work_btn_three.click(function(){
+    $custom_work_modal_three.removeClass('no-display');
+    $body.addClass('overflow-hidden');
+    TweenMax.from($custom_modal_content_three, 0.2, {scale: 1.2, opacity: 0, delay: 0.2});
+  });
+
+  $work_btn_four.click(function(){
+    $custom_work_modal_four.removeClass('no-display');
+    $body.addClass('overflow-hidden');
+    TweenMax.from($custom_modal_content_four, 0.2, {scale: 1.2, opacity: 0, delay: 0.2});
+  });
+
+  /*-----------Misc----------*/
+    function overflowHide(el){
+    el.addClass('overflow-hidden');
+  }
+
+  function overflowShow(el){
+    el.removeClass('overflow-hidden');
+  }
+
+  /*----------Scroll Events----------*/
 var $greeter_about_container = $('#greeter-about-container')
 var $greeter_breaker = $('#greeter-breaker');
 var $greeter_breaker_h1 = $('#greeter-breaker h1');
@@ -193,7 +270,6 @@ function shrinkImg(){
   //animate card content
   var card_pic = $(this).children('.card-pic-format');
   TweenMax.from($(this).children('.card-pic-format').children('.shrink-img'), 0.1, {scale: 1.5});
-  // alert('found shrink class');
 }
 
 // Triggers a scroll event so when the page reloads on
@@ -278,17 +354,6 @@ $window.on('scroll', _.throttle(function(){
         TweenMax.staggerFrom($(this).children('li'), 0.5, {x:-100, opacity: 0, ease: Back.easeOut.config(1.7)}, 0.2);
         $(this).children('li').addClass('disanimate');
        };
-
-       // Slow and buggie.
-      // $skills_icons_ul_li.each(function(){
-      //   $(this).hover(
-      //     function(){
-      //       TweenMax.to($(this), 0.3, {x: -10});
-      //     },
-      //     function(){
-      //      TweenMax.to($(this), 0.3, {x: 0});
-      //     });
-      // });
 
     // FUTURE
     if($window.scrollTop() >= ($future.offset().top - (600)) && $future.hasClass('disanimate') == false){
@@ -382,127 +447,7 @@ $window.on('scroll', _.throttle(function(){
     });
   });
 
-  // if($window.scrollTop() >= ($me_card.offset().top - (400)) && $me_card.hasClass('disanimate') == false){
-  
-  //   $me_card.removeClass('hide-me');
-  //   TweenMax.from($me_card, 1.5, {x: card_animate_dist, ease: Expo.easeOut,});
-  //   $me_card.addClass('disanimate');
-  //   $me_card.children().removeClass('hide-me');
-  //   TweenMax.staggerFrom($me_card.children(), 0.9, {y:100, opacity: 0, delay: 1.5}, 0.2);
-  //   $me_card.children().addClass('disanimate');
-  //  };
-
-  //  if($window.scrollTop() >= ($services_card.offset().top - (400)) && $services_card.hasClass('disanimate') == false){
-  
-  //   $services_card.removeClass('hide-me');
-  //   TweenMax.from($services_card, 1.5, {x: card_animate_dist, ease: Expo.easeOut,});
-  //   $services_card.addClass('disanimate');
-  //   $servvices_card.children().removeClass('hide-me');
-  //   TweenMax.staggerFrom($services_card.children(), 0.9, {y:100, opacity: 0, delay: 1.5}, 0.2);
-  //   $services_card.children().addClass('disanimate');
-  //  };
-
-
 }, 100));
-
-
-/*----------Greeter Stuff----------*/
-  var $greeter_logo = $('#greeter-logo');
-  var $greeter_hi = $('#greeter-hi');
-  var $greeter_heading_div = $("#greeter-heading-div");
-  var $greeter_about_div = $("#greeter-about-div");
-  var $heading_words = $('.heading-words');
-  var $greeter_arrow = $('#greeter-arrow');
-  
-
-  function mainGreeterTrigger(){
-  
-    $body.removeClass("overflow-hidden");
-    $greeter_main.removeClass("pos-fixed");
-    $greeter_main.addClass("no-display");
-  };
-
- 
-  $greeter_logo.removeClass('no-display');
-  TweenMax.from($greeter_logo, 1.5, {y: 200, opacity: 0, ease: Expo.easeOut});
-  TweenMax.to($greeter_logo, 2, {opacity: 0, delay: 3, onComplete: summonGreeterText});
-
-
-  function summonGreeterText(){
-    $greeter_logo.addClass('no-display');
-    $greeter_about_container.removeClass('no-display');;
-    TweenMax.from($greeter_about_container, 1.5, {y: 200, opacity: 0, ease: Expo.easeOut, delay: 1});
-  }
-
-
-
-  /*----------Me Stuff---------*/
-  var $work_btn_two = $('#work-btn-two');
-  var $custom_work_modal_two = $('#custom-work-modal-two');
-  var $custom_modal_content_two = $('#custom-modal-content-two');
-  var $me_img_container = $('.me-img-container');
-  var me_img_container_original_height = $me_img_container.height();
-  var me_img_container_original_width = $me_img_container.width();
-  var $me_img_figure = $('.me-img-container figure');
-
-  var $work_btn_three = $('#work-btn-three');
-  var $custom_work_modal_three = $('#custom-work-modal-three');
-  var $custom_modal_content_three = $('#custom-modal-content-three');
-
-  var $work_btn_four = $('#work-btn-four');
-  var $custom_work_modal_four = $('#custom-work-modal-four');
-  var $custom_modal_content_four = $('#custom-modal-content-four');
-
-  $custom_modal_close.click(function(){
-  $custom_modal_layer.addClass('no-display');
-  $body.removeClass('overflow-hidden');
-});
-
-  $work_btn_two.click(function(){
-    $custom_work_modal_two.removeClass('no-display');
-    $body.addClass('overflow-hidden');
-    TweenMax.from($custom_modal_content_two, 0.2, {scale: 1.2, opacity: 0, delay: 0.2});
-  });
-
-  $work_btn_three.click(function(){
-    $custom_work_modal_three.removeClass('no-display');
-    $body.addClass('overflow-hidden');
-    TweenMax.from($custom_modal_content_three, 0.2, {scale: 1.2, opacity: 0, delay: 0.2});
-  });
-
-  $work_btn_four.click(function(){
-    $custom_work_modal_four.removeClass('no-display');
-    $body.addClass('overflow-hidden');
-    TweenMax.from($custom_modal_content_four, 0.2, {scale: 1.2, opacity: 0, delay: 0.2});
-  });
-
-
-  // $me_img_container.each(function(){
-  //   $(this).hover(
-  //   function(){
-  //     TweenMax.to($(this), 0.7, {
-  //       width: 300,
-  //       height: 350,
-  //       ease: Expo.easeOut});
-  //   },
-  //   function(){
-  //     TweenMax.to($(this), 0.7, {
-  //       width: me_img_container_original_width,
-  //       height: me_img_container_original_height,
-  //       ease: Expo.easeOut});
-  //   }
-  // );
-  // });
-
-
-  /*-----------Misc----------*/
-    function overflowHide(el){
-    el.addClass('overflow-hidden');
-  }
-
-  function overflowShow(el){
-    el.removeClass('overflow-hidden');
-  }
 
 });
 
