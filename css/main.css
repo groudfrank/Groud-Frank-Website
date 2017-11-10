@@ -51,12 +51,14 @@ p {
 } 
 
 h1{
-  font-family: 'Josefin Slab', 'Georgia', 'Times', 'Times New Roman', 'Palatino Linotype', serif;
+  font-family: 'Indie Flower', cursive, 'Josefin Slab', 'Georgia', 'Times', 'Times New Roman', 'Palatino Linotype', serif;
   font-size: 2.3em;
+  padding: 1.5%;
 }
 
 h3{
-  font-family: 'Josefin Slab', 'Georgia', 'Times', 'Times New Roman', 'Palatino Linotype', serif;
+  /* font-family: 'Josefin Slab', 'Georgia', 'Times', 'Times New Roman', 'Palatino Linotype', serif; */
+  font-family: 'Josefin Sans', 'Trebuchet', 'Verdana', 'Tahoma', 'Arial Narrow', 'Helvetica', 'Geneva', sans-serif;
   font-size: 1.5em;
   color: #909090;
 }
@@ -195,7 +197,7 @@ h4{
   justify-content: center;
   align-items: center;
   /* font-family: 'Indie Flower', cursive; */
-  font-family: 'Indie Flower', cursive, 'Josefin Slab', 'Georgia', 'Times',
+  font-family: 'Josefin Slab', 'Georgia', 'Times',
   'Times New Roman', 'Palatino Linotype', serif;
   font-size: 3.5em;
   color: #808080;
