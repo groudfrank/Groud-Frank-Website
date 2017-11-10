@@ -204,3 +204,9 @@ padding-bottom: 150px;
       padding: calc(20px * 1.2);
   }
 }
+
+@media (max-width: 768px) {
+  .me-imgs-icons-bottom span{
+      margin: 3%;
+  }
+}

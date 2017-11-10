@@ -1864,7 +1864,6 @@ background: #3f3e44 !important;
   margin-bottom: 20px;
 }
 
-
 .padding-bottom-150{
   padding-bottom: 150px !important;
 }
@@ -2233,10 +2232,24 @@ background: #3f3e44 !important;
 
  @media (max-width: 768px) {
     .custom-modal .custom-modal-window-close{
-        top: 93%;
+        top: 91%;
         left: 45%;
     }
 } 
+
+@media (max-width: 768px) {
+  .custom-modal .custom-modal-body{
+    font-size: 1.2em;
+      text-align: left;
+      white-space: normal;
+  }
+} 
+
+@media (max-width: 768px) {
+  #greeter{
+      margin-bottom: 100px;
+  }
+}
 
 @media(max-width: 768px){
   #pseudo-body #greeter #greeter-about-container p{
