@@ -880,9 +880,12 @@ h4{
   border-radius: 50%;
 }
 
-/* #skills-improvement h3{
-  padding: 5%;
-} */
+#me-subsection #skills .my-skills{
+  font-family: 'Indie Flower', cursive, 'Josefin Slab', 'Georgia',
+  'Times', 'Times New Roman', 'Palatino Linotype', serif;
+  margin: 0px;
+  color: #9e9e9e;
+}
 
 #me-subsection #future{
   display: flex;
