@@ -29,10 +29,6 @@ p {
     color: #fff;
 } 
 
-h1{
-  /* color: #909090; */
-  /* color: #00897b; */
-}
 
 h3{
   color: #fff;
@@ -173,6 +169,7 @@ padding-bottom: 150px;
   @media (max-width: 768px) {
     h1{
         text-align: left;
+        margin: 0px;
     }
   }
 

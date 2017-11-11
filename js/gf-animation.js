@@ -68,14 +68,14 @@ var nav_btn_click_check = 0;
 $nav_btn.click(function(){
   
   if(navbar_exposed == false){
-    TweenMax.to($nav_btn, 0.2, {rotation: 135, transformOrigin:"50% 50%"})
+    TweenMax.to($nav_btn, 0.2, {rotation: 135, transformOrigin:"50% 50%"});
     TweenMax.to($('#nav-btn span i'), 0.7, {color: '#fff'});
     TweenMax.to($pseudo_body, 0.7, {x: (window_vw + 20), ease: Expo.easeInOut, onComplete: customNavAnimate});
     navbar_exposed = true;
     // $body.addClass('overflow-hidden');
   }
   else{
-    TweenMax.to($nav_btn, 0.2, {rotation: 0, transformOrigin:"50% 50%"})
+    TweenMax.to($nav_btn, 0.2, {rotation: 0, transformOrigin:"50% 50%"});
     TweenMax.to($('#nav-btn span i'), 0.2, {color: '#808080'});
     TweenMax.to($pseudo_body, 0.7, {x: 0, ease: Expo.easeInOut});
     navbar_exposed = false;
@@ -110,7 +110,7 @@ $nav_btn.click(function(){
 
   if(navbar_exposed == false){
 
-    TweenMax.to($nav_btn, 0.2, {rotation: 135})
+    TweenMax.to($nav_btn, 0.2, {rotation: 135});
     TweenMax.to($('#nav-btn span i'), 0.7, {color: '#fff'});
     TweenMax.to($pseudo_body, 0.7, {x: (window_vw + 20), ease: Expo.easeInOut});
     navbar_exposed = true;
@@ -118,7 +118,7 @@ $nav_btn.click(function(){
   }
   else{
 
-    TweenMax.to($nav_btn, 0.2, {rotation: 0})
+    TweenMax.to($nav_btn, 0.2, {rotation: 0});
     TweenMax.to($('#nav-btn span i'), 0.2, {color: '#808080'});
     TweenMax.to($pseudo_body, 0.7, {x: 0, ease: Expo.easeInOut});
     navbar_exposed = false;
