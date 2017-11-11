@@ -150,7 +150,7 @@ h4{
 }
 
 .card-pic-format img{
-  transform: scale(1.5);
+  /* transform: scale(1.5); */
   max-width: 100%;
   min-width: 100%;
 } 
@@ -849,11 +849,13 @@ h4{
   justify-content: space-between;
   align-items: center;
   position: relative;
+  transition: all 0.2s ease-in-out;
 }
 
 #me-subsection #skills div ul li:hover{
   background-color: #eeeeee;
   color: #1fc8db;
+  transform: translateX(-5px);
 }
 
 #me-subsection #skills div ul li:hover span p{
@@ -1165,16 +1167,15 @@ h4{
   justify-content: flex-start;
   align-items: center;
   width: 80px;
-  height: 300px;
+  height: 400px;
   position: relative;
   overflow: hidden;
   transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
 }
 
 #me-imgs .me-img-container:hover{
-  width: 225px;
-  height: 300px;
-  transform: scale(1.5);
+  width: 400px;
+  height: 400px;
 }
 
 .me-img-container figure{
@@ -1315,7 +1316,7 @@ h4{
   font-size: 4.3em;
   font-weight: bold;
   width: 100%;
-  padding-left: 5%;
+  padding-left: 30%;
 }
 
 #services-linux-p{
@@ -1939,7 +1940,7 @@ background: #3f3e44 !important;
 
 @media (max-width: 768px) {
   p{
-      font-size: 1.05em;
+      font-size: 1.3em;
   }
 }
 
@@ -2636,7 +2637,7 @@ background: #3f3e44 !important;
   #me-imgs .me-img-container{
       height: 40px;
       /* width: 80%; */
-      width: 300px;
+      width: 400px;
   }
 } 
 
@@ -2657,14 +2658,14 @@ background: #3f3e44 !important;
 @media only screen  and (min-width : 3000px) {
   #me-imgs .me-img-container{
     width: calc(80px * 2.4);
-    height: calc(300px * 2.4);
+    height: calc(400px * 2.4);
   }
 }
 
 @media only screen  and (min-width : 2000px) {
   #me-imgs .me-img-container:hover{
-    width: calc(225px * 1.5);
-    height: calc(300px * 1.5);
+    width: calc(400px * 1.5);
+    height: calc(400px * 1.5);
   }
 }
 

@@ -69,6 +69,12 @@ padding-bottom: 150px;
   border: 3px solid #23C086;
 }
 
+.card-pic-format img{
+  transform: scale(1.5);
+  max-width: 100%;
+  min-width: 100%;
+} 
+
 .card-format-shadow{
   box-shadow: 0px 39px 61px -15px rgba(0,0,0,0.5);
 }
