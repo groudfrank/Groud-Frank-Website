@@ -113,16 +113,6 @@ $(document).ready(function(){
           TweenMax.to($custom_nav_canvas, 1, {backgroundColor:"transparent"});
         });
       });
-
-      
-      var $card_pic_format = $('.card-pic-format img');
-      $questions_answers = $('#questions-answers');
-      $questions_answers_container = $('.questions-answers-container');
-
-      $questions_answers.children().removeClass('hide-me');
-      TweenMax.staggerFrom($questions_answers.children(), 1, {opacity: 0, y: 100, delay: 0.5, ease: Back.easeOut.config(1.7)}, 0.2);
-      TweenMax.to($questions_answers.children('.card-pic-format').children('.shrink-img'), 2.5, {scale: 1, delay: 1, ease: Power1.easeOut});
-    
     
       /*-----------Misc----------*/
         function overflowHide(el){

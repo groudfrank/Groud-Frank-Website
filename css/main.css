@@ -849,7 +849,7 @@ h4{
   justify-content: space-between;
   align-items: center;
   position: relative;
-  transition: all 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
 #me-subsection #skills div ul li:hover{
@@ -1026,7 +1026,7 @@ h4{
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 65%;
+  width: 60%;
   min-height: 200px;
   margin-bottom: 60px;
 }
@@ -1960,7 +1960,7 @@ background: #3f3e44 !important;
 
 @media (max-width: 768px) {
   h1{
-      font-size: 2em;
+      font-size: 2.85em;
   }
 }
 
@@ -2108,7 +2108,7 @@ background: #3f3e44 !important;
 
 @media (max-width: 768px) {
   .footer-format{
-      font-size: 1.563em;
+      /* font-size: 1.563em; */
       padding-left: 5px;
       padding-right: 10px; 
   }
@@ -2134,8 +2134,8 @@ background: #3f3e44 !important;
 
 @media (max-width: 768px) {
   .card-pic-format{
-      width: 250px;
-      height: 250px;
+      width: 350px;
+      height: 350px;
   }
 }
 
