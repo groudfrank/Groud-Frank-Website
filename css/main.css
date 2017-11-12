@@ -150,10 +150,14 @@ h4{
 }
 
 .card-pic-format img{
-  /* transform: scale(1.5); */
   max-width: 100%;
   min-width: 100%;
-} 
+  transition: transform 3s ease-in-out;
+}
+
+.card-pic-format img:hover{
+  transform: scale(1.5);
+}
 
 .card-txt-format{
   color: #fff;
@@ -1373,9 +1377,14 @@ h4{
   margin-right: 20px;
 }
 
-/* .contact-card-icons div h4{
-   min-height: 84px;
-} */
+.contact-card-icons div a{
+   color: #fff;
+   transition: color 0.3s ease-in-out;
+}
+
+.contact-card-icons div a:hover{
+  color: #333;
+}
 
 
 #contact-section{
@@ -2230,14 +2239,14 @@ background: #3f3e44 !important;
 @media (max-width: 768px) {
     .custom-modal{
         width: 90%;
-        min-height: 90%;
+        min-height: auto;
     }
 }
 
  @media (max-width: 768px) {
     .custom-modal .custom-modal-window-close{
-        top: 91%;
-        left: 45%;
+        bottom: 1%;
+        left: 46%;
     }
 } 
 
