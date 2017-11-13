@@ -129,31 +129,33 @@ $nav_btn.click(function(){
   });
 
 
-  $nav_a.each(function(){
-    $(this).hover(function(){
-      if($(this).hasClass('home-bg')){
-        TweenMax.to($custom_nav_canvas, 1, {backgroundColor:"#FF6484"});
-      }
-      if($(this).hasClass('me-bg')){
-        TweenMax.to($custom_nav_canvas, 1, {backgroundColor:"#1fc8db"});
-      }
-      if($(this).hasClass('services-bg')){
-        TweenMax.to($custom_nav_canvas, 1, {backgroundColor:"#BD3F55"});
-      }
-      if($(this).hasClass('contact-bg')){
-        TweenMax.to($custom_nav_canvas, 1, {backgroundColor:"#B99BEC"});
-      }
-      if($(this).hasClass('journal-bg')){
-        TweenMax.to($custom_nav_canvas, 1, {backgroundColor:"#f09819"});
-      }
-      if($(this).hasClass('qa-bg')){
-        TweenMax.to($custom_nav_canvas, 1, {backgroundColor:"#23C086"});
-      }
-    },
-    function(){
-      TweenMax.to($custom_nav_canvas, 1, {backgroundColor:"transparent"});
+  if(window_vw >= 768){
+    $nav_a.each(function(){
+      $(this).hover(function(){
+        if($(this).hasClass('home-bg')){
+          TweenMax.to($custom_nav_canvas, 1, {backgroundColor:"#FF6484"});
+        }
+        if($(this).hasClass('me-bg')){
+          TweenMax.to($custom_nav_canvas, 1, {backgroundColor:"#1fc8db"});
+        }
+        if($(this).hasClass('services-bg')){
+          TweenMax.to($custom_nav_canvas, 1, {backgroundColor:"#BD3F55"});
+        }
+        if($(this).hasClass('contact-bg')){
+          TweenMax.to($custom_nav_canvas, 1, {backgroundColor:"#B99BEC"});
+        }
+        if($(this).hasClass('journal-bg')){
+          TweenMax.to($custom_nav_canvas, 1, {backgroundColor:"#f09819"});
+        }
+        if($(this).hasClass('qa-bg')){
+          TweenMax.to($custom_nav_canvas, 1, {backgroundColor:"#23C086"});
+        }
+      },
+      function(){
+        TweenMax.to($custom_nav_canvas, 1, {backgroundColor:"transparent"});
+      });
     });
-  });
+  }
 
 /*----------Greeter Stuff----------*/
   var $greeter_logo = $('#greeter-logo');

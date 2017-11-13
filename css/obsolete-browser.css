@@ -109,3 +109,34 @@ b{
     position: absolute;
     bottom: 0;
   }
+
+  @media (max-width: 768px) {
+    #browsers{
+      flex-wrap: wrap;
+    }
+  }
+
+  @media (max-width: 768px) {
+    #browsers div{
+        margin: 0px 10px 5% 10px;
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    #obsolete-browser-content{
+      width: 95%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    #obsolete-browser-content p{
+      width: 95%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    #copyleft{
+        position: static;
+    }
+  }
