@@ -61,6 +61,7 @@ h3{
   font-family: 'Josefin Sans', 'Trebuchet', 'Verdana', 'Tahoma', 'Arial Narrow', 'Helvetica', 'Geneva', sans-serif;
   font-size: 1.5em;
   color: #909090;
+  padding: 1%;
 }
 
 
@@ -619,7 +620,14 @@ h4{
   justify-content: center;
   align-items: center;
   max-width: 100%;
-  /* margin-bottom: 100px; */
+}
+
+#me a{
+  transition: color 0.2s ease-in-out;
+}
+
+#me a:hover{
+  color: #1fc8db;
 }
 
 #me-card{
@@ -1171,7 +1179,7 @@ h4{
   justify-content: flex-start;
   align-items: center;
   width: 80px;
-  height: 400px;
+  height: 300px;
   position: relative;
   overflow: hidden;
   transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
@@ -2143,8 +2151,8 @@ background: #3f3e44 !important;
 
 @media (max-width: 768px) {
   .card-pic-format{
-      width: 350px;
-      height: 350px;
+      width: 300px;
+      height: 300px;
   }
 }
 
@@ -2239,7 +2247,7 @@ background: #3f3e44 !important;
 @media (max-width: 768px) {
     .custom-modal{
         width: 90%;
-        min-height: auto;
+        max-height: 90%;
     }
 }
 
@@ -2288,7 +2296,7 @@ background: #3f3e44 !important;
 @media (max-width: 768px) {
     #greeter-breaker-h1{
         font-size: 2.25em;
-        transform: scale(1.2);
+        transform: scaleY(1.2);
     }
 }
 
@@ -2680,7 +2688,7 @@ background: #3f3e44 !important;
 @media only screen  and (min-width : 3000px) {
   #me-imgs .me-img-container{
     width: calc(80px * 2.4);
-    height: calc(400px * 2.4);
+    height: calc(300px * 2.4);
   }
 }
 
@@ -2693,8 +2701,8 @@ background: #3f3e44 !important;
 
 @media only screen  and (min-width : 3000px) {
   #me-imgs .me-img-container:hover{
-    width: calc(225px * 2.4);
-    height: calc(300px * 2.4);
+    width: calc(400px * 2.4);
+    height: calc(400px * 2.4);
   }
 }
 
@@ -2811,9 +2819,9 @@ background: #3f3e44 !important;
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
     #contact-card{
-        padding-bottom: 150px;
+        padding-bottom: 60px;
     }
 }
 
