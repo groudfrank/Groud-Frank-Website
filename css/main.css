@@ -196,11 +196,6 @@ h4{
 
 
 .slogan{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  /* font-family: 'Indie Flower', cursive; */
   font-family: 'Josefin Slab', 'Georgia', 'Times',
   'Times New Roman', 'Palatino Linotype', serif;
   font-size: 3.5em;
@@ -272,6 +267,10 @@ h4{
   margin: 0px 10px 0px 0px;
   border-radius: 5%;
   transition: transform 0.3s ease-in-out;
+}
+
+.nav-icon-size{
+  font-size: 2.4em !important;
 }
 
 
@@ -414,7 +413,6 @@ h4{
   background-color: rgba(255,255,255,1);
   border-radius: 5px;
   padding: 10px;
-  box-shadow: 0 12px 15px 0 rgba(black, 0.25);
 }
 
 .custom-modal .custom-modal-window-close{
@@ -558,7 +556,7 @@ h4{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   position: relative;
   white-space: pre-line;
   text-align: center;
@@ -1894,6 +1892,8 @@ background: #3f3e44 !important;
 
 /*----------@media stuff----------*/
 
+
+
 @media only screen  and (min-width : 2000px) {
   .icon-size-sm-alt{
     font-size: calc(2em * 1.2) !important;
@@ -1977,6 +1977,7 @@ background: #3f3e44 !important;
 @media (max-width: 768px) {
   h1{
       font-size: 2.85em;
+      text-align: center;
   }
 }
 
@@ -2046,6 +2047,12 @@ background: #3f3e44 !important;
     white-space: wrap;
     text-align: center;
     max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-icon-size{
+      font-size: 3em !important;
   }
 }
 
@@ -2255,7 +2262,15 @@ background: #3f3e44 !important;
     .custom-modal .custom-modal-window-close{
         bottom: 1%;
         left: 46%;
+        width: 50px;
+        height: 50px;
     }
+}
+
+@media (max-width: 768px) {
+  .custom-modal .custom-modal-window-close span i{
+      font-size: 30px;
+  }
 } 
 
 @media (max-width: 768px) {
@@ -2315,7 +2330,7 @@ background: #3f3e44 !important;
 @media (max-width: 768px) {
   #greeter-breaker img{
     width: 483px;
-    height: 678px;
+    height: 630px;
   }
 }
 
@@ -2666,17 +2681,16 @@ background: #3f3e44 !important;
 @media (max-width: 768px) {
   #me-imgs .me-img-container{
       height: 40px;
-      /* width: 80%; */
-      width: 400px;
+      width: 300px;
   }
 } 
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   #me-imgs .me-img-container:hover{
-      height: 40px;
-      width: 225px;
+      height: 300px;
+      width: 300px;
   }
-}  */
+} 
 
 @media only screen  and (min-width : 2000px) {
   #me-imgs .me-img-container{
