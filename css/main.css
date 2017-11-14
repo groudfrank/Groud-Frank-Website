@@ -61,7 +61,6 @@ h3{
   font-family: 'Josefin Sans', 'Trebuchet', 'Verdana', 'Tahoma', 'Arial Narrow', 'Helvetica', 'Geneva', sans-serif;
   font-size: 1.5em;
   color: #909090;
-  padding: 1%;
 }
 
 
@@ -409,7 +408,7 @@ h4{
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 800px;
+  width: 700px;
   height: auto;
   font-family: 'Josefin Sans', 'Trebuchet', 'Verdana', 'Tahoma', 'Arial Narrow', 'Helvetica', 'Geneva', sans-serif;
   background-color: rgba(255,255,255,1);
@@ -1996,6 +1995,7 @@ background: #3f3e44 !important;
 @media (max-width: 768px) {
   h3{
       font-size: 1.4em;
+      padding: 1%;
   }
 }
 
