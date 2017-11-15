@@ -10,6 +10,21 @@ body{
      position: relative;
 }
 
+body::-webkit-scrollbar {
+  /* width: 0.75em; */
+  background-color: rgba(0,0,0,0);
+}
+
+body::-webkit-scrollbar-track {
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+}
+
+body::-webkit-scrollbar-thumb {
+background-color: #23C086;;
+outline: 1px solid slategrey;
+border-radius: 5px;
+}
+
 #pseudo-body{
     display: flex;
     flex-direction: column;
