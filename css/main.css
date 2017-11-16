@@ -17,10 +17,7 @@ body{
 
 body::-webkit-scrollbar {
   background-color: #eee;
-}
-
-body::-webkit-scrollbar-track {
-  /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+  width: 0.5em;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -291,7 +288,7 @@ h4{
 }
 
 .nav-icon-size{
-  font-size: 2.4em !important;
+  font-size: 2.8em !important;
 }
 
 
@@ -894,19 +891,30 @@ h4{
 }
 
 
-#skills #skills-improvement span i{
+/* #skills #skills-improvement span i{
   font-size: 155px;
   text-align: center;
   position: relative;
   margin-top: 15%;
   border-radius: 50%;
+} */
+
+
+#skills #skills-improvement figure img{
+  width: 300px;
+  height: 300px;
+  position: relative;
+  margin-top: 15%;
 }
 
 #me-subsection #skills .my-skills{
-  font-family: 'Indie Flower', cursive, 'Josefin Slab', 'Georgia',
-  'Times', 'Times New Roman', 'Palatino Linotype', serif;
-  margin: 0px;
+  font-family: 'Josefin Sans', 'Trebuchet', 'Verdana', 'Tahoma',
+  'Arial Narrow', 'Helvetica', 'Geneva', sans-serif;
   color: #9e9e9e;
+}
+
+ .skills-highlight{
+  color: #0FB8AC;
 }
 
 #me-subsection #future{
@@ -1226,7 +1234,14 @@ h4{
   justify-content: center;
   align-items: center;
   max-width: 100%;
-  /* margin-bottom: 100px; */
+}
+
+#services a{
+  transition: color 0.2s ease-in-out;
+}
+
+#services a:hover{
+  color: #BD3F55;
 }
 
 #services-card{
@@ -1450,7 +1465,6 @@ h4{
 #contact-subsection div form {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   background: rgba(255,255,255,0.95);
@@ -1468,8 +1482,7 @@ h4{
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-top: 9%; */
-  margin-bottom: 4.5%;
+  margin-bottom: 40px;
 }
 
 #contact-subsection div form span{
@@ -1515,9 +1528,10 @@ textarea{
   font-weight: bold;
   color: #B99BEC;
   width: 60%;
+  height: 80px;
   box-sizing: border-box;
   border: none;
-  border-bottom: 2px solid #cfcfcf;
+  border-bottom: 4px solid #cfcfcf;
   margin-bottom: 40px;
   outline: none;
   background: transparent;
@@ -1526,7 +1540,7 @@ textarea{
 }
 
 textarea:focus{
-  border-bottom: 2px solid #B99BEC;
+  border-bottom: 4px solid #B99BEC;
 }
 
 input[type=submit]{
@@ -1773,6 +1787,7 @@ background-color: #00acc1;
 
 .me-color-blend{
   color: #1fc8db;
+  font-weight: bold;
 }
 
 .gradient-services-txt{
@@ -2637,14 +2652,20 @@ background: #3f3e44 !important;
 }
 
 @media only screen  and (min-width : 2000px) {
-  #skills #skills-improvement span i{
-    font-size: calc(155px * 1.2);
+  #skills #skills-improvement figure img{
+    width: calc(300px * 1.2);
+    height: calc(300px * 1.2);
+    position: relative;
+    margin-top: 15%;
   }
 }
 
 @media only screen  and (min-width : 3000px) {
-  #skills #skills-improvement span i{
-    font-size: calc(155px * 2.4);
+  #skills #skills-improvement figure img{
+    width: calc(300px * 2.4);
+    height: calc(300px * 2.4);
+    position: relative;
+    margin-top: 15%;
   }
 }
 
@@ -3089,12 +3110,14 @@ background: #3f3e44 !important;
 @media only screen  and (min-width : 2000px) {
   #contact-subsection div form span{
     font-size: calc(80px * 1.2);
+    margin-bottom: calc(40px * 1.2);
   }
 }
 
 @media only screen  and (min-width : 3000px) {
   #contact-subsection div form span{
     font-size: calc(80px * 2.4);
+    margin-bottom: calc(40px * 2.4);
   }
 }
 
@@ -3162,28 +3185,30 @@ background: #3f3e44 !important;
 @media only screen  and (min-width : 2000px) {
   form textarea{
     font-size: calc(1.45em * 1.2);
-    border-bottom: calc(2px * 1.2) solid #cfcfcf;
+    border-bottom: calc(4px * 1.2) solid #cfcfcf;
+    height: calc(80px * 1.2);
   }
 }
 
 @media only screen  and (min-width : 2000px) {
   form textarea:focus{
     
-    border-bottom: calc(2px * 1.2) solid #df91fb;
+    border-bottom: calc(4px * 1.2) solid #df91fb;
   }
 }
 
 @media only screen  and (min-width : 3000px) {
   form textarea{
     font-size: calc(1.45em * 2.4);
-    border-bottom: calc(2px * 2.4) solid #cfcfcf;
+    border-bottom: calc(4px * 2.4) solid #cfcfcf;
+    height: calc(80px * 2.4);
   }
 }
 
 @media only screen  and (min-width : 3000px) {
   form textarea:focus{
     
-    border-bottom: calc(2px * 2.4) solid #df91fb;
+    border-bottom: calc(4px * 2.4) solid #df91fb;
   }
 }
 
@@ -3228,5 +3253,29 @@ background: #3f3e44 !important;
 @media (max-width: 768px) {
   .padding-top-150{
       padding-bottom: 60px;
+  }
+}
+
+@media only screen  and (min-width : 2000px) {
+  body::-webkit-scrollbar {
+    width: calc(0.5em * 1.2);
+  }
+}
+
+@media only screen  and (min-width : 3000px) {
+  body::-webkit-scrollbar {
+    width: calc(0.5em * 2.4);
+  }
+}
+
+@media only screen  and (min-width : 2000px) {
+  body::-webkit-scrollbar-thumb {
+    border-radius: calc(5px * 1.2);
+  }
+}
+
+@media only screen  and (min-width : 3000px) {
+  body::-webkit-scrollbar-thumb {
+    border-radius: calc(5px * 2.4);
   }
 }
