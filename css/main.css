@@ -2367,6 +2367,18 @@ background: #3f3e44 !important;
     }
 }
 
+@media only screen  and (min-width : 2000px) {
+  .custom-modal {
+    border-radius: calc(5px * 1.2);
+  }
+}
+
+@media only screen  and (min-width : 3000px) {
+  .custom-modal {
+    border-radius: calc(5px * 2.4);
+  }
+}
+
  @media (max-width: 768px) {
     .custom-modal .custom-modal-window-close{
         bottom: 1%;
@@ -2421,6 +2433,18 @@ background: #3f3e44 !important;
     font-size: 1.25em;
   }
 } 
+
+@media only screen  and (min-width : 2000px) {
+  .custom-modal .custom-modal-footer{
+    height: calc(80px * 1.2);
+  }
+}
+
+@media only screen  and (min-width : 3000px) {
+  .custom-modal .custom-modal-footer{
+    height: calc(80px * 2.4);
+  }
+}
 
 @media (max-width: 768px) {
   #greeter{
