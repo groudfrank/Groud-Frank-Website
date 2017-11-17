@@ -36,14 +36,16 @@ b{
 #obsolete-browser-content p{
     width: 80%; /*IE support*/
     margin-bottom: 5%;
-    font-family: 'Inconsolata', 'Courier', 'Courier New', 'Lucida Sans Typewriter', 'Lucida Console', 'Monaco', 'Andale Mono', monospace;
+    font-family: 'Inconsolata', 'Courier', 'Courier New',
+    'Lucida Sans Typewriter', 'Lucida Console', 'Monaco', 'Andale Mono', monospace;
 }
 
 #obsolete-browser-content a{
     width: 80%; /*IE support*/
-    font-family: 'Inconsolata', 'Courier', 'Courier New', 'Lucida Sans Typewriter', 'Lucida Console', 'Monaco', 'Andale Mono', monospace;
+    font-family: 'Inconsolata', 'Courier', 'Courier New',
+    'Lucida Sans Typewriter', 'Lucida Console', 'Monaco', 'Andale Mono', monospace;
     font-size: 1.2em;
-    color: #33333;
+    color: #333;
     text-align: center;
     text-decoration: underline;
     transition: color 0.3s ease-in-out;
