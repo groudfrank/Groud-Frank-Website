@@ -209,6 +209,7 @@ $nav_btn.click(function(){
   $body.removeClass('overflow-hidden');
 });
 
+if(window_vw >= 768){
   $work_btn_two.click(function(){
     $custom_work_modal_two.removeClass('no-display');
     $body.addClass('overflow-hidden');
@@ -226,6 +227,25 @@ $nav_btn.click(function(){
     $body.addClass('overflow-hidden');
     TweenMax.from($custom_modal_content_four, 0.2, {scale: 1.2, opacity: 0, delay: 0.2});
   });
+}
+else{
+  $work_btn_two.click(function(){
+    $custom_work_modal_two.removeClass('no-display');
+    $body.addClass('overflow-hidden');
+  });
+
+  $work_btn_three.click(function(){
+    $custom_work_modal_three.removeClass('no-display');
+    $body.addClass('overflow-hidden');
+  });
+
+  $work_btn_four.click(function(){
+    $custom_work_modal_four.removeClass('no-display');
+    $body.addClass('overflow-hidden');
+  });
+}
+
+
 
   /*-----------Misc----------*/
     function overflowHide(el){
