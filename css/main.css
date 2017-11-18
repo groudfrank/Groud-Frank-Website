@@ -28,6 +28,7 @@ border-radius: 5px;
 
 a{
   color: #333;
+  /* text-decoration: none; */
 }
 
 a:hover{
@@ -55,7 +56,7 @@ u{
 
 p {
   font-family: 'Josefin Sans', 'Trebuchet', 'Verdana', 'Tahoma', 'Arial Narrow', 'Helvetica', 'Geneva', sans-serif;
-  font-size: 1.05em;
+  font-size: 1.1em;
   margin: 0px;
   color: #9e9e9e;
   line-height: 1.35;
@@ -64,7 +65,7 @@ p {
 h1{
   font-family: 'Indie Flower', cursive, 'Josefin Slab', 'Georgia', 'Times', 'Times New Roman', 'Palatino Linotype', serif;
   font-size: 2.3em;
-  padding: 1.5%;
+  padding: 7px;
 }
 
 h2{
@@ -89,7 +90,7 @@ h4{
 
 .inconsolata{
   font-family: 'Inconsolata', 'Courier', 'Courier New', 'Lucida Sans Typewriter', 'Lucida Console', 'Monaco', 'Andale Mono', monospace;
-  font-size: 0.9em;
+  font-size: 1em;
   color: #9e9e9e;
   line-height: 1.5;
   padding: 5px 10px 5px 10px;
@@ -908,7 +909,7 @@ h4{
 #me-subsection #skills .my-skills{
   font-family: 'Josefin Sans', 'Trebuchet', 'Verdana', 'Tahoma',
   'Arial Narrow', 'Helvetica', 'Geneva', sans-serif;
-  color: #9e9e9e;
+  color: #bdbdbd;
 }
 
  .skills-highlight{
@@ -1646,13 +1647,11 @@ input[type=submit]:hover{
 }
 
 .me-badge-border{
-  /* border: 3px solid #0fb8ad; */
-  border: 3px solid #1fc8db;
-  /* border: 3px solid #1BC4CE; */
+  border: 4px solid #1fc8db;
 }
 
 .services-badge-border{
-  border: 3px solid #BD3F55;
+  border: 4px solid #BD3F55;
 }
 
 .me-shade1{
@@ -2015,15 +2014,13 @@ background: #3f3e44 !important;
 
 @media only screen  and (min-width : 2000px) {
   p{
-    /* font-size: 1.8em; */
-    font-size: calc(1.05em * 1.2);
+    font-size: calc(1.1em * 1.2);
     }
   }
 
   @media only screen  and (min-width : 3000px) {
     p{
-      /* font-size: 1.8em; */
-      font-size: calc(1.05em * 2.4);
+      font-size: calc(1.1em * 2.4);
       }
     }
 
@@ -2037,12 +2034,14 @@ background: #3f3e44 !important;
 @media only screen  and (min-width : 2000px) {
   h1{
     font-size: calc(2.5em * 1.2);
+    padding: calc(7px * 1.2);
   }
 }
 
 @media only screen  and (min-width : 3000px) {
     h1{
       font-size: calc(2.5em * 2.4);
+      padding: calc(7px * 2.4);
     }
   }
 
@@ -2105,7 +2104,7 @@ background: #3f3e44 !important;
 
 @media only screen  and (min-width : 2000px) {
   .inconsolata{
-    font-size: calc(1.2em * 1.2);
+    font-size: calc(1em * 1.2);
     /* white-space: wrap; */
     text-align: center;
     max-width: 100%;
@@ -2114,7 +2113,7 @@ background: #3f3e44 !important;
 
 @media only screen  and (min-width : 3000px) {
   .inconsolata{
-    font-size: calc(1.02em * 2.4);
+    font-size: calc(1em * 2.4);
     /* white-space: wrap; */
     text-align: center;
     max-width: 100%;
@@ -2347,25 +2346,25 @@ background: #3f3e44 !important;
 
 @media only screen  and (min-width : 2000px) {
   .me-badge-border{
-    border: calc(3px * 1.2) solid #1fc8db;
+    border: calc(4px * 1.2) solid #1fc8db;
   }
 }
 
 @media only screen  and (min-width : 3000px) {
   .me-badge-border{
-    border: calc(3px * 2.4) solid #1fc8db;
+    border: calc(4px * 2.4) solid #1fc8db;
   }
 }
 
 @media only screen  and (min-width : 2000px) {
   .services-badge-border{
-    border: calc(3px * 1.2) solid #BD3F55;;
+    border: calc(4px * 1.2) solid #BD3F55;;
   }
 }
 
 @media only screen  and (min-width : 3000px) {
   .services-badge-border{
-    border: calc(3px * 2.4) solid #BD3F55;
+    border: calc(4px * 2.4) solid #BD3F55;
   }
 }
 
