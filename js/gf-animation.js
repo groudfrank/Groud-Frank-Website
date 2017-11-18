@@ -129,7 +129,7 @@ $nav_btn.click(function(){
   });
 
 
-  if(window_vw >= 768){
+  if(window_vw > 768){
     $nav_a.each(function(){
       $(this).hover(function(){
         if($(this).hasClass('home-bg')){
@@ -209,23 +209,23 @@ $nav_btn.click(function(){
   $body.removeClass('overflow-hidden');
 });
 
-if(window_vw >= 768){
+if(window_vw > 768){
   $work_btn_two.click(function(){
     $custom_work_modal_two.removeClass('no-display');
     $body.addClass('overflow-hidden');
-    TweenMax.from($custom_modal_content_two, 0.1, {scale: 1.2, opacity: 0, delay: 0.2});
+    TweenMax.from($custom_modal_content_two, 0.05, {scale: 1.2, opacity: 0, delay: 0.2});
   });
 
   $work_btn_three.click(function(){
     $custom_work_modal_three.removeClass('no-display');
     $body.addClass('overflow-hidden');
-    TweenMax.from($custom_modal_content_three, 0.1, {scale: 1.2, opacity: 0, delay: 0.2});
+    TweenMax.from($custom_modal_content_three, 0.05, {scale: 1.2, opacity: 0, delay: 0.2});
   });
 
   $work_btn_four.click(function(){
     $custom_work_modal_four.removeClass('no-display');
     $body.addClass('overflow-hidden');
-    TweenMax.from($custom_modal_content_four, 0.1, {scale: 1.2, opacity: 0, delay: 0.2});
+    TweenMax.from($custom_modal_content_four, 0.05, {scale: 1.2, opacity: 0, delay: 0.2});
   });
 }
 else{

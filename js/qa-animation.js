@@ -88,7 +88,7 @@ $(document).ready(function(){
       }
       })
 
-      if(window_vw >= 768){
+      if(window_vw > 768){
         $nav_a.each(function(){
           $(this).hover(function(){
             if($(this).hasClass('home-bg')){
