@@ -1759,12 +1759,12 @@ background-color: #00acc1;
   -webkit-text-fill-color: transparent;
 }
 
-/* .txt-accent-mobile-fix{
+.txt-accent-mobile-fix{
   background-image: linear-gradient(-225deg,#ff4eb3  0%, #ff765c 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
-} */
+} 
 
 .no-backgroundcliptext .txt-accent{
   color: #FF6484;
@@ -3300,8 +3300,7 @@ background: #3f3e44 !important;
 
 @media (max-width: 768px) {
   .txt-accent-mobile-fix{
-    color: #FF6484;
-    font-weight: bold;
+    display: inline-flex;
   }
 }
 
