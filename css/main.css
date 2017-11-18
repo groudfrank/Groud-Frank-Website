@@ -575,7 +575,7 @@ h4{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  /* width: 100vw; */
   position: relative;
   white-space: pre-line;
   text-align: center;
@@ -2096,7 +2096,8 @@ background: #3f3e44 !important;
 @media (max-width: 768px) {
   .inconsolata{
     font-size: 1.1em;
-    text-align: left !important;
+    text-align: center;
+    white-space: normal !important;
     max-width: 100%;
   }
 }
@@ -2478,8 +2479,8 @@ background: #3f3e44 !important;
 
 @media(max-width: 768px){
   #pseudo-body #greeter #greeter-about-container p{
-    /* white-space: normal; */
-    text-align: left;
+    white-space: normal;
+    text-align: center;
     /* line-height: 1.6em; */
   }
 }
@@ -2495,7 +2496,6 @@ background: #3f3e44 !important;
 @media (max-width: 768px) {
     #greeter-breaker-h1{
         font-size: 2.25em;
-        transform: scaleY(1.2);
     }
 }
 
@@ -3237,9 +3237,10 @@ background: #3f3e44 !important;
 }
 
 @media (max-width: 768px) {
-  #contact-breaker p{
+  #contact .flex-container-wrapper-ie-support #contact-breaker p{
     width: 95%;
-    text-align: left;
+    text-align: center !important;
+    white-space: normal;
   }
 }
 
