@@ -1262,7 +1262,6 @@ h4{
 .services-card-icons div{
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   align-content: center;
   align-items: center;
   margin-bottom: 20px;
@@ -1274,7 +1273,6 @@ h4{
 #services-section{
   display: flex;
   flex-direction: column;
-  /* flex-wrap: wrap; */
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -2078,7 +2076,8 @@ background: #3f3e44 !important;
 
 @media (max-width: 768px) {
   h4{
-      min-height: auto;
+    font-size: 1.3em;
+    min-height: auto;
   }
 }
 
@@ -2286,15 +2285,15 @@ background: #3f3e44 !important;
   }
 }
 
-@media only screen  and (min-width : 2000px) {
+@media (max-width: 768px) {
   .card-icons-format{
-    font-size: calc(50px * 1.2);
+      font-size: 70px;
   }
 }
 
-@media only screen  and (min-width : 3000px) {
+@media only screen  and (min-width : 2000px) {
   .card-icons-format{
-    font-size: calc(50px * 2.4);
+    font-size: calc(50px * 1.2);
   }
 }
 
@@ -2471,11 +2470,11 @@ background: #3f3e44 !important;
   }
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   #greeter{
       margin-bottom: 100px;
   }
-}
+} */
 
 @media(max-width: 768px){
   #pseudo-body #greeter #greeter-about-container p{
@@ -2535,7 +2534,7 @@ background: #3f3e44 !important;
 
 @media (max-width: 768px) {
     .me-card-icons div{
-       width: 150px !important;
+       width: 100% !important;
     }
 }
 
@@ -2994,7 +2993,8 @@ background: #3f3e44 !important;
 
 @media (max-width: 768px) {
     .services-card-icons div{
-       width: auto !important;
+       width: 100% !important;
+       height: 140px;
     }
 }
 
@@ -3095,8 +3095,8 @@ background: #3f3e44 !important;
 
 @media (max-width: 768px) {
     .contact-card-icons div{
-       width: auto;
-       height: 100px;
+       width: 100%;
+       height: 140px;
        flex-wrap: nowrap;
     }
 }
