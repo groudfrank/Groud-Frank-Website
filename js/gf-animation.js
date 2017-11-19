@@ -6,6 +6,7 @@ var $html_body = $('html, body');
 var $pseudo_body = $('#pseudo-body');
 var $custom_modal_layer = $('.custom-modal-layer');
 var $custom_modal_close = $('.custom-modal-window-close');
+var $last_updated = $('.last-updated');
 
 
 $window = $(window);
@@ -59,6 +60,10 @@ function customNavAnimate(){
   TweenMax.from($nav_contact_ul, 1, {y: 20, opacity: 0, delay: 1.3});
 }
 
+function unhideLastUpdatedTag(){
+  $last_updated.removeClass('no-display')
+}
+
 
 var navbar_exposed = false;
 
@@ -72,16 +77,16 @@ $nav_btn.click(function(){
     TweenMax.to($('#nav-btn span i'), 0.7, {color: '#fff'});
     TweenMax.to($pseudo_body, 0.7, {x: (window_vw + 20), ease: Expo.easeInOut, onComplete: customNavAnimate});
     navbar_exposed = true;
-    // $body.addClass('overflow-hidden');
+    $last_updated.addClass('no-display');
   }
   else{
     TweenMax.to($nav_btn, 0.2, {rotation: 0, transformOrigin:"50% 50%"});
     TweenMax.to($('#nav-btn span i'), 0.2, {color: '#808080'});
-    TweenMax.to($pseudo_body, 0.7, {x: 0, ease: Expo.easeInOut});
+    TweenMax.to($pseudo_body, 0.7, {x: 0, ease: Expo.easeInOut,
+    onComplete: unhideLastUpdatedTag});
     navbar_exposed = false;
     $nav_li.addClass('hide-me');
     $nav_contact_ul.addClass('hide-me');
-    // $body.removeClass('overflow-hidden');
   }
 });
 
