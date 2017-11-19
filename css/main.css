@@ -2102,7 +2102,7 @@ background: #3f3e44 !important;
 
 @media (max-width: 768px) {
   .inconsolata{
-    font-size: 1.2em;
+    font-size: 1em;
     text-align: center;
     white-space: normal !important;
     max-width: 100%;
