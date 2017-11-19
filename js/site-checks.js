@@ -2,9 +2,9 @@ $(function(){
     var val = 0;
     var ie_visit = sessionStorage.setItem("count", 0);
     
-    if(is.ie()){
+    if(is.ie() && ie_visit == 0){
         window.location.href = "internet-explorer-sucks.html";
-        alert("IE count registered");
+        // alert("IE count registered");
        };
     
     if(is.chrome('<=45')){
