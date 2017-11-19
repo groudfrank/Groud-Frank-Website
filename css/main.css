@@ -257,21 +257,14 @@ h4{
 }
 
 /*----------Navigation bar stuff----------*/
-
-/* .no-backgroundcliptext #nav-btn{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
+.last-updated{
+  position: absolute;
   z-index: 15;
   top: 0;
-  right: 0;
-  left: 1;
-  bottom: 1;
-  margin: 0px 25px 0px 0px;
-  border-radius: 5%;
-  transition: transform 0.3s ease-in-out;
-} */
+  left: 0;
+  margin: 5px;
+  font-size: 0.75em;
+}
 
 #nav-btn{
   display: flex;
@@ -404,6 +397,8 @@ h4{
   position: relative;
   width: 100%;
   height: 100%;
+  padding-top: 55px;
+
 }
 
 
@@ -534,20 +529,18 @@ h4{
   position: relative;
 }
 
-.last-updated{
-  position: absolute;
-  z-index: 15;
-  top: 1%;
-  left: 0px;
-  margin: 0px 10px 0px 0px;
-  font-size: 0.75em;
-}
-
 #greeter-logo{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  z-index: 15;
+  position: absolute;
+  top: 0;
+  bottom: 150px;
+  left: 0;
+  right: 0;
   width: auto;
   margin: 0px auto 0px auto;
 }
@@ -575,8 +568,11 @@ h4{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* width: 100vw; */
-  position: relative;
+  position: absolute;
+  top: 0;
+  bottom: 150px;
+  left: 0;
+  right: 0;
   white-space: pre-line;
   text-align: center;
   padding: 10px;
@@ -2102,7 +2098,7 @@ background: #3f3e44 !important;
 
 @media (max-width: 768px) {
   .inconsolata{
-    font-size: 1em;
+    font-size: 1.15em;
     text-align: center;
     white-space: normal !important;
     max-width: 100%;
@@ -2124,6 +2120,31 @@ background: #3f3e44 !important;
     /* white-space: wrap; */
     text-align: center;
     max-width: 100%;
+  }
+}
+
+@media only screen  and (min-width : 2000px) {
+  #pseudo-body{
+    padding-top: calc(55px * 1.2);
+  }
+}
+
+@media only screen  and (min-width : 3000px) {
+  #pseudo-body{
+    padding-top: calc(55px * 2.4);
+  }
+}
+
+
+@media only screen  and (min-width : 2000px) {
+  .last-updated{
+    margin: calc(5px * 1.2);
+  }
+}
+
+@media only screen  and (min-width : 3000px) {
+  .last-updated{
+    margin: calc(5px * 2.4);
   }
 }
 
@@ -2478,11 +2499,42 @@ background: #3f3e44 !important;
   }
 }
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   #greeter{
-      margin-bottom: 100px;
+      margin-bottom: 40px;
   }
-} */
+} 
+
+@media (max-width: 768px) {
+  #greeter-logo{
+      bottom: 100px;
+  }
+} 
+
+@media only screen  and (min-width : 2000px) {
+  #greeter-logo{
+    bottom: calc(150px * 1.2);
+  }
+}
+
+@media only screen  and (min-width : 3000px) {
+  #greeter-logo{
+    bottom: calc(150px * 2.4);
+  }
+}
+
+@media only screen  and (min-width : 2000px) {
+  #pseudo-body #greeter #greeter-about-container{
+    bottom: calc(150px * 1.2);
+  }
+}
+
+@media only screen  and (min-width : 3000px) {
+  #pseudo-body #greeter #greeter-about-container{
+    bottom: calc(150px * 2.4);
+  }
+}
+
 
 @media(max-width: 768px){
   #pseudo-body #greeter #greeter-about-container p{
