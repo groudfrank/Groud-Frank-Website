@@ -28,7 +28,6 @@ border-radius: 5px;
 
 a{
   color: #333;
-  /* text-decoration: none; */
 }
 
 a:hover{
@@ -44,12 +43,10 @@ b{
 }
 
 s{
-  /* color: #90a1b8; */
   color: #333;
 }
 
 u{
-  /* color: #90a1b8; */
   color: #333;
  
 }
@@ -2540,7 +2537,9 @@ background: #3f3e44 !important;
 
 @media (max-width: 768px) {
   #pseudo-body #greeter #greeter-about-container{
-      position: relative;
+      /* overflow-y: auto; */
+      display: block;
+      /* position: relative; */
   }
 } 
 
