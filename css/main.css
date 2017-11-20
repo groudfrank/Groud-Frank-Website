@@ -2513,7 +2513,7 @@ background: #3f3e44 !important;
 
 @media (max-width: 768px) {
   #greeter{
-      margin-bottom: 40px;
+      /* margin-bottom: 40px; */
   }
 } 
 
