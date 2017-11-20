@@ -155,6 +155,9 @@ $nav_btn.click(function(){
         if($(this).hasClass('qa-bg')){
           TweenMax.to($custom_nav_canvas, 1, {backgroundColor:"#23C086"});
         }
+        if($(this).hasClass('credits-bg')){
+          TweenMax.to($custom_nav_canvas, 1, {backgroundColor:"#3D82BA"});
+        }
       },
       function(){
         TweenMax.to($custom_nav_canvas, 1, {backgroundColor:"transparent"});

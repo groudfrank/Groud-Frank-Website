@@ -1,0 +1,52 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    text-align: center;
+}
+
+body #obsolete-browser-content a{
+    font-family: 'Inconsolata', 'Courier', 'Courier New', 'Lucida Sans Typewriter', 
+    'Lucida Console', 'Monaco', 'Andale Mono', monospace;
+    text-decoration: none;
+    color: #9e9e9e;
+}
+
+body #obsolete-browser-content b{
+    color: #333;
+}
+
+
+#obsolete-browser-content h1{
+    font-family: 'Indie Flower', cursive, 'Josefin Slab', 'Georgia',
+    'Times', 'Times New Roman', 'Palatino Linotype', serif;
+    font-size: 4em;
+
+}
+
+
+#obsolete-browser-content a:hover{
+    color: #3D82BA;
+}
+
+#obsolete-browser-content a:visited{
+    text-decoration: none;
+}
+
+/* body #obsolete-browser-content .gradient-credits-txt{
+    background-image: linear-gradient(141deg, #24c6dc, #514a9d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+.no-backgroundcliptext body #obsolete-browser-content .gradient-credits-txt{
+    color: #3D82BA;
+    background-image: none;
+  }
+  
+  .credits-color-blend{
+    color: #3D82BA;
+  } */
