@@ -103,7 +103,7 @@ b{
     align-items: center;
     width: 100%;
     min-height: 50px;
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
     left: 0;
     right: 0;

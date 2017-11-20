@@ -2537,9 +2537,7 @@ background: #3f3e44 !important;
 
 @media (max-width: 768px) {
   #pseudo-body #greeter #greeter-about-container{
-      /* overflow-y: auto; */
-      display: block;
-      /* position: relative; */
+      overflow-y: auto;
   }
 } 
 
@@ -2978,6 +2976,7 @@ background: #3f3e44 !important;
     }
 }
 
+
 @media (max-width: 768px) {
   #groudie .me-imgs-icons-top{
       /* top: 5%; */
@@ -2996,6 +2995,12 @@ background: #3f3e44 !important;
     font-size: calc(35px * 2.4);
   }
 }
+
+@media (max-width: 768px) {
+  #groudie .me-imgs-icons-bottom{
+    flex-wrap: wrap;
+  }
+} 
 
 @media (max-width: 768px) {
   #groudie .me-imgs-icons-bottom span{

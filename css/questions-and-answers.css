@@ -20,9 +20,8 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-background-color: #23C086;;
+background-color: #23C086;
 outline: 1px solid slategrey;
-border-radius: 5px;
 }
 
 #pseudo-body{
