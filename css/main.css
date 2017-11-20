@@ -3377,7 +3377,7 @@ background: #3f3e44 !important;
 
 @media (max-width: 768px) {
   .txt-accent-mobile-fix{
-    display: inline-flex;
+    display: inline-block;
   }
 }
 
