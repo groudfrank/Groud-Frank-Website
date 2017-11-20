@@ -44,7 +44,7 @@ b{
     width: 80%; /*IE support*/
     font-family: 'Inconsolata', 'Courier', 'Courier New',
     'Lucida Sans Typewriter', 'Lucida Console', 'Monaco', 'Andale Mono', monospace;
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: #333;
     text-align: center;
     text-decoration: underline;
@@ -110,7 +110,7 @@ b{
   }
   /*----------Media Queries----------*/
 
-  @media only screen and (min-width: 2000px){
+@media only screen and (min-width: 2000px){
     #obsolete-browser-content h1 {
         font-size: calc(4em * 1.2);
         margin-bottom: calc(50px * 1.2);
@@ -123,6 +123,21 @@ b{
       margin-bottom: calc(50px * 2.4);
   }
 }
+
+@media only screen and (min-width: 2000px){
+    #obsolete-browser-content a {
+        font-size: calc(1.1em * 1.2);
+        margin-bottom: calc(50px * 1.2);
+    }
+  }
+
+@media only screen and (min-width: 3000px){
+    #obsolete-browser-content a {
+      font-size: calc(1.1em * 2.4);
+      margin-bottom: calc(50px * 2.4);
+  }
+}
+
   @media (max-width: 768px) {
     #browsers{
       flex-wrap: wrap;
