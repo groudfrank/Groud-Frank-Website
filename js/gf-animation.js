@@ -60,8 +60,8 @@ function customNavAnimate(){
   TweenMax.from($nav_contact_ul, 1, {y: 20, opacity: 0, delay: 1.3});
 }
 
-function unhideLastUpdatedTag(){
-  $last_updated.removeClass('no-display')
+function MansNotHot(){
+  $last_updated.removeClass('no-display');
 }
 
 
@@ -83,7 +83,7 @@ $nav_btn.click(function(){
     TweenMax.to($nav_btn, 0.2, {rotation: 0, transformOrigin:"50% 50%"});
     TweenMax.to($('#nav-btn span i'), 0.2, {color: '#808080'});
     TweenMax.to($pseudo_body, 0.7, {x: 0, ease: Expo.easeInOut,
-    onComplete: unhideLastUpdatedTag});
+    onComplete: MansNotHot});
     navbar_exposed = false;
     $nav_li.addClass('hide-me');
     $nav_contact_ul.addClass('hide-me');
