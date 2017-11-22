@@ -2853,6 +2853,17 @@ background: #3f3e44 !important;
     }
 }
 
+/* @media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (orientation: portrait) 
+and (-webkit-min-device-pixel-ratio: 1) {
+  .container-2 .txt-container p{
+    text-align: center;
+  }
+} */
+
+
 @media (max-width: 768px) {
   .container-2 .txt-container {
       text-align: center;
