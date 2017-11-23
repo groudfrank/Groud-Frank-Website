@@ -2024,6 +2024,19 @@ background: #3f3e44 !important;
     }
   }
 
+  @media(max-width: 768px){
+    #greeter-logo figure{
+      width: 600px;
+      height: 600px;
+    }
+  }
+
+  @media(max-width: 500px){
+    #greeter-logo figure{
+      width: 300px;
+      height: 300px;
+    }
+  }
 
 @media only screen  and (min-width : 2000px) {
   #greeter-logo figure{
@@ -2063,16 +2076,17 @@ background: #3f3e44 !important;
       }
     }
 
-@media (max-width: 500px) {
-  h1{
-      font-size: 2.85em;
-      text-align: center;
-  }
-}
 
 @media (max-width: 768px) {
   h1{
       font-size: 3em;
+      text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  h1{
+      font-size: 2.85em;
       text-align: center;
   }
 }
@@ -2150,7 +2164,7 @@ background: #3f3e44 !important;
 
 @media (max-width: 768px) {
   .inconsolata{
-    font-size: 1.9em;
+    font-size: 1.6em;
     text-align: center;
     white-space: normal !important;
     max-width: 100%;
@@ -2166,17 +2180,17 @@ background: #3f3e44 !important;
   }
 }
 
-@media only screen  and (min-width : 3000px) {
+@media only screen  and (min-width : 2000px) {
   .inconsolata{
-    font-size: calc(0.9em * 2.4);
+    font-size: calc(0.9em * 1.2);
     text-align: center;
     max-width: 100%;
   }
 }
 
-@media only screen  and (min-width : 2000px) {
+@media only screen  and (min-width : 3000px) {
   .inconsolata{
-    font-size: calc(0.9em * 1.2);
+    font-size: calc(0.9em * 2.4);
     text-align: center;
     max-width: 100%;
   }
@@ -2358,6 +2372,14 @@ background: #3f3e44 !important;
   }
 }
 
+@media (max-width: 768px) {
+  .card-txt-format{
+    font-weight: 500;
+    max-width: 90% !important;
+   font-weight: bold;
+  }
+}
+
 @media (max-width: 500px) {
   .card-txt-format{
     font-weight: 500;
@@ -2366,13 +2388,6 @@ background: #3f3e44 !important;
   }
 }
 
-@media (max-width: 768px) {
-  .card-txt-format{
-    font-weight: 500;
-    max-width: 90% !important;
-   font-weight: bold;
-  }
-}
 
 @media only screen  and (min-width : 2000px) {
   .card-txt-format{
@@ -2615,12 +2630,6 @@ background: #3f3e44 !important;
   }
 }
 
-@media(max-width: 500px){
-  #pseudo-body #greeter #greeter-about-container p{
-    white-space: normal;
-    text-align: left;
-  }
-}
 
 @media(max-width: 768px){
   #pseudo-body #greeter #greeter-about-container p{
@@ -2630,29 +2639,21 @@ background: #3f3e44 !important;
 }
 
 @media(max-width: 500px){
-  #greeter-logo figure{
-    width: 300px;
-    height: 300px;
+  #pseudo-body #greeter #greeter-about-container p{
+    white-space: normal;
+    text-align: left;
   }
-}
-
-@media(max-width: 768px){
-  #greeter-logo figure{
-    width: 600px;
-    height: 600px;
-  }
-}
-
-
-@media (max-width: 500px) {
-    #greeter-breaker-h1{
-        font-size: 2.25em;
-    }
 }
 
 @media (max-width: 768px) {
   #greeter-breaker-h1{
       font-size: 4em;
+  }
+}
+
+@media (max-width: 500px) {
+  #greeter-breaker-h1{
+      font-size: 2.25em;
   }
 }
 
@@ -2668,17 +2669,17 @@ background: #3f3e44 !important;
   }
 }
 
-@media (max-width: 500px) {
-  #greeter-breaker img{
-    width: 483px;
-    height: 630px;
-  }
-}
-
 @media (max-width: 768px) {
   #greeter-breaker img{
     width: 683px;
     height: 830px;
+  }
+}
+
+@media (max-width: 500px) {
+  #greeter-breaker img{
+    width: 483px;
+    height: 630px;
   }
 }
 
@@ -2963,6 +2964,12 @@ and (-webkit-min-device-pixel-ratio: 1) {
   }
 }
 
+@media (max-width: 500px) {
+  .container-2 .txt-container {
+      text-align: center;
+  }
+}
+
 @media (max-width: 768px) {
     .container-2 .txt-container p{
         text-align: center;
@@ -3117,6 +3124,12 @@ and (-webkit-min-device-pixel-ratio: 1) {
     /* margin: 20px 10px 20px 10px; */
     margin: 20px;
   }
+}
+
+@media (max-width: 500px) {
+  #groudie .me-imgs-icons-bottom span{
+    margin: 20px 10px 20px 10px;
+  }
 } 
 
 
@@ -3146,6 +3159,13 @@ and (-webkit-min-device-pixel-ratio: 1) {
       width: 600px;
   }
 } 
+
+@media (max-width: 500px) {
+  #me-imgs .me-img-container:hover{
+      height: 300px;
+      width: 300px;
+  }
+}
 
 @media only screen  and (min-width : 2000px) {
   #me-imgs .me-img-container{
@@ -3259,17 +3279,17 @@ and (-webkit-min-device-pixel-ratio: 1) {
   }
 }
 
-@media (max-width: 500px) {
-    #services-linux-img img{
-        width: 326px;
-        height: 200px;
-    }
-}
-
 @media (max-width: 768px) {
   #services-linux-img img{
       width: 626px;
-      height: 400px;
+      height: 360px;
+  }
+}
+
+@media (max-width: 500px) {
+  #services-linux-img img{
+      width: 326px;
+      height: 200px;
   }
 }
 
