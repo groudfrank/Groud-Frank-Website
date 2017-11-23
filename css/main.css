@@ -637,6 +637,11 @@ h4{
   background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
 }
 
+.ur{
+  text-decoration: none;
+  color: #333;
+}
+
 .me-card-icons{
   display: flex;
   flex-direction: row;
