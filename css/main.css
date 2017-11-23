@@ -2641,7 +2641,7 @@ background: #3f3e44 !important;
 @media(max-width: 500px){
   #pseudo-body #greeter #greeter-about-container p{
     white-space: normal;
-    text-align: left;
+    text-align: center;
   }
 }
 
@@ -2678,8 +2678,8 @@ background: #3f3e44 !important;
 
 @media (max-width: 500px) {
   #greeter-breaker img{
-    width: 483px;
-    height: 630px;
+    width: 583px;
+    height: 730px;
   }
 }
 
