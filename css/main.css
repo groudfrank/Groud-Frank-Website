@@ -676,7 +676,8 @@ h4{
   align-items: center;
   width: 100%;
   height: auto;
-  font-family: 'Josefin Sans', 'Trebuchet', 'Verdana', 'Tahoma', 'Arial Narrow', 'Helvetica', 'Geneva', sans-serif;
+  font-family: 'Josefin Sans', 'Trebuchet', 'Verdana', 'Tahoma',
+  'Arial Narrow', 'Helvetica', 'Geneva', sans-serif;
   position: relative;
   padding-top: 40px;
   -webkit-transition: all 0.7s ease;
