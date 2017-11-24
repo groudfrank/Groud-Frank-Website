@@ -532,11 +532,6 @@ h4{
   align-items: center;
   position: absolute;
   z-index: 15;
-  position: absolute;
-  top: 0;
-  bottom: 150px;
-  left: 0;
-  right: 0;
   width: auto;
   margin: 0px auto 0px auto;
 }
