@@ -182,16 +182,16 @@ $nav_btn.click(function(){
   };
 
  
-  $greeter_logo.removeClass('no-display');
-  TweenMax.from($greeter_logo, 1.5, {y: 200, opacity: 0, ease: Expo.easeOut});
-  TweenMax.to($greeter_logo, 2, {opacity: 0, delay: 3, onComplete: summonGreeterText});
+  // $greeter_logo.removeClass('no-display');
+  // TweenMax.from($greeter_logo, 1.5, {y: 200, opacity: 0, ease: Expo.easeOut});
+  // TweenMax.to($greeter_logo, 2, {opacity: 0, delay: 3, onComplete: summonGreeterText});
 
 
-  function summonGreeterText(){
-    $greeter_logo.addClass('no-display');
-    $greeter_about_container.removeClass('no-display');;
-    TweenMax.from($greeter_about_container, 1.5, {y: 200, opacity: 0, ease: Expo.easeOut, delay: 1});
-  };
+  // function summonGreeterText(){
+  //   $greeter_logo.addClass('no-display');
+  //   $greeter_about_container.removeClass('no-display');;
+  //   TweenMax.from($greeter_about_container, 1.5, {y: 200, opacity: 0, ease: Expo.easeOut, delay: 1});
+  // };
 
 
 
