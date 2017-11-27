@@ -39,7 +39,7 @@ $(document).ready(function(){
 
     function customNavAnimate(){
       $nav_li.removeClass('hide-me');
-      TweenMax.staggerFrom($nav_li, 1, {y: -20, opacity: 0}, 0.2);
+      TweenMax.staggerFrom($nav_li, 0.5, {y: -20, opacity: 0}, 0.2);
     
       $nav_contact_ul.removeClass('hide-me');
       TweenMax.from($nav_contact_ul, 1, {y: 20, opacity: 0, delay: 1.3});

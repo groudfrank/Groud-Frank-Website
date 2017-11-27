@@ -1,4 +1,4 @@
-// Sorry boys. jQuery all the way. It was made to be used. 
+// Zepto is used instead of jQuery for query selections
 $(document).ready(function(){
 
 var $body = $('body');
@@ -56,7 +56,7 @@ $custom_nav_canvas = $('#custom-nav-canvas');
 // Animates the sections on 
 function customNavAnimate(){
   $nav_li.removeClass('hide-me');
-  TweenMax.staggerFrom($nav_li, 1, {y: -20, opacity: 0}, 0.2);
+  TweenMax.staggerFrom($nav_li, 0.5, {y: -20, opacity: 0}, 0.2);
 
   $nav_contact_ul.removeClass('hide-me');
   TweenMax.from($nav_contact_ul, 1, {y: 20, opacity: 0, delay: 1.3});
@@ -75,14 +75,14 @@ var nav_btn_click_check = 0;
 $nav_btn.on('click', function(){
 
   if(navbar_exposed == false){
-    TweenMax.to($nav_btn, 0.2, {rotation: 135, transformOrigin:"50% 50%"});
+    // TweenMax.to($nav_btn, 0.2, {rotation: 135, transformOrigin:"50% 50%"});
     TweenMax.to($nav_icon, 0.7, {color: '#fff'});
     TweenMax.to($pseudo_body, 0.7, {x: (window_vw + 20), ease: Expo.easeInOut, onComplete: customNavAnimate});
     navbar_exposed = true;
     $last_updated.addClass('no-display');
   }
   else{
-    TweenMax.to($nav_btn, 0.2, {rotation: 0, transformOrigin:"50% 50%"});
+    // TweenMax.to($nav_btn, 0.2, {rotation: 0, transformOrigin:"50% 50%"});
     TweenMax.to($nav_icon, 0.2, {color: '#808080'});
     TweenMax.to($pseudo_body, 0.7, {x: 0, ease: Expo.easeInOut, onComplete: MansNotHot});
     navbar_exposed = false;
@@ -95,7 +95,7 @@ $nav_a.each(function(){
   $(this).on('click', function(event){
     if(navbar_exposed == true){
       event.preventDefault();
-      TweenMax.to($nav_btn, 0.2, {rotation: 0});
+      // TweenMax.to($nav_btn, 0.2, {rotation: 0});
       TweenMax.to($nav_icon, 0.2, {color: '#808080'});
       TweenMax.to($pseudo_body, 0.7, {x: 0, ease: Expo.easeInOut, onComplete: MansNotHot});
       navbar_exposed = false;
