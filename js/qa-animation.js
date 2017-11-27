@@ -53,13 +53,13 @@ $(document).ready(function(){
     $nav_btn.on('click', function(){
       if(navbar_exposed == false){
         TweenMax.to($nav_btn, 0.2, {rotation: 135, transformOrigin:"50% 50%"})
-        TweenMax.to($('#nav-btn span i'), 0.7, {color: '#333'});
+        TweenMax.to($nav_icon, 0.7, {color: '#333'});
         TweenMax.to($pseudo_body, 0.7, {x: (window_vw + 20), ease: Expo.easeInOut, onComplete: customNavAnimate});
         navbar_exposed = true;
       }
       else{
         TweenMax.to($nav_btn, 0.2, {rotation: 0, transformOrigin:"50% 50%"})
-        TweenMax.to($('#nav-btn span i'), 0.2, {color: '#fff'});
+        TweenMax.to($nav_icon, 0.2, {color: '#fff'});
         TweenMax.to($pseudo_body, 0.7, {x: 0, ease: Expo.easeInOut});
         navbar_exposed = false;
         $nav_li.addClass('hide-me');
@@ -67,24 +67,26 @@ $(document).ready(function(){
       }
     });
     
-      $nav_a.on('click', function(e){
-        // e.preventDefault();
+    $nav_a.each(function(){
+      $(this).on('click', function(event){
+        if(navbar_exposed == true){
+          event.preventDefault();
+          TweenMax.to($nav_btn, 0.2, {rotation: 0});
+          TweenMax.to($nav_icon, 0.2, {color: '#fff'});
+          TweenMax.to($pseudo_body, 0.7, {x: 0, ease: Expo.easeInOut});
+          navbar_exposed = false;
+          $nav_li.addClass('hide-me');
+          $nav_contact_ul.addClass('hide-me');
+          }
     
-        if(navbar_exposed == false){
-        TweenMax.to($nav_btn, 0.2, {rotation: 135})
-        TweenMax.to($nav_icon, 0.7, {color: '#fff'});
-        TweenMax.to($pseudo_body, 0.7, {x: (window_vw + 20), ease: Expo.easeInOut});
-        navbar_exposed = true;
-        // $body.addClass('overflow-hidden');
-      }
-      else{
-        TweenMax.to($nav_btn, 0.2, {rotation: 0})
-        TweenMax.to($nav_icon, 0.2, {color: '#808080'});
-        TweenMax.to($pseudo_body, 0.7, {x: 0, ease: Expo.easeInOut});
-        navbar_exposed = false;
-        // $body.removeClass('overflow-hidden');
-      }
-      })
+        (function(link){ 
+          setTimeout(function() { 
+            window.location = link;
+          }, 701);
+      })(this.href);
+    
+        });
+    });
 
       if(window_vw > 768){
         $nav_a.each(function(){

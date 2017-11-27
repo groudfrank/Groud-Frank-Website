@@ -53,6 +53,7 @@ $nav_contact_ul = $('.nav-contact-ul');
 $nav_icon = $('#nav-btn span i');
 $custom_nav_canvas = $('#custom-nav-canvas');
 
+// Animates the sections on 
 function customNavAnimate(){
   $nav_li.removeClass('hide-me');
   TweenMax.staggerFrom($nav_li, 1, {y: -20, opacity: 0}, 0.2);
@@ -71,18 +72,18 @@ var navbar_exposed = false;
 $nav_btn = $('#nav-btn');
 var nav_btn_click_check = 0;
 
-$nav_btn.click(function(){
-  
+$nav_btn.on('click', function(){
+
   if(navbar_exposed == false){
     TweenMax.to($nav_btn, 0.2, {rotation: 135, transformOrigin:"50% 50%"});
-    TweenMax.to($('#nav-btn span i'), 0.7, {color: '#fff'});
+    TweenMax.to($nav_icon, 0.7, {color: '#fff'});
     TweenMax.to($pseudo_body, 0.7, {x: (window_vw + 20), ease: Expo.easeInOut, onComplete: customNavAnimate});
     navbar_exposed = true;
     $last_updated.addClass('no-display');
   }
   else{
     TweenMax.to($nav_btn, 0.2, {rotation: 0, transformOrigin:"50% 50%"});
-    TweenMax.to($('#nav-btn span i'), 0.2, {color: '#808080'});
+    TweenMax.to($nav_icon, 0.2, {color: '#808080'});
     TweenMax.to($pseudo_body, 0.7, {x: 0, ease: Expo.easeInOut, onComplete: MansNotHot});
     navbar_exposed = false;
     $nav_li.addClass('hide-me');
@@ -90,29 +91,26 @@ $nav_btn.click(function(){
   }
 });
 
-  $nav_a.on('click', function(e){
+$nav_a.each(function(){
+  $(this).on('click', function(event){
+    if(navbar_exposed == true){
+      event.preventDefault();
+      TweenMax.to($nav_btn, 0.2, {rotation: 0});
+      TweenMax.to($nav_icon, 0.2, {color: '#808080'});
+      TweenMax.to($pseudo_body, 0.7, {x: 0, ease: Expo.easeInOut, onComplete: MansNotHot});
+      navbar_exposed = false;
+      $nav_li.addClass('hide-me');
+      $nav_contact_ul.addClass('hide-me');
+      }
 
-  if(navbar_exposed == false){
+    (function(link){ 
+      setTimeout(function() { 
+        window.location = link;
+      }, 701);
+  })(this.href);
 
-    TweenMax.to($nav_btn, 0.2, {rotation: 135});
-    TweenMax.to($('#nav-btn span i'), 0.7, {color: '#fff'});
-    TweenMax.to($pseudo_body, 0.7, {x: (window_vw + 20), ease: Expo.easeInOut});
-    navbar_exposed = true;
-    // $body.addClass('overflow-hidden');
-  }
-  else{
-
-    TweenMax.to($nav_btn, 0.2, {rotation: 0});
-    TweenMax.to($('#nav-btn span i'), 0.2, {color: '#808080'});
-    TweenMax.to($pseudo_body, 0.7, {x: 0, ease: Expo.easeInOut});
-    navbar_exposed = false;
-    $nav_li.addClass('hide-me');
-    $nav_contact_ul.addClass('hide-me');
-    // $body.removeClass('overflow-hidden');
-  }
-
-  
-  });
+    });
+});
 
   if(window_vw > 768){
     $nav_a.each(function(){
