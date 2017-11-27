@@ -50,6 +50,7 @@ function noDisplaySetIn(target, delay){
 $nav_a = $('#custom-nav .nav-ul .nav-li a');
 $nav_li = $('#custom-nav .nav-ul .nav-li');
 $nav_contact_ul = $('.nav-contact-ul');
+$nav_icon = $('#nav-btn span i');
 $custom_nav_canvas = $('#custom-nav-canvas');
 
 function customNavAnimate(){
@@ -82,36 +83,14 @@ $nav_btn.click(function(){
   else{
     TweenMax.to($nav_btn, 0.2, {rotation: 0, transformOrigin:"50% 50%"});
     TweenMax.to($('#nav-btn span i'), 0.2, {color: '#808080'});
-    TweenMax.to($pseudo_body, 0.7, {x: 0, ease: Expo.easeInOut,
-    onComplete: MansNotHot});
+    TweenMax.to($pseudo_body, 0.7, {x: 0, ease: Expo.easeInOut, onComplete: MansNotHot});
     navbar_exposed = false;
     $nav_li.addClass('hide-me');
     $nav_contact_ul.addClass('hide-me');
   }
 });
 
-  $($nav_a).on('click', function(event) {
-
-    if($(this).hasClass("allow-default") == true){
-      // alert("has class allow-default");
-    }
-    else if (this.hash !== "") {
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      $($html_body).animate({
-        scrollTop: $(hash).offset().top
-      }, 2200, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    }
-  });
-
-  $nav_a.click(function(e){
+  $nav_a.on('click', function(e){
 
   if(navbar_exposed == false){
 
@@ -131,12 +110,13 @@ $nav_btn.click(function(){
     $nav_contact_ul.addClass('hide-me');
     // $body.removeClass('overflow-hidden');
   }
-  });
 
+  
+  });
 
   if(window_vw > 768){
     $nav_a.each(function(){
-      $(this).hover(function(){
+      $(this).on('mouseenter', function(){
         if($(this).hasClass('home-bg')){
           TweenMax.to($custom_nav_canvas, 1, {backgroundColor:"#FF6484"});
         }
@@ -158,10 +138,10 @@ $nav_btn.click(function(){
         if($(this).hasClass('credits-bg')){
           TweenMax.to($custom_nav_canvas, 1, {backgroundColor:"#3D82BA"});
         }
-      },
-      function(){
-        TweenMax.to($custom_nav_canvas, 1, {backgroundColor:"transparent"});
       });
+      $(this).on('mouseleave', function(){
+        TweenMax.to($custom_nav_canvas, 1, {backgroundColor:"transparent"});
+      })
     });
   }
 
@@ -212,42 +192,42 @@ $nav_btn.click(function(){
   var $custom_work_modal_four = $('#custom-work-modal-four');
   var $custom_modal_content_four = $('#custom-modal-content-four');
 
-  $custom_modal_close.click(function(){
+  $custom_modal_close.on('click', function(){
   $custom_modal_layer.addClass('no-display');
   $body.removeClass('overflow-hidden');
 });
 
 if(window_vw > 768){
-  $work_btn_two.click(function(){
+  $work_btn_two.on('click',function(){
     $custom_work_modal_two.removeClass('no-display');
     $body.addClass('overflow-hidden');
     TweenMax.from($custom_modal_content_two, 0.05, {scale: 1.2, opacity: 0, delay: 0.2});
   });
 
-  $work_btn_three.click(function(){
+  $work_btn_three.on('click',function(){
     $custom_work_modal_three.removeClass('no-display');
     $body.addClass('overflow-hidden');
     TweenMax.from($custom_modal_content_three, 0.05, {scale: 1.2, opacity: 0, delay: 0.2});
   });
 
-  $work_btn_four.click(function(){
+  $work_btn_four.on('click',function(){
     $custom_work_modal_four.removeClass('no-display');
     $body.addClass('overflow-hidden');
     TweenMax.from($custom_modal_content_four, 0.05, {scale: 1.2, opacity: 0, delay: 0.2});
   });
 }
 else{
-  $work_btn_two.click(function(){
+  $work_btn_two.on('click',function(){
     $custom_work_modal_two.removeClass('no-display');
     $body.addClass('overflow-hidden');
   });
 
-  $work_btn_three.click(function(){
+  $work_btn_three.on('click',function(){
     $custom_work_modal_three.removeClass('no-display');
     $body.addClass('overflow-hidden');
   });
 
-  $work_btn_four.click(function(){
+  $work_btn_four.on('click', function(){
     $custom_work_modal_four.removeClass('no-display');
     $body.addClass('overflow-hidden');
   });
