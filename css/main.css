@@ -283,11 +283,6 @@ h4{
 
 #nav-btn span i{
   color: #808080;
-  transition: filter 0.3s ease-in-out;
-}
-
-#nav-btn:hover span i{
-  filter: brightness(75%);
 }
 
 #custom-nav-container{
