@@ -82,14 +82,14 @@ var nav_btn_click_check = 0;
 $nav_btn.on('click', function(){
 
   if(navbar_exposed == false){
-    TweenMax.to($nav_btn, 0.2, {rotation: -135, transformOrigin:"50% 50%"});
+    // TweenMax.to($nav_btn, 0.2, {rotation: -135, transformOrigin:"50% 50%"});
     TweenMax.to($nav_icon, 0.7, {color: '#fff'});
     $custom_nav_container.removeClass('no-display');
     TweenMax.from($custom_nav_container, 0.7, {x: -(window_vw + 20), ease: Expo.easeInOut, onComplete: customNavAnimate});
     navbar_exposed = true;
   }
   else{
-    TweenMax.to($nav_btn, 0.2, {rotation: 0, transformOrigin:"50% 50%"});
+    // TweenMax.to($nav_btn, 0.2, {rotation: 0, transformOrigin:"50% 50%"});
     TweenMax.to($nav_icon, 0.2, {color: '#808080'});
     TweenMax.to($custom_nav_container, 0.7, {x: -(window_vw + 20), ease: Expo.easeInOut, onComplete:MansNotHot});
     navbar_exposed = false;
@@ -100,7 +100,7 @@ $nav_a.each(function(){
   $(this).on('click', function(event){
     if(navbar_exposed == true){
       event.preventDefault();
-      TweenMax.to($nav_btn, 0.2, {rotation: 0, transformOrigin:"50% 50%"});
+      // TweenMax.to($nav_btn, 0.2, {rotation: 0, transformOrigin:"50% 50%"});
       TweenMax.to($nav_icon, 0.2, {color: '#808080'});
       TweenMax.to($custom_nav_container, 0.7, {x: -(window_vw + 20), ease: Expo.easeInOut, onComplete:MansNotHot});
       navbar_exposed = false;
