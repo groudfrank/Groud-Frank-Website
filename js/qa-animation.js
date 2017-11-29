@@ -75,7 +75,7 @@ $nav_btn.on('click', function(){
   }
   else{
     // TweenMax.to($nav_btn, 0.2, {rotation: 0, transformOrigin:"50% 50%"});
-    TweenMax.to($nav_icon, 0.2, {color: '#fff'});
+    TweenMax.to($nav_icon, 0.7, {color: '#fff'});
     TweenMax.to($custom_nav_container, 0.7, {x: (window_vw + 20), ease: Expo.easeInOut, onComplete:MansNotHot});
     navbar_exposed = false;
   }
@@ -86,7 +86,7 @@ $nav_a.each(function(){
     if(navbar_exposed == true){
       event.preventDefault();
       // TweenMax.to($nav_btn, 0.2, {rotation: 0, transformOrigin:"50% 50%"});
-      TweenMax.to($nav_icon, 0.2, {color: '#fff'});
+      TweenMax.to($nav_icon, 0.7, {color: '#fff'});
       TweenMax.to($custom_nav_container, 0.7, {x: (window_vw + 20), ease: Expo.easeInOut, onComplete:MansNotHot});
       navbar_exposed = false;
       }

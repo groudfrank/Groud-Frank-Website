@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/obsolete-browser.css">
     <link rel="stylesheet" href="css/credits.css">
-    <link rel="shortcut icon" type="image/x-icon" href="icons/groud-logo-alt.ico"/>
+    <link rel="shortcut icon" type="image/x-icon" href="icons/groud-logo-alt-3.ico"/>
     <link rel="stylesheet" media="screen" href="css/style.css">
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
@@ -20,6 +20,97 @@
 </head>
 
 <body>
+
+<div class="nav-icon-size" id="nav-btn">
+    <span><i class = "icon icon ion-navicon"></i></span>
+    <!-- <span><i class="icon icon ion-android-add"></i></span> -->
+</div>
+<nav id="custom-nav-container" class="no-display">
+        <div id="custom-nav-canvas">
+        </div>
+        
+        <div id="custom-nav">
+        <ul class="nav-ul">
+            <li class="nav-li hide-me">
+            <a href="index.html" class="custom-nav-format home-bg">HOME</a>
+            </li>
+            <li class="nav-li hide-me">
+            <a href="index.html#me" class="custom-nav-format me-bg">ABOUT</a>
+            </li>
+            <li class="nav-li hide-me">
+            <a href="index.html#services" class="custom-nav-format services-bg">SERVICES</a>
+            </li>
+            <li class="nav-li hide-me">
+            <a href="index.html#contact" class="custom-nav-format contact-bg">CONTACT</a>
+            </li>
+            <li class="nav-li hide-me">
+            <a href="https://medium.com/@groudfrank" target="_blank" rel="noopener"
+            class="custom-nav-format journal-bg">JOURNAL</a>
+            </li>
+            <li class="nav-li hide-me">
+            <a href="qestions-and-answers.html" class="custom-nav-format allow-default qa-bg">Q&amp;A</a>
+            </li>
+            <li class="nav-li hide-me">
+            <a href="credits.html" class="custom-nav-format allow-default credits-bg">Credits</a>
+            </li>
+        </ul>
+        
+        <ul class="nav-contact-ul hide-me">
+            <li class="nav-contact-li no-display">
+            <a href="https://dribbble.com/GroudFrank" target="_blank" rel="noopener" class="custom-nav-contact-format">Dribbble</a>
+            </li>
+            <li class="seperator-li no-display">
+            <p>&bull;</p>
+            </li>
+            <li class="nav-contact-li">
+            <a href="https://www.facebook.com/groud" target="_blank" rel="noopener" class="custom-nav-contact-format">Facebook</a>
+            </li>
+            <li class="seperator-li">
+            <p>&bull;</p>
+            </li>
+            <li class="nav-contact-li">
+            <a href="https://github.com/groudfrank" target="_blank" rel="noopener" class="custom-nav-contact-format">GitHub</a>
+            </li>
+            <li class="seperator-li">
+            <p>&bull;</p>
+            </li>
+            <li class="nav-contact-li">
+            <a href="https://plus.google.com/+GroudFrank" target="_blank" rel="noopener" class="custom-nav-contact-format">Google+</a>
+            </li>
+            <li class="seperator-li">
+            <p>&bull;</p>
+            </li>
+            <li class="nav-contact-li">
+            <a href="https://www.instagram.com/groudie/" target="_blank" rel="noopener" class="custom-nav-contact-format">Instagram</a>
+            </li>
+            <li class="seperator-li">
+            <p>&bull;</p>
+            </li>
+            <li class="nav-contact-li">
+            <a href="https://medium.com/@groudfrank" target="_blank" rel="noopener" class="custom-nav-contact-format">Medium</a>
+            </li>
+            <li class="seperator-li">
+            <p>&bull;</p>
+            </li>
+            <li class="nav-contact-li">
+            <a href="https://twitter.com/groudfrank" target="_blank" rel="noopener" class="custom-nav-contact-format">Twitter</a>
+            </li>
+            <li class="seperator-li">
+            <p>&bull;</p>
+            </li>
+            <li class="nav-contact-li">
+            <a class="custom-nav-contact-format">groudfrank@gmail.com</a>
+            </li>
+            <li class="seperator-li">
+            <p>&bull;</p>
+            </li>
+            <li class="nav-contact-li">
+            <a class="custom-nav-contact-format" title="call, WhatsApp, Viber, etc">+1-868-343-3756</a>
+            </li>
+        </ul>
+        </div>
+</nav>
+
 <div id="obsolete-browser-content">
     <h1 class="gradient-credits-txt">Credits</h1>
     <p>
@@ -139,6 +230,9 @@
       </p> 
     </div>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+  <script src="js/gf-animation.js"></script>
   <script src="js/modernizr.js"></script>
 </body>
 
