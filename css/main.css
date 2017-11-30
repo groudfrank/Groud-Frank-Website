@@ -28,7 +28,6 @@ border-radius: 5px;
 
 a{
   color: #333;
-  font-weight: bold;
 }
 
 a:hover{
@@ -605,6 +604,7 @@ h4{
 }
 
 #me a{
+  font-weight: bold;
   transition: color 0.2s ease-in-out;
 }
 
@@ -1208,6 +1208,7 @@ h4{
 }
 
 #services a{
+  font-weight: bold;
   transition: color 0.2s ease-in-out;
 }
 
