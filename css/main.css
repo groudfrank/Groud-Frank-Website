@@ -549,7 +549,6 @@ h4{
   margin-bottom: 100px;
 }
 
-
 #greeter-breaker{
   display: flex;
   flex-direction: column;
@@ -593,7 +592,6 @@ h4{
   height: 978px;
   filter: grayscale(1);
 }
-
 
 /*----------Me Stuff-----------*/
 
@@ -1504,7 +1502,7 @@ textarea{
   box-sizing: border-box;
   border: none;
   border-bottom: 4px solid #cfcfcf;
-  margin-bottom: 40px;
+  margin-bottom: 40px !important;
   outline: none;
   background: transparent;
   -webkit-transition: all 0.5s ease-in-out;
@@ -3507,7 +3505,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 @media only screen  and (min-width : 2000px) {
   form textarea{
     font-size: calc(1.45em * 1.2);
-    border-bottom: calc(4px * 1.2) solid #cfcfcf;
+    border-bottom: calc(4px * 1.2) solid #cfcfcf !important;
     height: calc(80px * 1.2);
   }
 }
@@ -3521,7 +3519,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 @media only screen  and (min-width : 3000px) {
   form textarea{
     font-size: calc(1.45em * 2.4);
-    border-bottom: calc(4px * 2.4) solid #cfcfcf;
+    border-bottom: calc(4px * 2.4) solid #cfcfcf !important;
     height: calc(80px * 2.4);
   }
 }
