@@ -546,7 +546,7 @@ h4{
   white-space: pre-line;
   text-align: center;
   padding: 10px;
-  margin-bottom: 135px;
+  margin-bottom: 100px;
 }
 
 
@@ -2657,13 +2657,13 @@ background: #3f3e44 !important;
 
 @media only screen  and (min-width : 2000px) {
   #pseudo-body #greeter #greeter-about-container{
-    margin-bottom: calc(135px * 1.2);
+    margin-bottom: calc(100px * 1.2);
   }
 }
 
 @media only screen  and (min-width : 3000px) {
   #pseudo-body #greeter #greeter-about-container{
-    margin-bottom: calc(135px * 2.4);
+    margin-bottom: calc(100px * 2.4);
   }
 }
 
