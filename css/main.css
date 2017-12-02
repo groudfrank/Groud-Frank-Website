@@ -568,7 +568,7 @@ h4{
   min-height: 100vh;
   margin-bottom: 60px;
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 #greeter-breaker-h1{
