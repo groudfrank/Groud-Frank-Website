@@ -130,7 +130,7 @@
 
 <h1 class="gradient-qa-txt big-h1">Q&amp;A</h1>
 <div class="card-pic-format" id="me-pic-div">
-    <img src="img/me-beard.jpg" class="shrink-img"/>
+    <img src="img/handtinywhite.gif" data-src="img/me-beard.jpg" class="b-lazy" alt="Groud Frank"/>
 </div>
 
 <div class="questions-answers-container">
@@ -517,7 +517,16 @@
 
 </div>
 
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/blazy@1.8.2/blazy.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    var bLazy = new Blazy({
+    selector: 'img',
+    offset: 0,
+    });
+    });
+    </script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
     <script defer src="js/modernizr.js"></script>
     <script defer src="js/qa-animation.js"></script>

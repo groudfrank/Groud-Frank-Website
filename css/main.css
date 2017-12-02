@@ -1,7 +1,7 @@
 .b-lazy {
   opacity:0;
   transform: scale(1.5);
-  transition: all 3s;
+  transition: all 1.7s;
 }
 .b-loaded {
   opacity:1;
@@ -1410,7 +1410,7 @@ h4{
   justify-content: center;
   width: 100%;
   height: auto;
-  background: url("img/contact-background-image-alt1k.jpg") repeat center center fixed;
+  /* background: url("img/contact-background-image-alt1k.jpg") repeat center center fixed; */
   position: relative;
   margin-bottom: 150px;
   padding-top: 40px;
@@ -1418,14 +1418,6 @@ h4{
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
 }
-/* 
-#contact-subsection:hover{
-  -webkit-box-shadow: 0 14px 28px rgba(0,0,0,0.25),
-   0 10px 10px rgba(0,0,0,0.22);
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25),
-   0 10px 10px rgba(0,0,0,0.22);
-   background: #f5f5f5 !important;
-} */
 
 #contact-subsection div{
   display: flex;

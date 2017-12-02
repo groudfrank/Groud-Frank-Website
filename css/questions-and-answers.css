@@ -1,3 +1,13 @@
+.b-lazy {
+  opacity:0;
+  transform: scale(1.5);
+  transition: all 2s;
+}
+.b-loaded {
+  opacity:1;
+  transform: scale(1);
+}
+
 html, body {
     min-width: 100vw;
     min-height: 100vh;

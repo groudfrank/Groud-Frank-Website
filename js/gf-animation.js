@@ -245,11 +245,6 @@ else{
     el.removeClass('overflow-hidden');
   }
 
-  /*----------blazy lazy load----------*/
-var bLazy = new Blazy({
-  // selector: 'img',
-  offset: 0,
-});
 });
 
 
