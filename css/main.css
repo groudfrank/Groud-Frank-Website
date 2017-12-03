@@ -1477,7 +1477,7 @@ input[type=text]{
   font-family: 'Josefin Sans', 'Trebuchet', 'Verdana', 'Tahoma', 'Arial Narrow', 'Helvetica', 'Geneva', sans-serif;
   font-size: 1.05em;
   width: 45%;
-  height: 40px;
+  height: 50px;
   box-sizing: border-box;
   border: none;
   /* border-bottom: 1.5px solid #cfcfcf; */
@@ -3442,7 +3442,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 @media only screen  and (min-width : 2000px) {
   input[type=text]{
     font-size: calc(1.45em * 1.2);
-    height: calc(40px * 1.2);
+    height: calc(50px * 1.2);
     border-radius: calc(30px * 1.2);
   }
 }
@@ -3450,7 +3450,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 @media only screen  and (min-width : 3000px) {
   input[type=text]{
     font-size: calc(1.45em * 2.4);
-    height: calc(40px * 2.4);
+    height: calc(50px * 2.4);
     border-radius: calc(30px * 2.4);
   }
 }
