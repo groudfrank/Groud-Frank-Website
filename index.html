@@ -14,17 +14,14 @@
     <meta property="og:url" content="https://groudfrank.com/">
     <meta property="og:type" content="website"/>
     <meta name="theme-color" content="#333333">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css" />
     <link rel="shortcut icon" type="image/x-icon" href="icons/groud-logo-alt.ico"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css" />
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <!-- <noscript><meta http-equiv="refresh" content="0; url=nojavascript.html" /></noscript> -->
     <title>Groud Frank | Interactive Résumé</title>
 </head>
@@ -32,8 +29,7 @@
 <body id="groudfrank">
 
 <div class="nav-icon-size" id="nav-btn">
-  <span><i class = "icon icon ion-navicon"></i></span>
-  <!-- <span><i class="icon icon ion-android-add"></i></span> -->
+  <span><i class="fa fa-bars" aria-hidden="true"></i></span>
 </div>
 
 <nav id="custom-nav-container" class="no-display">
@@ -133,9 +129,9 @@
 <div class="custom-modal-layer no-display" id="custom-work-modal-two">
   <div class="custom-modal" id="custom-modal-content-two">
     <div class="custom-modal-window-close">
-      <span>
-        <i class = "icon icon ion-android-close"></i>
-      </span>
+        <span>
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </span>
     </div>
     <div class="custom-modal-header">
       <h2>
@@ -162,7 +158,7 @@
   <div class="custom-modal" id="custom-modal-content-three">
     <div class="custom-modal-window-close">
       <span>
-        <i class="material-icons">close</i>
+        <i class="fa fa-times" aria-hidden="true"></i>
       </span>
     </div>
     <div class="custom-modal-header">
@@ -187,7 +183,7 @@
   <div class="custom-modal" id="custom-modal-content-four">
     <div class="custom-modal-window-close">
       <span>
-        <i class="material-icons">close</i>
+        <i class="fa fa-times" aria-hidden="true"></i>
       </span>
     </div>
     <div class="custom-modal-header">
@@ -401,7 +397,10 @@
               <h1 class="gradient-me-txt">Skills</h1>
               <div class="skills-icons">
                 <ul>
-                  <i class="material-icons main-icons color-fill" title="Coding">code</i>
+                  <div class="main-icons">
+                    <i class="fa fa-code color-fill" aria-hidden="true"></i>
+                  </div>
+                  
                   <li>
                     <span class="ability"><p>JavaScript</p></span>
                     <span class="ability-score">
@@ -884,7 +883,9 @@
                 </ul>
 
                 <ul>
-                  <i class="material-icons main-icons color-fill" title="Tools">build</i>
+                    <div class="main-icons">
+                        <i class="fa fa-wrench color-fill" aria-hidden="true"></i>
+                    </div>
                   <li>
                     <span class="ability"><p>Linux Package Managers</p></span>
                     <span class="ability-score">
@@ -1248,8 +1249,9 @@
                 </ul>
 
                 <ul>
-                  <i class="material-icons main-icons color-fill" title="Web">language</i>
-                  <!-- <h3>Systems</h3> -->
+                    <div class="main-icons">
+                        <i class="fa fa-internet-explorer color-fill" aria-hidden="true"></i>
+                    </div>
                   <li>
                     <span class="ability"><p>SEO</p></span>
                     <span class="ability-score">
@@ -1493,8 +1495,9 @@
                 </ul>
 
                 <ul>
-                  <i class="material-icons main-icons color-fill" title="Systems">memory</i>
-                  <!-- <h3>Systems</h3> -->
+                    <div class="main-icons">
+                        <i class="fa fa-microchip color-fill" aria-hidden="true"></i>
+                    </div>
                   <li>
                     <span class="ability"><p>GNU/Linux</p></span>
                     <span class="ability-score">
@@ -1658,7 +1661,9 @@
                 </ul>
 
                 <ul>
-                  <i class="material-icons main-icons color-fill" title="Groud">fingerprint</i>
+                    <div class="main-icons">
+                        <i class="fa fa-vcard-o color-fill" aria-hidden="true"></i>
+                    </div>
                   <li>
                     <span class="ability"><p>Singing</p></span>
                     <span class="ability-score">
@@ -2284,29 +2289,29 @@
               <span class="me-imgs-arrow groudie-icons icon-size-sm"><i class = "icon ion-arrow-left-b"></i></span>
             </div>
             <div class="me-imgs-icons-bottom groudie-icons">
-              <span class="no-display">
+              <!-- <span>
                 <a href="https://dribbble.com/GroudFrank" target="_blank" rel="noopener">
-                    <i class = "icon ion-social-dribbble-outline icon-size-sm"></i>
+                    <i class="fa fa-dribbble icon-size-sm-alt" aria-hidden="true"></i>
                 </a>
-              </span>
+              </span> -->
               <span>
                 <a href="https://www.facebook.com/groud" target="_blank" rel="noopener">
-                    <i class = "icon ion-social-facebook icon-size-sm"></i>
+                    <i class="fa fa-facebook icon-size-sm-alt" aria-hidden="true"></i>
                 </a>
               </span>
               <span>
                 <a href="https://github.com/groudfrank" target="_blank" rel="noopener">
-                    <i class = "icon ion-social-octocat icon-size-sm"></i>
+                    <i class="fa fa-github-alt icon-size-sm-alt" aria-hidden="true"></i>
                 </a>
               </span>
               <span>
                 <a href="https://plus.google.com/+GroudFrank" target="_blank" rel="noopener">
-                    <i class = "icon ion-social-googleplus-outline icon-size-sm"></i>
+                    <i class="fa fa-google-plus icon-size-sm-alt" aria-hidden="true"></i>
                 </a>
               </span>
               <span>
                 <a href="https://www.instagram.com/groudie/" target="_blank" rel="noopener">
-                    <i class = "icon ion-social-instagram-outline icon-size-sm"></i>
+                    <i class="fa fa-instagram icon-size-sm-alt" aria-hidden="true"></i>
                 </a>
               </span>
               <span>
@@ -2316,12 +2321,12 @@
               </span>
               <span>
                 <a title="groud.dalton.frank">
-                    <i class = "icon ion-social-skype icon-size-sm"></i>
+                    <i class="fa fa-skype icon-size-sm-alt" aria-hidden="true"></i>
                 </a>
               </span>
               <span>
                 <a href="https://twitter.com/groudfrank" target="_blank rel="noopener"">
-                    <i class = "icon ion-social-twitter icon-size-sm"></i>
+                    <i class="fa fa-twitter icon-size-sm-alt" aria-hidden="true"></i>
                 </a>
               </span>
               <span>
@@ -2337,7 +2342,7 @@
           </div>
           <div class="section-breaker-format" id="me-footer">
             <div id="me-footer-content">
-              <i class="material-icons gradient-me-txt icon-size-sm">format_quote</i>
+              <i class="fa fa-quote-left gradient-me-txt icon-size-sm" aria-hidden="true"></i>
               <h1 class="gradient-me-txt footer-format">BORN TO BE AWESOME, NOT PERFECT</h1>
             </div>
           </div>
@@ -2363,30 +2368,42 @@
         </p>
         <div class="services-card-icons card-content">
           <div>
-            <span class="lnr lnr-pencil card-icons-format"></span>
+            <span class="card-icons-format">
+                <i class="fa fa-paint-brush" aria-hidden="true"></i>
+            </span>
             <h4>UI Design</h4>
           </div>
           <div>
-            <span class="lnr lnr-layers card-icons-format"></span>
+            <span class="card-icons-format">
+                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+            </span>
             <h4>UX Engineering</h4>
           </div>
           <div>
-            <span class="lnr lnr-code card-icons-format"></span>
+            <span class="card-icons-format">
+                <i class="fa fa-code" aria-hidden="true"></i>
+            </span>
             <h4>Web Design</h4>
           </div>
         </div>
 
         <div class="services-card-icons card-content">
           <div>
-            <span class="lnr lnr-enter card-icons-format"></span>
+            <span class="card-icons-format">
+                <i class="fa fa-folder-open-o" aria-hidden="true"></i>
+            </span>
             <h4>Online Porfolio Creation</h4>
           </div>
           <div>
-            <span class="lnr lnr-laptop-phone card-icons-format"></span>
+            <span class="card-icons-format">
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+            </span>
             <h4>Digital Media Management</h4>
           </div>
           <div>
-            <span class="lnr lnr-heart-pulse card-icons-format"></span>
+            <span class="card-icons-format">
+                <i class="fa fa-heartbeat" aria-hidden="true"></i>
+            </span>
             <h4>Client Assistance</h4>
           </div>
         </div>
@@ -2513,7 +2530,7 @@
 
         <div class="section-breaker-format" id="services-footer">
             <div id="services-footer-content">
-              <i class="material-icons gradient-services-txt icon-size-sm">format_quote</i>
+              <i class="fa fa-quote-left gradient-services-txt icon-size-sm" aria-hidden="true"></i>
               <h1 class="gradient-services-txt footer-format">HIRE ME, I'M GOOD.</h1>
             </div>
           </div>
@@ -2542,30 +2559,30 @@
 
         <div class="contact-card-icons card-content">
           <div>
-            <span class="card-icons-format"><i class = "icon icon ion-social-facebook-outline"></i></span>
+            <span class="card-icons-format"><i class="fa fa-facebook" aria-hidden="true"></i></span>
             <a href="https://www.facebook.com/groud"  target="_blank" rel="noopener"><h4>Facebook</h4></a>
           </div>
           <div>
-            <span class="card-icons-format"><i class = "icon icon ion-social-github-outline"></i></span>
+            <span class="card-icons-format"><i class="fa fa-github-alt" aria-hidden="true"></i></span>
             <a href="https://github.com/groudfrank"  target="_blank" rel="noopener"><h4>GitHub</h4></a>
           </div>
           <div>
-            <span class="card-icons-format"><i class = "icon icon ion-social-twitter-outline"></i></span>
+            <span class="card-icons-format"><i class="fa fa-twitter" aria-hidden="true"></i></span>
             <a href="https://twitter.com/groudfrank"  target="_blank" rel="noopener"><h4>Twitter</h4></a>
           </div>
         </div>
 
         <div class="contact-card-icons card-content">
           <div>
-            <span class="card-icons-format"><i class = "icon icon ion-ios-telephone-outline"></i></span>
+            <span class="card-icons-format"><i class="fa fa-phone" aria-hidden="true"></i></span>
             <h4>+1-868-343-3756</h4>
           </div>
           <div>
-            <span class="card-icons-format"><i class = "icon icon ion-ios-email-outline"></i></span>
+            <span class="card-icons-format"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
             <h4>groudfrank@gmail.com</h4>
           </div>
           <div>
-            <span class="card-icons-format"><i class = "icon icon ion-ios-location-outline"></i></span>
+            <span class="card-icons-format"><i class="fa fa-map-marker" aria-hidden="true"></i></i></span>
             <h4>
               #18 Courland Bush Trace,<br>
               Black Rock,
@@ -2614,7 +2631,7 @@
 
       <div class="section-breaker-format" id="contact-footer">
             <div id="contact-footer-content">
-                <i class="material-icons gradient-contact-txt icon-size-sm">format_quote</i>
+                    <i class="fa fa-quote-left gradient-contact-txt icon-size-sm" aria-hidden="true"></i>
               <h1 class="gradient-contact-txt footer-format">LET'S TALK</h1>
             </div>
           </div>
@@ -2622,7 +2639,7 @@
 
   <div class="flex-container-wrapper-ie-support"> 
   <div class="padding-bottom-150" id="contact-breaker">
-    <i class="material-icons txt-accent icon-size-sm">format_quote</i>
+        <i class="fa fa-quote-left txt-accent icon-size-sm" aria-hidden="true"></i>
   <p class="inconsolata">
     Imagine yourself as a living house. God comes in to rebuild that house.
     At first, perhaps, you can understand what He is doing. He is getting the drains right and stopping the leaks
@@ -2657,9 +2674,9 @@
 </div>
 
 </div>
-<script async src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
-<script async src="https://cdn.jsdelivr.net/npm/blazy@1.8.2/blazy.min.js"></script>
-<script async>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/blazy@1.8.2/blazy.min.js"></script>
+<script>
 $(document).ready(function(){
 var bLazy = new Blazy({
 selector: 'img',
