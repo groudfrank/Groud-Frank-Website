@@ -1415,7 +1415,8 @@ h4{
   justify-content: center;
   width: 100%;
   height: auto;
-  /* background: url("img/contact-background-image-alt1k.jpg") repeat center center fixed; */
+  background: url("img/contact-background-image-alt1k.jpg") no-repeat center center fixed;
+  background-size: cover;
   position: relative;
   margin-bottom: 150px;
   padding-top: 40px;
@@ -3386,13 +3387,13 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
 @media only screen  and (min-width : 2000px) {
   #contact-subsection{
-    background: url("img/contact-background-image-alt2k.jpg") repeat center center fixed;
+    background: url("img/contact-background-image-alt2k.jpg") no-repeat center center fixed;
   }
 }
 
 @media only screen  and (min-width : 3000px) {
   #contact-subsection{
-    background: url("img/contact-background-image-alt4k.jpg") repeat center center fixed;
+    background: url("img/contact-background-image-alt4k.jpg") no-repeat center center fixed;
   }
 }
 
