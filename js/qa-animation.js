@@ -6,15 +6,11 @@ $(document).ready(function(){
     
     
     $window = $(window);
-    var window_vh = $window.height();
     var window_vw = $window.width();
-    var body_scroll_height = $body.scrollHeight;
     
     /*---------- Resize Events ----------*/
     $window.on('resize', function(){
-      var window_vh = $window.height();
-      var window_vw = $window.width();
-      var body_scroll_height = $body.scrollHeight;
+      window_vw = $window.width();
     });
     
     function hideTimeOut(target, delay){

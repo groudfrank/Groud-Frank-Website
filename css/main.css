@@ -48,6 +48,11 @@ a:visited{
   text-decoration: underline;
 }
 
+a:active, a:focus{
+  outline: 0;
+  border: none;
+}
+
 b{
   font-weight: 700;
 }
@@ -61,7 +66,7 @@ u{
  
 }
 
-p {
+body p {
   font-family: 'Josefin Sans', 'Trebuchet', 'Verdana', 'Tahoma', 'Arial Narrow', 'Helvetica', 'Geneva', sans-serif;
   font-size: 1.1em;
   margin: 0px;
@@ -69,18 +74,18 @@ p {
   line-height: 1.35;
 } 
 
-h1{
+body h1{
   font-family: 'Indie Flower', cursive, 'Josefin Slab', 'Georgia', 'Times', 'Times New Roman', 'Palatino Linotype', serif;
   font-size: 2.3em;
   padding: 7px;
 }
 
-h2{
+body h2{
   font-family: 'Josefin Sans', 'Trebuchet', 'Verdana', 'Tahoma', 'Arial Narrow', 'Helvetica', 'Geneva', sans-serif;
   font-size: 1.5em;
 }
 
-h3{
+body h3{
   /* font-family: 'Josefin Slab', 'Georgia', 'Times', 'Times New Roman', 'Palatino Linotype', serif; */
   font-family: 'Josefin Sans', 'Trebuchet', 'Verdana', 'Tahoma', 'Arial Narrow', 'Helvetica', 'Geneva', sans-serif;
   font-size: 1.5em;
@@ -88,7 +93,7 @@ h3{
 }
 
 
-h4{
+body h4{
   font-family: 'Josefin Sans', 'Trebuchet', 'Verdana', 'Tahoma', 'Arial Narrow', 'Helvetica', 'Geneva', sans-serif;
   text-align: center;
   font-size: 1em;
@@ -1482,8 +1487,7 @@ input[type=text]{
   height: 50px;
   box-sizing: border-box;
   border: none;
-  /* border-bottom: 1.5px solid #cfcfcf; */
-  /* border-radius: 30px; */
+  border: 1px solid #cfcfcf;
   border-radius: 30px;
   outline: none;
   font-weight: bold;
@@ -1498,6 +1502,7 @@ input[type=text]:focus{
     /* background: rgba(223,145,251,0.5); */
     Background: rgba(185,155,236,0.6);
     color: #ffffff;
+    border: 2px solid transparent;
   /* width: 37%; */
 }
 
@@ -1561,7 +1566,6 @@ input[type=submit]:hover{
 }
 
 #contact-breaker p{
-  font-weight: lighter;
   white-space: pre-line;
   text-align: center;
   position: relative;
@@ -2909,6 +2913,7 @@ background: #3f3e44 !important;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-bottom: 20px;
     }
 }
 
@@ -3143,7 +3148,9 @@ and (-webkit-min-device-pixel-ratio: 1) {
 @media (max-width: 768px) {
   #groudie .me-imgs-icons-top{
       top: 5%;
-      /* position: relative; */
+      position: relative;
+      margin-top: auto;
+      margin-bottom: auto;
   }
 }
 
@@ -3263,6 +3270,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
     .services-card-icons div{
        width: 100% !important;
        height: 140px;
+       margin-bottom: 40px;
     }
 }
 
@@ -3378,6 +3386,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
     .contact-card-icons div{
        width: 100%;
        height: 140px;
+       margin-bottom: 30px;
        flex-wrap: nowrap;
     }
 }

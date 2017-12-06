@@ -64,6 +64,7 @@ body b{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-bottom: 60px;
 }
 
 #browsers div{
@@ -141,6 +142,18 @@ body b{
   @media (max-width: 768px) {
     #browsers{
       flex-wrap: wrap;
+    }
+  }
+
+  @media only screen and (min-width: 2000px){
+    #browsers {
+        margin-bottom: calc(60px * 1.2);
+    }
+  }
+
+  @media only screen and (min-width: 3000px){
+    #browsers {
+        margin-bottom: calc(60px * 2.4);
     }
   }
 
