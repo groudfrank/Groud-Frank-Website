@@ -47,7 +47,7 @@ outline: 1px solid slategrey;
   }
 
 
-p {
+body p {
   font-family: 'Inconsolata', 'Courier', 'Courier New', 'Lucida Sans Typewriter',
    'Lucida Console', 'Monaco', 'Andale Mono', monospace;
     /* color: #9e9e9e; */
@@ -55,20 +55,20 @@ p {
 } 
 
 
-h3{
+body h3{
   color: #fff;
 }
 
 
-h4{
+body h4{
   color: #fff;
 }
 
-u{
+body u{
   color: #9e9e9e;
 }
 
-s{
+body s{
   color: #9e9e9e;
 }
 
@@ -180,13 +180,13 @@ padding-bottom: 150px;
   /*----------Media Queries----------*/
 
   @media (max-width: 768px) {
-    p{
+    body p{
         text-align: left;
     }
   }
 
   @media (max-width: 768px) {
-    h1{
+    body h1{
         font-size: 2.7em;
         text-align: left;
         margin: 0px;
@@ -194,7 +194,7 @@ padding-bottom: 150px;
   }
 
   @media (max-width: 500px) {
-    h1{
+    body h1{
         font-size: 2em;
         text-align: left;
         margin: 0px;
