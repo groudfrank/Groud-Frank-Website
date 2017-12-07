@@ -1172,7 +1172,6 @@ body h4{
   align-items: center;
   width: 100%;
   position: relative;
-  margin-top: auto;
 }
 
 #me-imgs .me-imgs-arrow{
@@ -3191,6 +3190,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 @media (max-width: 768px) {
   #me-imgs{
       flex-direction: column;
+      margin-bottom: auto;
   }
 }
 
