@@ -3253,6 +3253,12 @@ and (-webkit-min-device-pixel-ratio: 1) {
 }
 
 @media (max-width: 768px) {
+  .me-img-container figure{
+     transition: none;
+  }
+} 
+
+@media (max-width: 768px) {
   #me-imgs .me-imgs-arrow{
       visibility: hidden;
   }
