@@ -3198,6 +3198,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
   #me-imgs .me-img-container{
       height: 60px;
       width: 600px;
+      transition: none;
   }
 } 
 
@@ -3205,6 +3206,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
   #me-imgs .me-img-container{
       height: 60px;
       width: 350px;
+      transition: none;
   }
 } 
 
