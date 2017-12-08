@@ -66,6 +66,10 @@ u{
  
 }
 
+.bolded{
+  font-weight: bold;
+}
+
 body p {
   font-family: 'Josefin Sans', 'Trebuchet', 'Verdana', 'Tahoma', 'Arial Narrow', 'Helvetica', 'Geneva', sans-serif;
   font-size: 1.1em;
