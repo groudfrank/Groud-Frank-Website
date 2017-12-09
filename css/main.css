@@ -1514,7 +1514,8 @@ input[type=text]:focus{
 }
 
 textarea{
-  font-family: 'Josefin Sans', 'Trebuchet', 'Verdana', 'Tahoma', 'Arial Narrow', 'Helvetica', 'Geneva', sans-serif;
+  font-family: 'Josefin Sans', 'Trebuchet', 'Verdana', 'Tahoma',
+  'Arial Narrow', 'Helvetica', 'Geneva', sans-serif !important;
   font-size: 1.05em;
   font-weight: bold;
   color: #B99BEC;
