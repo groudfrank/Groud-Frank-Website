@@ -70,6 +70,16 @@ u{
   font-weight: bold;
 }
 
+.d-inline-blk{
+  display: inline-block;
+}
+
+.ur{
+  color: #333333;
+  font-weight: bold;
+  font-style: italic;
+}
+
 body p {
   font-family: 'Josefin Sans', 'Trebuchet', 'Verdana', 'Tahoma', 'Arial Narrow', 'Helvetica', 'Geneva', sans-serif;
   font-size: 1.1em;
