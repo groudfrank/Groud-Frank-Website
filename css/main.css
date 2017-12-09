@@ -1132,7 +1132,7 @@ body h4{
   /* padding-bottom: 80px; */
   position: relative;
   background-color: #fff;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 #groudie .me-imgs-icons-top{
@@ -1149,11 +1149,11 @@ body h4{
   justify-content: center;
   align-items: center;
   padding: 0px;
-  /* position: absolute;
+  position: absolute;
   right: 0;   
   left: 0;
-  bottom:0;  */
-  margin: auto auto 0px auto;
+  bottom:0; 
+  /* margin: auto auto 0px auto; */
 }
 
 #groudie .me-imgs-icons-bottom span{
@@ -1177,7 +1177,7 @@ body h4{
   align-items: center;
   width: 100%;
   position: relative;
-  margin-top: auto;
+  /* margin-top: auto; */
 }
 
 #me-imgs .me-imgs-arrow{
@@ -1191,15 +1191,15 @@ body h4{
   justify-content: flex-start;
   align-items: center;
   width: 80px;
-  height: 300px;
+  height: 350px;
   position: relative;
   overflow: hidden;
   transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
 }
 
 #me-imgs .me-img-container:hover{
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
 }
 
 .me-img-container figure{
@@ -3176,6 +3176,8 @@ and (-webkit-min-device-pixel-ratio: 1) {
 @media (max-width: 768px) {
   #groudie .me-imgs-icons-bottom{
     flex-wrap: wrap;
+    position: relative;
+    margin: auto auto 0px auto;
   }
 } 
 
@@ -3196,7 +3198,8 @@ and (-webkit-min-device-pixel-ratio: 1) {
 @media (max-width: 768px) {
   #me-imgs{
       flex-direction: column;
-      margin-bottom: auto;
+      /* margin-bottom: auto; */
+      margin-top: auto;
   }
 }
 
@@ -3233,28 +3236,28 @@ and (-webkit-min-device-pixel-ratio: 1) {
 @media only screen  and (min-width : 2000px) {
   #me-imgs .me-img-container{
     width: calc(80px * 1.2);
-    height: calc(300px * 1.2);
+    height: calc(350px * 1.2);
   }
 }
 
 @media only screen  and (min-width : 3000px) {
   #me-imgs .me-img-container{
     width: calc(80px * 2.4);
-    height: calc(300px * 2.4);
+    height: calc(350px * 2.4);
   }
 }
 
 @media only screen  and (min-width : 2000px) {
   #me-imgs .me-img-container:hover{
-    width: calc(400px * 1.5);
-    height: calc(400px * 1.5);
+    width: calc(350px * 1.5);
+    height: calc(350px * 1.5);
   }
 }
 
 @media only screen  and (min-width : 3000px) {
   #me-imgs .me-img-container:hover{
-    width: calc(400px * 2.4);
-    height: calc(400px * 2.4);
+    width: calc(350px * 2.4);
+    height: calc(350px * 2.4);
   }
 }
 
