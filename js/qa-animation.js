@@ -51,11 +51,10 @@ $nav_btn_close.on('click', function(){
 
 $nav_a.each(function(){
   $(this).on('click', function(event){
-    if(navbar_exposed == true){
-      event.preventDefault();
-      TweenMax.to($custom_nav_container, 0.7, {x: (window_vw + 2), ease: Expo.easeInOut, onComplete:MansNotHot});
-      navbar_exposed = false;
-      }
+    navbar_exposed == true)
+    event.preventDefault();
+    TweenMax.to($custom_nav_container, 0.7, {x: (window_vw + 2), ease: Expo.easeInOut, onComplete:MansNotHot});
+    navbar_exposed = false;
 
     (function(link){ 
       setTimeout(function() { 
