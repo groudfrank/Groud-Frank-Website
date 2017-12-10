@@ -28,7 +28,8 @@ $(document).ready(function(){
     
     /*----------Navigation Stuff-----------*/
 var $custom_nav_container = $('#custom-nav-container');
-var $nav_a = $('#custom-nav .nav-ul .nav-li a');
+var $nav_a = $('.nav-li a');
+var $nav_a_contact = $('.custom-nav-contact-format');
 var $custom_nav_canvas = $('#custom-nav-canvas');
 
 // Carries the slide in navbar to it's origin/original position.
@@ -51,11 +52,22 @@ $nav_btn_close.on('click', function(){
 
 $nav_a.each(function(){
   $(this).on('click', function(event){
-    navbar_exposed == true)
     event.preventDefault();
     TweenMax.to($custom_nav_container, 0.7, {x: (window_vw + 2), ease: Expo.easeInOut, onComplete:MansNotHot});
-    navbar_exposed = false;
 
+    (function(link){ 
+      setTimeout(function() { 
+        window.location = link;
+      }, 701);
+  })(this.href);
+
+    });
+});
+
+$nav_a_contact.each(function(){
+  $(this).on('click', function(event){
+    event.preventDefault();
+    TweenMax.to($custom_nav_container, 0.7, {x: (window_vw + 2), ease: Expo.easeInOut, onComplete:MansNotHot});
     (function(link){ 
       setTimeout(function() { 
         window.location = link;
