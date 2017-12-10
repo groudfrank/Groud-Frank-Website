@@ -78,7 +78,11 @@ body s{
 }
 
 #nav-btn span i{
-  color: white;
+  color: #ffffff;
+}
+
+#nav-btn-close span i{
+  color: #333333;
 }
 
 .card-format{

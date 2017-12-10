@@ -304,10 +304,10 @@ body h4{
   justify-content: center;
   align-items: center;
   position: fixed;
-  z-index: 15;
+  z-index: 13;
   top: 0;
   right: 0;
-  margin: 0px 10px 0px 0px;
+  margin: 0px 20px 0px 0px;
   border-radius: 5%;
 }
 
@@ -318,6 +318,22 @@ body h4{
 
 #nav-btn span i{
   color: #808080;
+}
+
+#nav-btn-close{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 13;
+  top: 0;
+  right: 0;
+  margin: 0px 20px 0px 0px;
+  border-radius: 5%;
+}
+
+#nav-btn-close span i{
+  color: #FFFFFF;
 }
 
 #custom-nav-container{
