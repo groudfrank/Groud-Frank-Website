@@ -343,7 +343,7 @@ body h4{
   max-height: 100vh;
   position: fixed;
   z-index: 14;
-  background-color: #3f3e44;
+  background-color: #333333;
 }
 
 #custom-nav-canvas{
@@ -404,12 +404,12 @@ body h4{
 }
 
 #custom-nav .nav-contact-ul .nav-contact-li a{
-  transition: all 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 #custom-nav .nav-contact-ul .nav-contact-li a:hover{
-  filter: brightness(75%);
-  /* color: #FF6484; */
+  /* filter: brightness(75%); */
+  color: #FF6484;
 } 
 
 #custom-nav .nav-contact-ul .seperator-li p{

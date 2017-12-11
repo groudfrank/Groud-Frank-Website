@@ -36,6 +36,15 @@ body #obsolete-browser-content b{
 }
 
 
+#custom-nav .nav-contact-ul .nav-contact-li a{
+    transition: color 0.3s ease-in-out;
+  }
+
+  #custom-nav .nav-contact-ul .nav-contact-li a:hover{
+    color: #3D82BA;
+  } 
+
+
 #obsolete-browser-content h1{
     font-family: 'Indie Flower', cursive, 'Josefin Slab', 'Georgia',
     'Times', 'Times New Roman', 'Palatino Linotype', serif;
