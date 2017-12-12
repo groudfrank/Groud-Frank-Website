@@ -1098,6 +1098,10 @@ body h4{
   width: 50%;
 }
 
+/* #fancies .fancies-layout .container-2 p{
+  text-align: center;
+} */
+
 #fancies .fancies-layout-reverse{
   display: flex;
   flex-direction: row-reverse;
@@ -1155,7 +1159,6 @@ body h4{
   width: 100%;
   min-height: 100vh;
   text-align: center;
-  /* padding-bottom: 80px; */
   position: relative;
   background-color: #fff;
   /* overflow: hidden; */
@@ -2720,7 +2723,7 @@ background: #3f3e44 !important;
 @media(max-width: 500px){
   #pseudo-body #greeter #greeter-about-container p{
     white-space: normal;
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -3064,7 +3067,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
 @media (max-width: 500px) {
   .container-2 .txt-container p{
-      text-align: center;
+      text-align: left;
   }
 }
 
@@ -3179,6 +3182,11 @@ and (-webkit-min-device-pixel-ratio: 1) {
     }
 }
 
+@media (max-width: 768px) {
+ #me-subsection #groudie {
+    padding-top: 80px;
+  }
+}
 
 @media (max-width: 768px) {
   #groudie .me-imgs-icons-top{
@@ -3598,12 +3606,24 @@ and (-webkit-min-device-pixel-ratio: 1) {
 }
 
 @media (max-width: 768px) {
+  #contact-breaker .txt-left-mobile{
+     text-align: center;
+   }
+ }
+
+@media (max-width: 768px) {
  #contact-breaker p{
     width: 95%;
-    text-align: center !important;
+    text-align: center;
     white-space: normal;
   }
 }
+
+@media (max-width: 500px) {
+  #contact-breaker p{
+     text-align: left;
+   }
+ }
 
 @media only screen  and (min-width : 2000px) {
   #contact-breaker p {
