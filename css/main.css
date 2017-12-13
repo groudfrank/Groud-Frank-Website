@@ -2630,6 +2630,12 @@ background: #3f3e44 !important;
   }
 } 
 
+@media (max-width: 500px) {
+  .custom-modal .custom-modal-header h2{
+      font-size: 1.5em;
+  }
+} 
+
 @media (max-width: 768px) {
   .custom-modal .custom-modal-body{
       text-align: center;
@@ -2647,12 +2653,13 @@ background: #3f3e44 !important;
   .custom-modal .custom-modal-body p{
     font-size: 1.6em;
     padding: 5px 20px 5px 20px;
+    overflow: auto;
   }
 }
 
 @media (max-width: 500px) {
   .custom-modal .custom-modal-body p{
-    font-size: 1.25em;
+    font-size: 1.3em;
     padding: 5px 20px 5px 20px;
   }
 } 
