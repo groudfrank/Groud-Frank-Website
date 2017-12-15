@@ -870,6 +870,15 @@ body h4{
   overflow: hidden;
 }
 
+.skills-icons .no-transition{
+  transition: none !important;
+}
+
+.skills-icons .no-transition:hover{
+  transform: none !important;
+  background-color: transparent !important;
+}
+
 #me-section #skills .skills-icons .skills-level{
   font-size:16px;
 }
