@@ -3503,6 +3503,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
     width: 50%;
     height: 50px;
     font-size: 1.6em;
+    transition: none;
   }
 }
 
@@ -3511,6 +3512,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
     width: 80%;
     height: 50px;
     font-size: 1.6em;
+    transition: none;
   }
 }
 
@@ -3533,12 +3535,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 @media (max-width: 768px) {
   form textarea{
     width: 80%;
-  }
-}
-
-@media (max-width: 500px) {
-  input[type=submit]{
-    font-size: 1.6em;
+    transition: none;
   }
 }
 
@@ -3547,6 +3544,14 @@ and (-webkit-min-device-pixel-ratio: 1) {
     font-size: 1.6em;
     width: 160px;
     height: 55px;
+    transition: none;
+  }
+}
+
+@media (max-width: 500px) {
+  input[type=submit]{
+    font-size: 1.6em;
+    transition: none;
   }
 }
 
