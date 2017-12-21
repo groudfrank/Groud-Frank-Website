@@ -105,11 +105,12 @@ padding-bottom: 150px;
 
 .custom-nav-format{
   color: #3f3e44;
-  transition: color 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .custom-nav-format:hover{
-  color: #ffffff;
+  /* color: #ffffff; */
+  filter: blur(2px);
 }
 
 #custom-nav .nav-contact-ul .nav-contact-li a{

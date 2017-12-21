@@ -137,12 +137,12 @@ body h4{
   color: #fff;
   list-style: none !important;
   text-decoration: none !important;
-  transition: color 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .custom-nav-format:hover{
-  /* filter: blur(2px); */
-  color: #333333;
+  filter: blur(2px);
+  /* color: #333333; */
 }
 
 .custom-nav-contact-format{
