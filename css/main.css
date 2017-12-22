@@ -1616,7 +1616,7 @@ input[type=submit]:hover{
   white-space: pre-line;
   text-align: center;
   position: relative;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 
@@ -3648,14 +3648,14 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
 @media only screen  and (min-width : 2000px) {
   #contact-breaker p {
-    margin-top: calc(40px * 1.2);
+    margin-top: calc(20px * 1.2);
     margin-bottom: calc(10px * 1.2);
   }
 }
 
 @media only screen  and (min-width : 3000px) {
   #contact-breaker p {
-    margin-top: calc(40px * 2.4);
+    margin-top: calc(20px * 2.4);
     margin-bottom: calc(10px * 2.4);
   }
 }
