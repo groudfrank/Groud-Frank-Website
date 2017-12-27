@@ -1411,6 +1411,10 @@ body h4{
   max-width: 100%;
 }
 
+.slogan-crossout{
+  color: #808080 !important;
+}
+
 #contact-card{
   background: #b993d6; 
   background: -webkit-linear-gradient(141deg, #df91fb, #8ca6db); 
